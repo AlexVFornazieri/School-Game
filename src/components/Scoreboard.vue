@@ -2,7 +2,7 @@
   <v-snackbar
     :timeout="timeout"
     :color="color"
-    bottom right vertical
+    top right vertical
     multi-line
     v-model="snackbar">
     <span v-html="message"></span>
@@ -14,17 +14,16 @@
   export default {
     data () {
       return {
-        timeout: 6000,
+        timeout: 3000,
         color: '',
         message: '',
-        snackbar: false,
-        score: 0
+        snackbar: false
       }
     },
     mounted () {
-      this.$bus.$on('add-score', (score) => {
+      this.$bus.$on('add-score', (score, target) => {
         if (score === 0) return
-        this.score += score
+        this.$service.addScore(score, target)
         if (score >= 0) {
           this.color = 'success'
           this.message = `<b>Parabéns!</b> + ${score} pontos.`
@@ -33,6 +32,12 @@
           this.color = 'danger'
           this.message = `<b>Ah não!</b> - ${score} pontos.`
         }
+        this.snackbar = true
+      })
+
+      this.$bus.$on('show-message', (message, color) => {
+        this.message = message
+        this.color = color
         this.snackbar = true
       })
     }

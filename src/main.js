@@ -6,6 +6,7 @@ import router from './router'
 import VueYoutube from 'vue-youtube'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+import { Service } from './Service'
 
 Vue.use(Vuetify)
 
@@ -14,11 +15,17 @@ Vue.config.productionTip = false
 Vue.use(VueYoutube)
 
 const EventBus = new Vue()
+const service = new Service()
 
 Object.defineProperties(Vue.prototype, {
   $bus: {
     get: function () {
       return EventBus
+    }
+  },
+  $service: {
+    get: function () {
+      return service
     }
   }
 })

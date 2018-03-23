@@ -22,11 +22,6 @@
         </v-alert>
         <br>
 
-        <div class="text-xs-center">
-          Ao invés de ler, você também pode:
-          <v-btn large color="primary" :to="{name: 'Video'}">Assistir a vídeo aula</v-btn>
-        </div>
-        <br>
         <p>Quando um corpo é abandonado de uma determinada altura, cai com movimento acelerado devido a força de atração
           da Terra.</p>
 
@@ -49,19 +44,16 @@
           intensidade, uma direção e um sentido. A unidade de força no SI é o newton (N).</p>
       </section>
 
-      <div class="text-xs-center">
-        <v-btn large color="success">
-          Exercícios
-          <v-icon right>arrow_forward</v-icon>
-        </v-btn>
-      </div>
-
     </v-container>
   </v-content>
 </template>
 
 <script>
-  export default {}
+  export default {
+    mounted () {
+      this.$service.setTeoriaRead(0)
+    }
+  }
 </script>
 
 <style scoped>

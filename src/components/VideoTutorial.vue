@@ -1,7 +1,7 @@
 <template>
   <v-content>
     <v-toolbar fixed>
-      <v-btn icon :to="{name: 'Teoria'}">
+      <v-btn icon :to="{name: 'Home'}">
         <v-icon>arrow_back</v-icon>
       </v-btn>
       <v-toolbar-title>1ª Fase - Vídeo aula</v-toolbar-title>
@@ -10,18 +10,9 @@
         <v-icon>more_vert</v-icon>
       </v-btn>
     </v-toolbar>
-
-    <v-container fluid>
-      <br> <br>
+    <br><br>
+    <v-container>
       <section id="video">
-        <v-alert
-          :color="color"
-          icon="check_circle"
-          :value="true"
-          v-if="Boolean(message)"
-          v-html="message"
-        >
-        </v-alert>
         <youtube
           ref="youtube"
           width="100%"
@@ -30,12 +21,6 @@
           @playing="playing"
           @ended="ended"
         />
-        <div class="text-xs-center">
-          <v-btn large color="success">
-            Exercícios
-            <v-icon right>arrow_forward</v-icon>
-          </v-btn>
-        </div>
       </section>
     </v-container>
   </v-content>
@@ -47,24 +32,23 @@
       return {
         videoId: 'lpe7mT2LSuY',
         message: '',
+        played: false,
         color: ''
       }
     },
     methods: {
       playing () {
-        this.color = 'success'
-        this.message = '<span>Assista o vídeo até o fim <b>e ganhe um bonus!</b></span>'
+        if (!this.played) {
+          const message = '<span>Assista o vídeo até o fim <b>e ganhe um bonus!</b></span>'
+          this.$bus.$emit('show-message', message, 'info')
+          this.played = true
+        }
       },
       ended () {
-        this.$bus.$emit('add-score', 10)
-        this.message = ''
+        this.$service.setVideoWatched(0)
+        this.$bus.$emit('add-score', 10, 0)
+        this.$router.push({name: 'Home'})
       }
     }
   }
 </script>
-
-<style>
-  #video iframe {
-    height: auto !important;
-  }
-</style>

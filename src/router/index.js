@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '../components/Home'
 import Teoria from '../components/Teoria'
 import VideoTutorial from '../components/VideoTutorial'
+import Questoes from '../components/Questoes'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/video/',
       name: 'Video',
       component: VideoTutorial
+    },
+    {
+      path: '/questoes/',
+      name: 'Questoes',
+      component: Questoes
     }
   ]
 })

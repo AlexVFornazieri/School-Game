@@ -28,12 +28,13 @@
         </div>
       </section>
       <v-footer fixed>
-        <v-btn flat>
+        <v-btn flat :disabled="isFirstQuestion" @click="back">
           <v-icon left>arrow_back</v-icon>
           Anterior
         </v-btn>
         <v-spacer/>
-        <v-btn flat>Proxima
+        <v-btn flat @click.native="next()" :color="isLastQuestion ? 'error':''">
+          {{isLastQuestion ? 'Finalizar':'Proxima'}}
           <v-icon right>arrow_forward</v-icon>
         </v-btn>
       </v-footer>
@@ -89,35 +90,16 @@
   export default {
     data () {
       return {
+        total: 0,
         letras: ['A', 'B', 'C', 'D', 'E'],
-        pergunta: {
-          texto: 'O que é força? É uma grandeza escalar ou vetorial?',
-          pontuacao: 200,
-          respondiada: false,
-          alternativas: [
-            {
-              texto: 'Forças são interações entre corpos, causando variações no seu estado de movimento ou uma deformação. É uma grandeza escalar.',
-              correta: false,
-              selecionada: false
-            },
-            {
-              texto: 'Forças são interações entre corpos, causando variações no seu estado de movimento ou uma deformação. É uma grandeza vetorial.',
-              correta: true,
-              selecionada: false
-            },
-            {
-              texto: 'Forças são interações entre velocidades, causando variações no seu estado de movimento ou uma deformação.  É uma grandeza vetorial.',
-              correta: false,
-              selecionada: false
-            },
-            {
-              texto: 'Forças são interações entre temperaturas, causando variações no seu estado de movimento ou uma deformação.  É uma grandeza vetorial.',
-              correta: false,
-              selecionada: false
-            }
-          ]
-        }
+        pergunta: {},
+        questoes: [],
+        index: 0
       }
+    },
+    mounted () {
+      this.questoes = this.$service.getQuestoes(0)
+      this.pergunta = this.questoes[0]
     },
     methods: {
       check (index) {
@@ -136,11 +118,39 @@
             this.$bus.$emit('show-message', message, 'error')
           } else {
             this.pergunta.respondiada = true
+            this.total += this.pergunta.pontuacao
             const message = `Muito bem! Respota correta (+${this.pergunta.pontuacao} pontos).`
             this.$service.addScore(this.pergunta.pontuacao, 0)
             this.$bus.$emit('show-message', message, 'success')
           }
         }
+      },
+
+      back () {
+        if (!this.isFirstQuestion) {
+          this.index -= 1
+          this.pergunta = this.questoes[this.index]
+        }
+      },
+      next () {
+        if (!this.isLastQuestion) {
+          this.index += 1
+          this.pergunta = this.questoes[this.index]
+        } else {
+          const message = `Questionário concluído, ${this.total} pontos acumulados.`
+          this.$bus.$emit('show-message', message, 'info')
+          this.$service.setAnswered(0)
+          this.$router.push({name: 'Home'})
+        }
+      }
+    },
+    computed: {
+      isLastQuestion () {
+        return this.questoes.length - 1 === this.index
+      },
+
+      isFirstQuestion () {
+        return this.index === 0
       }
     }
   }

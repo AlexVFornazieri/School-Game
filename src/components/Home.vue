@@ -96,41 +96,56 @@
       <v-layout row wrap>
         <v-flex xs12 sm6 offset-sm3 v-for="(modulo,index) in modulos" :key="index">
           <v-slide-y-transition mode="out-in">
-            <v-card>
+            <v-card class="modules">
               <v-card-media height="150px" :src="modulo.cover"></v-card-media>
-              <p class="counter"><span>{{modulo.xps}}</span> pontos</p>
               <v-card-title primary-title>
                 <div>
-                  <h3 class="headline mb-0">{{'#' + (index+1) + ' - ' + modulo.titulo}}</h3>
-                  <div>{{modulo.tags}}</div>
+
+                  <h3 class="headline mb-0">
+                    <span class="moduleNumber">{{index+1}}</span>{{modulo.titulo}}</h3>
                 </div>
               </v-card-title>
-              <v-card-actions>
-                <v-spacer/>
-                <v-btn
-                  :to="{name: 'Teoria'}"
-                  :disabled="!modulo.habilitado"
-                  icon outline :color="modulo.teoriaRead ? 'success':'primary'">
-                  <v-icon>library_books</v-icon>
-                </v-btn>
-                <v-btn
-                  :to="{name: 'Video'}"
-                  :disabled="!modulo.habilitado"
-                  icon outline :color="modulo.videoWatched ? 'success':'primary'">
-                  <v-icon>play_arrow</v-icon>
-                </v-btn>
-                <v-btn
-                  :disabled="!modulo.habilitado"
-                  icon outline color="primary">
-                  <v-icon>explicit</v-icon>
-                </v-btn>
-                <v-btn
-                  :to="{name: 'Questoes'}"
-                  :disabled="!modulo.habilitado"
-                  icon outline :color="modulo.answered ? 'success':'primary'">
-                  <v-icon>question_answer</v-icon>
-                </v-btn>
-              </v-card-actions>
+              <v-layout row wrap>
+                <v-flex xs6 class="helpLine">
+                  <div class="span">50 Pontos</div>
+                  <div class="span">10 Pontos (bonus)</div>
+                  <div class="span">10 Pontos (bonus)</div>
+                  <div class="span">200 Pontos</div>
+                </v-flex>
+                <v-flex xs6>
+                  <v-btn
+                    :to="{name: 'Teoria'}" block
+                    :disabled="!modulo.habilitado"
+                    :color="modulo.teoriaRead ? 'success':'primary'">
+                    Teoria
+                  </v-btn>
+
+                  <v-btn
+                    :to="{name: 'Exemplos'}" block
+                    :disabled="!modulo.habilitado"
+                    :color="modulo.exemplosRead ? 'success':'primary'">
+                    Exemplos
+                  </v-btn>
+
+                  <v-btn
+                    slot="activator"
+                    :to="{name: 'Video'}" block
+                    :disabled="!modulo.habilitado"
+                    :color="modulo.videoWatched ? 'success':'primary'">
+                    Vídeo Aula
+                  </v-btn>
+
+
+                  <v-btn
+                    :to="{name: 'Questoes'}" block
+                    :disabled="!modulo.habilitado"
+                    :color="modulo.answered ? 'success':'primary'">
+                    Questões
+                  </v-btn>
+
+                  <p class="counter"><span>{{modulo.xps}}</span> pontos</p>
+                </v-flex>
+              </v-layout>
             </v-card>
           </v-slide-y-transition>
         </v-flex>
@@ -155,6 +170,7 @@
     },
 
     mounted () {
+      this.$vuetify.goTo(0, {duration: 300})
       this.modulos = this.$service.listaModulos()
     }
   }
@@ -162,11 +178,35 @@
 
 <style scoped>
   .counter {
-    position: absolute;
-    left: 20px;
-    bottom: 0;
     font-size: large;
     font-weight: 400;
+    text-align: center;
+  }
+
+  .helpLine div.span {
+    text-align: right;
+    color: rgba(0, 0, 0, 0.5);
+    height: 36px;
+    line-height: 36px;
+    margin: 6px 0;
+  }
+
+  .modules .moduleNumber {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.6rem;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    font-weight: bold;
+  }
+
+  .tooltip__content {
+    z-index: 0 !important;
   }
 
   .counter span {

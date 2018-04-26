@@ -10,7 +10,7 @@
         <v-icon>more_vert</v-icon>
       </v-btn>
     </v-toolbar>
-    <br><br>
+    <br><br><br>
     <v-container>
       <section id="questoes">
         <div class="questao">
@@ -78,7 +78,6 @@
   }
 
   .alternativa .letra {
-    float: left;
     font-weight: bold;
     font-size: 2rem;
     padding-right: 10px;
@@ -137,9 +136,11 @@
           this.index += 1
           this.pergunta = this.questoes[this.index]
         } else {
-          const message = `Questionário concluído, ${this.total} pontos acumulados.`
-          this.$bus.$emit('show-message', message, 'info')
-          this.$service.setAnswered(0)
+          if (!this.$service.getAnswered(0)) {
+            const message = `Questionário concluído, ${this.total} pontos acumulados.`
+            this.$bus.$emit('show-message', message, 'info')
+            this.$service.setAnswered(0)
+          }
           this.$router.push({name: 'Home'})
         }
       }

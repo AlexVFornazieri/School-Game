@@ -5,6 +5,12 @@
   </v-app>
 </template>
 
+<style>
+  .application.theme--light {
+    background-color: #FFF;
+  }
+</style>
+
 <script>
   import Scoreboard from './components/Scoreboard'
 

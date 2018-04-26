@@ -51,7 +51,12 @@
 <script>
   export default {
     mounted () {
-      this.$service.setTeoriaRead(0)
+      setTimeout(() => {
+        if (!this.$service.getTeoriaRead(0)) {
+          this.$service.setTeoriaRead(0)
+          this.$bus.$emit('add-score', 50, 0)
+        }
+      }, 3000)
     }
   }
 </script>

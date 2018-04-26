@@ -33,20 +33,27 @@
         videoId: 'lpe7mT2LSuY',
         message: '',
         played: false,
-        color: ''
+        color: '',
+        timePlaying: 0
       }
     },
     methods: {
-      playing () {
+      playing (player) {
+        console.log(player)
         if (!this.played) {
           const message = '<span>Assista o vídeo até o fim <b>e ganhe um bonus!</b></span>'
           this.$bus.$emit('show-message', message, 'info')
           this.played = true
         }
+        const interval = setInterval(() => {
+          this.timePlaying += 1
+        }, 1000)
       },
       ended () {
-        this.$service.setVideoWatched(0)
-        this.$bus.$emit('add-score', 10, 0)
+        if (!this.$service.getVideoWatched(0)) {
+          this.$service.setVideoWatched(0)
+          this.$bus.$emit('add-score', 10, 0)
+        }
         this.$router.push({name: 'Home'})
       }
     }

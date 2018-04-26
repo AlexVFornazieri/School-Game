@@ -8,6 +8,7 @@ export class Service {
         habilitado: true,
         videoWatched: false,
         teoriaRead: false,
+        exemplosRead: false,
         aswered: false,
         xps: 0,
         questoes: [{
@@ -57,17 +58,79 @@ export class Service {
               correta: true,
               selecionada: false
             }]
+        }, {
+          texto: 'Um garoto arma um estilingue com uma pedra. Supondo que a força de cada ramo do estilingue seja de 40N e o ângulo α  entre eles tal que cos α=0,805, determine o módulo da força resultante sobre a pedra.',
+          pontuacao: 200,
+          alternativas: [{texto: '72 N', correta: true, selecionada: false},
+            {texto: '71 N', correta: false, selecionada: false},
+            {texto: '76 N', correta: false, selecionada: false},
+            {texto: '75 N', correta: false, selecionada: false},
+            {texto: '78 N', correta: false, selecionada: false}]
+        }, {
+          texto: 'O que é equilíbrio estático?',
+          pontuacao: 200,
+          alternativas: [{
+            texto: 'Um ponto material está em equilíbrio estático quando se encontra em repouso, isto é, sua velocidade vetorial é positiva no decorrer do tempo.',
+            correta: false,
+            selecionada: false
+          }, {
+            texto: 'Um ponto material está em equilíbrio estático quando se encontra em repouso, isto é, sua velocidade vetorial é negativa no decorrer do tempo.',
+            correta: false,
+            selecionada: false
+          }, {
+            texto: 'Um ponto material está em equilíbrio estático quando se encontra em repouso, isto é, sua velocidade vetorial varia no decorrer do tempo.',
+            correta: false,
+            selecionada: false
+          }, {
+            texto: 'Um ponto material está em equilíbrio estático quando se encontra em repouso, isto é, sua velocidade vetorial é nula no decorrer do tempo.',
+            correta: false,
+            selecionada: false
+          }, {
+            texto: 'Um ponto material está em equilíbrio estático quando se encontra em repouso, isto é, sua velocidade vetorial é igual a massa.',
+            correta: true,
+            selecionada: false
+          }]
+        }, {
+          texto: 'O que é equilíbrio dinâmico?',
+          pontuacao: 200,
+          alternativas: [{
+            texto: 'O equilíbrio é dito dinâmico quando o ponto material está em movimento retilíneo uniforme, isto é, sua velocidade é constante e igual de zero.',
+            correta: false,
+            selecionada: false
+          }, {
+            texto: 'O equilíbrio é dito dinâmico quando o ponto material está em movimento retilíneo uniforme, isto é, sua velocidade é constante e sempre negativa.',
+            correta: false,
+            selecionada: false
+          }, {
+            texto: 'O equilíbrio é dito dinâmico quando o ponto material está em movimento retilíneo uniforme, isto é, sua velocidade é constante e sempre positiva.',
+            correta: false,
+            selecionada: false
+          }, {
+            texto: 'O equilíbrio é dito dinâmico quando o ponto material está em movimento retilíneo uniforme, isto é, sua velocidade é constante e diferente de zero.',
+            correta: false,
+            selecionada: false
+          }, {
+            texto: 'O equilíbrio é dito dinâmico quando o ponto material está em movimento retilíneo uniforme, isto é, sua velocidade é igual a sua massa.',
+            correta: true,
+            selecionada: false
+          }]
         }
         ]
       },
       {
         titulo: 'Leis de Newtom',
-        tags: 'Inercia, Dinâmica, Ação e Reação',
-        cover: 'http://beto.abelha.network/static/img/leis_de_newton.png',
-        habilitado: false,
-        videoWatched: false,
-        answered: false,
-        xps: 0
+        tags:
+          'Inercia, Dinâmica, Ação e Reação',
+        cover:
+          'http://beto.abelha.network/static/img/leis_de_newton.png',
+        habilitado:
+          false,
+        videoWatched:
+          false,
+        answered:
+          false,
+        xps:
+          0
       }
     ]
   }
@@ -88,11 +151,31 @@ export class Service {
     this.modulos[target].videoWatched = true
   }
 
+  getVideoWatched (target) {
+    return this.modulos[target].videoWatched
+  }
+
   setTeoriaRead (target) {
     this.modulos[target].teoriaRead = true
   }
 
+  getTeoriaRead (target) {
+    return this.modulos[target].teoriaRead
+  }
+
+  setExemplosRead (target) {
+    this.modulos[target].exemplosRead = true
+  }
+
+  getExemplosRead (target) {
+    return this.modulos[target].exemplosRead
+  }
+
   setAnswered (target) {
     this.modulos[target].answered = true
+  }
+
+  getAnswered (target) {
+    return this.modulos[target].answered
   }
 }

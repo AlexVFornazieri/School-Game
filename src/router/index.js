@@ -13,27 +13,32 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
+      props: true
     },
     {
-      path: '/teoria/',
+      path: '/teoria/:id',
       name: 'Teoria',
-      component: Teoria
+      component: Teoria,
+      props: true
     },
     {
-      path: '/video/',
+      path: '/video/:id',
       name: 'Video',
-      component: VideoTutorial
+      component: VideoTutorial,
+      props: true
     },
     {
-      path: '/exemplos/',
+      path: '/exemplos/:id',
       name: 'Exemplos',
-      component: Exemplos
+      component: Exemplos,
+      props: true
     },
     {
-      path: '/questoes/',
+      path: '/questoes/:id',
       name: 'Questoes',
-      component: Questoes
+      component: Questoes,
+      props: true
     }
   ]
 })

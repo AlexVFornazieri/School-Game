@@ -114,14 +114,14 @@
                 </v-flex>
                 <v-flex xs6>
                   <v-btn
-                    :to="{name: 'Teoria'}" block
+                    :to="{name: 'Teoria', params: {id: index}}" block
                     :disabled="!modulo.habilitado"
                     :color="modulo.teoriaRead ? 'success':'primary'">
                     Teoria
                   </v-btn>
 
                   <v-btn
-                    :to="{name: 'Exemplos'}" block
+                    :to="{name: 'Exemplos', params: {id: index}}" block
                     :disabled="!modulo.habilitado"
                     :color="modulo.exemplosRead ? 'success':'primary'">
                     Exemplos
@@ -129,7 +129,7 @@
 
                   <v-btn
                     slot="activator"
-                    :to="{name: 'Video'}" block
+                    :to="{name: 'Video', params: {id: index}}" block
                     :disabled="!modulo.habilitado"
                     :color="modulo.videoWatched ? 'success':'primary'">
                     Vídeo Aula
@@ -137,7 +137,7 @@
 
 
                   <v-btn
-                    :to="{name: 'Questoes'}" block
+                    :to="{name: 'Questoes', params: {id: index}}" block
                     :disabled="!modulo.habilitado"
                     :color="modulo.answered ? 'success':'primary'">
                     Questões

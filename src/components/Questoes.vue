@@ -4,7 +4,7 @@
       <v-btn icon :to="{name: 'Home'}">
         <v-icon>arrow_back</v-icon>
       </v-btn>
-      <v-toolbar-title>1ª Fase - Questionário</v-toolbar-title>
+      <v-toolbar-title>{{id + 1}}ª Fase - Questionário</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon>
         <v-icon>more_vert</v-icon>
@@ -29,13 +29,13 @@
       </section>
       <v-footer fixed>
         <v-btn flat :disabled="isFirstQuestion" @click="back">
-          <v-icon left>arrow_back</v-icon>
-          Anterior
+          <v-icon>arrow_back</v-icon>
         </v-btn>
-        <v-spacer/>
-        <v-btn flat @click.native="next()" :color="isLastQuestion ? 'error':''">
-          {{isLastQuestion ? 'Finalizar':'Proxima'}}
-          <v-icon right>arrow_forward</v-icon>
+        <v-btn flat @click.native="next()" :disabled="isLastQuestion">
+          <v-icon>arrow_forward</v-icon>
+        </v-btn>
+        <v-btn flat @click.native="done()" :color="allAnswered ? 'success':'error'">
+          Finalizar
         </v-btn>
       </v-footer>
     </v-container>
@@ -87,17 +87,19 @@
 
 <script>
   export default {
+    props: ['id'],
     data () {
       return {
         total: 0,
         letras: ['A', 'B', 'C', 'D', 'E'],
         pergunta: {},
         questoes: [],
+        respondidas: 0,
         index: 0
       }
     },
     mounted () {
-      this.questoes = this.$service.getQuestoes(0)
+      this.questoes = this.$service.getQuestoes(this.id)
       this.pergunta = this.questoes[0]
     },
     methods: {
@@ -121,6 +123,7 @@
             const message = `Muito bem! Respota correta (+${this.pergunta.pontuacao} pontos).`
             this.$service.addScore(this.pergunta.pontuacao, 0)
             this.$bus.$emit('show-message', message, 'success')
+            this.respondidas += 1
           }
         }
       },
@@ -132,20 +135,29 @@
         }
       },
       next () {
-        if (!this.isLastQuestion) {
-          this.index += 1
-          this.pergunta = this.questoes[this.index]
-        } else {
-          if (!this.$service.getAnswered(0)) {
-            const message = `Questionário concluído, ${this.total} pontos acumulados.`
-            this.$bus.$emit('show-message', message, 'info')
-            this.$service.setAnswered(0)
-          }
-          this.$router.push({name: 'Home'})
+        this.index += 1
+        this.pergunta = this.questoes[this.index]
+      },
+      done () {
+        if (!this.allAnswered) {
+          const message = `Ah questões não respondidas, use as setas para verificar.`
+          this.$bus.$emit('show-message', message, 'info')
+          return
         }
+
+        if (!this.$service.getAnswered(this.id)) {
+          const message = `Questionário concluído, ${this.total} pontos acumulados.`
+          this.$bus.$emit('show-message', message, 'info')
+          this.$service.setAnswered(this.id)
+        }
+        this.$router.push({name: 'Home'})
       }
     },
     computed: {
+      allAnswered () {
+        return this.respondidas === this.questoes.length
+      },
+
       isLastQuestion () {
         return this.questoes.length - 1 === this.index
       },

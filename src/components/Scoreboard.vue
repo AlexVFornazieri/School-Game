@@ -16,7 +16,7 @@
 <style scoped>
   .emoticon {
     position: absolute;
-    bottom: -15px;
+    bottom: -25px;
     font-size: 6rem;
   }
 </style>

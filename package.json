@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "mathjax": "^2.7.4",
     "vue": "^2.5.16",
+    "vue-mathjax": "^0.0.1",
     "vue-router": "^3.0.1",
     "vue-youtube": "^1.2.5",
     "vuetify": "^1.0.8"

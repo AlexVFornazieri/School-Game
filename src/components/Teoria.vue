@@ -22,12 +22,15 @@
   #teoria {
     margin-top: 5em;
   }
+
   #teoria img {
     width: 100%;
   }
 </style>
 
 <script>
+  /* eslint-disable no-undef */
+
   export default {
     props: ['id'],
     data () {
@@ -36,12 +39,17 @@
       }
     },
     mounted () {
+      this.$vuetify.goTo(0)
       setTimeout(() => {
         if (!this.$service.getTeoriaRead(this.id)) {
           this.$service.setTeoriaRead(this.id)
           this.$bus.$emit('add-score', 50, 0)
         }
       }, this.$service.getTeoria(this.id).timeRead * 1000)
+
+      this.$nextTick(function () {
+        MathJax.Hub.Queue(['Typeset', MathJax.Hub, 'editor-output'])
+      })
     }
   }
 </script>

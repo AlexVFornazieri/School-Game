@@ -86,6 +86,8 @@
 
 
 <script>
+  /* eslint-disable no-undef */
+
   export default {
     props: ['id'],
     data () {
@@ -99,6 +101,7 @@
       }
     },
     mounted () {
+      this.$vuetify.goTo(0)
       this.questoes = this.$service.getQuestoes(this.id)
       this.pergunta = this.questoes[0]
     },
@@ -132,11 +135,13 @@
         if (!this.isFirstQuestion) {
           this.index -= 1
           this.pergunta = this.questoes[this.index]
+          this.$nextTick(this.change)
         }
       },
       next () {
         this.index += 1
         this.pergunta = this.questoes[this.index]
+        this.$nextTick(this.change)
       },
       done () {
         if (!this.allAnswered) {
@@ -151,6 +156,9 @@
           this.$service.setAnswered(this.id)
         }
         this.$router.push({name: 'Home'})
+      },
+      change () {
+        MathJax.Hub.Queue(['Typeset', MathJax.Hub, 'editor-output'])
       }
     },
     computed: {

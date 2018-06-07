@@ -7,8 +7,11 @@ import VueYoutube from 'vue-youtube'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import { Service } from './Service'
+import VueMathjax from 'vue-mathjax'
 
 Vue.use(Vuetify)
+
+Vue.use(VueMathjax)
 
 Vue.config.productionTip = false
 

@@ -624,6 +624,185 @@ export class Service {
             }
           ]
         }]
+      }, {
+        titulo: '3ª Lei de Newton ou Princípio da Ação e Reação',
+        cover: 'http://beto.abelha.network/static/img/3_lei.jpg',
+        videoId: 'R9hh0WPe8Uc',
+        habilitado: true,
+        videoWatched: false,
+        answered: false,
+        xps: 0,
+        teoria: {
+          timeRead: 10,
+          texto:
+            `
+            <h2>3ª Lei de Newton ou Princípio da Ação e Reação</h2>
+
+            <h3>O que é a terceira lei de Newton?</h3>
+            
+            <p>Você provavelmente sabe que a Terra lhe puxa para baixo. O que você pode não perceber é que você também está puxando a Terra para cima. Por exemplo, se a Terra está puxando você para baixo com uma força gravitacional de 500 N, você também está puxando para cima na terra com uma força gravitacional de 500 N. Este fato notável é consequência da Terceira Lei de Newton.</p>
+            <p>A Terceira Lei de Newton: Se um objeto A exerce uma força sobre um objeto B, então o objeto B deve exercer uma força de igual magnitude e de sentido oposto sobre o objeto A.</p>
+            <p>Esta lei representa uma certa simetria na natureza: as forças sempre ocorrem aos pares, e um corpo não pode exercer uma força sobre outro, sem ele mesmo experimentar uma força. Às vezes, vagamente, nos referimos à essa lei como ação-reação, onde a força exercida é a ação e a força experimentada como consequência é a reação.</p>
+            <p>Podemos ver rapidamente a Terceira Lei de Newton em ação dando uma olhada como pessoas se movem. Considere uma nadadora empurrando o lado da piscina, como ilustrado abaixo.</p>
+            <p>A nadadora empurra contra a parede da piscina com os pés e acelera em sentido oposto ao seu impulso. A parede exerce uma força igual e oposta de volta sobre o nadador. Você pode pensar que as duas forças iguais e opostas iriam se cancelar, mas elas não fazem isso porque elas atuam em sistemas diferentes. Nesse caso, existem dois sistemas que podemos investigar: a nadadora ou a parede. Se escolhermos a nadadora para ser o sistema de interesse, como na imagem acima,
+             então $F_{\\text{parede no pé}}$ é uma força externa sobre este sistema e afeta o seu movimento. A nadadora se move na direção do $F_{\\text{parede no pé}}$.
+             Em contraste, a força $F_{\\text{pé na parede}}$  atua na parede e não no nosso sistema de interesse. Assim, $F_{\\text{pé na parede}}$  não afeta diretamente o movimento do sistema e não cancela $F_{\\text{parede no pé}}$. Observe que a nadadora empurra no sentido oposto ao que ela deseja se mover. A reação do empurrão é, portanto, no sentido desejado.</p>
+                        
+            <h3>Quais são outros exemplos da terceira lei de Newton?</h3>
+            
+            <p>É fácil encontrar outros exemplos da terceira lei de Newton. Conforme uma professora anda na frente da lousa, ela exerce uma força para trás no chão. O chão exerce uma força de reação para frente na professora, o que a faz acelerar para frente.</p>
+            <p>Da mesma forma, um carro acelera porque o chão empurra as rodas para a frente, em reação às rodas do carro empurrando o chão para trás. Você pode ver evidências das rodas empurrando o chão para trás quando os pneus giram em uma estrada de cascalho e jogam pedras para trás.</p>
+            <p>Em outro exemplo, os foguetes se movem expelindo para trás gases em alta velocidade. Isso significa que o foguete exerce uma grande força para trás no gás na câmara de combustão do foguete, e o gás portanto exerce uma grande força de reação para frente no foguete. Essa força de reação é chamada de empuxo. É um erro de conceito comum dizer que os foguetes se impulsionam empurrando o solo ou o ar atrás deles. Eles na verdade funcionam melhor no vácuo, onde podem expelir os gases mais facilmente.</p>
+            <p>Da mesma forma, helicópteros cria elevação empurrando o ar para baixo, sofrendo, assim, uma força de reação para cima. Pássaros e aviões também voam exercendo uma força no ar em sentido oposto de qualquer força que precisam. Por exemplo, as asas de um pássaro forçam o ar para baixo e para trás a fim de obter elevação e movimento para frente e para cima.</p>
+            `
+        },
+        exemplos: {
+          timeRead: 3,
+          texto:
+            `
+            <h2>Exemplo 1: Empurrando uma geladeira</h2>
+            <p>Uma pessoa conduz um carro, Carro 1, para a direita enquanto empurra um outro carro, Carro 2, este carregando uma geladeira enorme. A massa total do Carro 2, carro mais geladeira, é três vezes a massa total do Carro 1, carro mais pessoa. Se a pessoa está dirigindo com força suficiente para que os dois carros aceleram para a direita, o que pode ser dito com certeza sobre as magnitudes das forças sobre os carros?</p>
+            
+            <p>A força no Carro 2 exercida pelo Carro 1 é igual em magnitude à força no Carro 1 exercida pelo Carro 2.</p>
+            <p>Não importa se há aceleração ou se a massa de um objeto é maior do que o outro objeto. Pares de força reativas são sempre iguais em magnitude. Sabemos que as forças nesta questão são pares de força reativas uma vez que se trocar a ordem dos objetos na frase "força exercida no Carro 2 pelo Carro 1 nos dá a "força exercida no Carro 1 pelo Carro 2. Trocando a ordem dos objetos envolvidos na força—isto é, o objeto exercendo a força e o objeto em que a força é exercida—é uma maneira fácil de identificar par de força da terceira lei.</p>
+            
+            <h2>Exemplo 2: Movimento de um Corpo</h2>
+            <p>Qual a massa de um corpo que, partindo do repouso, atinge uma velocidade de 12m/s em 20s? Sabendo que a força aplicada nele tem módulo igual a 30N.</p>
+            
+            $$\{V}={V}_{0}+{a}.{t}$$
+            
+            $$\{12}={0}+{a}.{20}$$
+            
+            $$\{a}={0},{6}{m}/{s}$$
+            
+            $$\{F}={m}.{a}$$
+            
+            $$\{30}={m}.{0},{6}$$
+            
+            $$\{m}={50}{kg}$$
+            `
+        },
+        questoes: [{
+          texto: 'Após estudar a Terceira lei de Newton, um estudante concluiu que um cavalo, ao tentar puxar uma carroça, ' +
+          'não deveria sair do lugar, já que o cavalo faz uma força sobre a carroça e vice-versa. A respeito dessa observação, ' +
+          'marque a alternativa correta.',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: 'O estudante está correto, sendo esse um tipo de problema que Newton não conseguiu resolver.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'O estudante está errado, pois a força de atrito entre as patas do cavalo e o solo é a responsável pelo movimento.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'O estudante está correto e não há uma lei da Física que possa explicar esse fato.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'O estudante está errado, pois as forças aplicadas são de mesma intensidade, mas atuam em corpos diferentes. Sendo assim, não haverá equilíbrio, e a carroça movimentar-se-á.',
+              correta: true,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: 'A respeito da Terceira lei de Newton, marque a alternativa verdadeira.',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: 'Os pares de ação e reação podem ser formados exclusivamente por forças de contato.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'As forças de ação e reação sempre se anulam.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'A força normal é uma reação da força peso aplicada por um corpo sobre uma superfície.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'Como estão aplicadas em corpos diferentes, as foças de ação e reação não se equilibram.',
+              correta: true,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: 'Analisando as Leis de Newton, pode-se concluir corretamente que:',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: 'O movimento retilíneo e uniforme é consequência da aplicação de uma força constante sobre o corpo que se move.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'A lei da inércia prevê a existência de referenciais inerciais absolutos, em repouso, como é o caso do centro de nossa galáxia.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'Para toda ação existe uma reação correspondente, sendo exemplo dessa circunstância a força normal, que é reação à força peso sobre objetos apoiados em superfícies planas.',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: 'Se um corpo é dotado de aceleração, esta certamente é consequência da ação de uma força, ou de um conjunto de forças de resultante diferente de zero, agindo sobre o corpo.',
+              correta: true,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: 'Se um corpo é dotado de aceleração, esta certamente é consequência da ação de uma força, ou de um conjunto de forças de resultante diferente de zero, agindo sobre o corpo.',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: 'Porque as leis de Newton são válidas somente na Terra.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'Por conta da gravidade zero do espaço.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: ' No espaço, não existe ar para ser empurrado pela hélice, logo, a aeronave não pode ser impulsionada para frente. Pela Terceira lei de Newton, a hélice empurra o ar e, consequentemente, a aeronave é empurrada para frente.',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: 'No espaço, somente é válida a lei da Inércia.',
+              correta: false,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: 'Suponha que uma pessoa puxe uma corda de um equipamento de ginástica com uma força de intensidade igual a 100 N. Determine o valor da força que o equipamento faz sobre a pessoa e marque a opção correta.',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: '-100N',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: '200N',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: '100N',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '-200N',
+              correta: false,
+              selecionada: false
+            }
+          ]
+        }]
       }
     ]
   }
@@ -687,6 +866,7 @@ export class Service {
   }
 
   habilitaModulos (target) {
+    if (target >= this.modulos.length - 1) return
     const modulo = this.modulos[target]
     if (modulo.answered && modulo.teoriaRead) {
       this.modulos[target + 1].habilitado = true

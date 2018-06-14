@@ -1,10 +1,11 @@
 export class Service {
   constructor () {
     this.modulos = [
+      /* ---------- */
       {
         titulo: 'Noções de Força',
         tags: 'Definição, Força Resultante, Equilíbrio',
-        cover: 'http://beto.abelha.network/static/img/forca_fisica.jpg',
+        cover: 'http://beto.abelha.network/static/img/capas/01.jpg',
         habilitado: true,
         videoId: 'lpe7mT2LSuY',
         videoWatched: false,
@@ -13,7 +14,7 @@ export class Service {
         aswered: false,
         xps: 0,
         teoria: {
-          timeRead: 10,
+          timeRead: 15,
           texto: `
         <h2>Noções de Força</h2>
 
@@ -59,7 +60,7 @@ export class Service {
         },
 
         exemplos: {
-          timeRead: 5,
+          timeRead: 10,
           texto: `
           
         <h2>Noções de Força</h2>
@@ -192,11 +193,13 @@ export class Service {
         }
         ]
       },
+
+      /* ---------- */
       {
         titulo: '1ª Lei de Newton ou princípio da inércia',
-        cover: 'http://beto.abelha.network/static/img/leis_de_newton.png',
+        cover: 'http://beto.abelha.network/static/img/capas/02.jpg',
         videoId: '0lmB4pNgQWU',
-        habilitado: true,
+        habilitado: false,
         videoWatched: false,
         answered: false,
         xps: 0,
@@ -392,11 +395,14 @@ export class Service {
             }
           ]
         }]
-      }, {
+      },
+
+      /* ---------- */
+      {
         titulo: '2ª Lei de Newton ou princípio fundamental da dinâmica',
-        cover: 'http://beto.abelha.network/static/img/2_lei.jpg',
+        cover: 'http://beto.abelha.network/static/img/capas/03.jpg',
         videoId: 'ZQPO9-LGoAU',
-        habilitado: true,
+        habilitado: false,
         videoWatched: false,
         answered: false,
         xps: 0,
@@ -504,8 +510,8 @@ export class Service {
             `
         },
         questoes: [{
-          texto: 'Em um acidente, um carro de 1200 kg e velocidade de 162 Km/h chocou-se com um muro e gastou 0,3 s para parar. Marque a alternativa que indica a comparação correta entre o peso do carro e a força, considerada constante, que atua sobre o veículo em virtude da colisão.\n' +
-          'ADOTE: g = 10m/s2\n',
+          texto: 'Em um acidente, um carro de 1200 kg e velocidade de 162 Km/h chocou-se com um muro e gastou 0,3 s para parar. Marque a alternativa que indica a comparação correta entre o peso do carro e a força, considerada constante, que atua sobre o veículo em virtude da colisão.<br>' +
+          'ADOTE: g = 10m/s^2<br>',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -624,11 +630,14 @@ export class Service {
             }
           ]
         }]
-      }, {
+      },
+
+      /* ---------- */
+      {
         titulo: '3ª Lei de Newton ou Princípio da Ação e Reação',
-        cover: 'http://beto.abelha.network/static/img/3_lei.jpg',
+        cover: 'http://beto.abelha.network/static/img/capas/04.jpg',
         videoId: 'R9hh0WPe8Uc',
-        habilitado: true,
+        habilitado: false,
         videoWatched: false,
         answered: false,
         xps: 0,
@@ -643,7 +652,9 @@ export class Service {
             <p>Você provavelmente sabe que a Terra lhe puxa para baixo. O que você pode não perceber é que você também está puxando a Terra para cima. Por exemplo, se a Terra está puxando você para baixo com uma força gravitacional de 500 N, você também está puxando para cima na terra com uma força gravitacional de 500 N. Este fato notável é consequência da Terceira Lei de Newton.</p>
             <p>A Terceira Lei de Newton: Se um objeto A exerce uma força sobre um objeto B, então o objeto B deve exercer uma força de igual magnitude e de sentido oposto sobre o objeto A.</p>
             <p>Esta lei representa uma certa simetria na natureza: as forças sempre ocorrem aos pares, e um corpo não pode exercer uma força sobre outro, sem ele mesmo experimentar uma força. Às vezes, vagamente, nos referimos à essa lei como ação-reação, onde a força exercida é a ação e a força experimentada como consequência é a reação.</p>
-            <p>Podemos ver rapidamente a Terceira Lei de Newton em ação dando uma olhada como pessoas se movem. Considere uma nadadora empurrando o lado da piscina, como ilustrado abaixo.</p>
+            <p>Podemos ver rapidamente a Terceira Lei de Newton em ação dando uma olhada como pessoas se movem. Considere uma nadadora empurrando o lado da piscina, como ilustrado abaixo.
+            <img src="http://beto.abelha.network/static/img/mod_04_img_01.png"></p>
+            
             <p>A nadadora empurra contra a parede da piscina com os pés e acelera em sentido oposto ao seu impulso. A parede exerce uma força igual e oposta de volta sobre o nadador. Você pode pensar que as duas forças iguais e opostas iriam se cancelar, mas elas não fazem isso porque elas atuam em sistemas diferentes. Nesse caso, existem dois sistemas que podemos investigar: a nadadora ou a parede. Se escolhermos a nadadora para ser o sistema de interesse, como na imagem acima,
              então $F_{\\text{parede no pé}}$ é uma força externa sobre este sistema e afeta o seu movimento. A nadadora se move na direção do $F_{\\text{parede no pé}}$.
              Em contraste, a força $F_{\\text{pé na parede}}$  atua na parede e não no nosso sistema de interesse. Assim, $F_{\\text{pé na parede}}$  não afeta diretamente o movimento do sistema e não cancela $F_{\\text{parede no pé}}$. Observe que a nadadora empurra no sentido oposto ao que ela deseja se mover. A reação do empurrão é, portanto, no sentido desejado.</p>
@@ -661,7 +672,8 @@ export class Service {
           texto:
             `
             <h2>Exemplo 1: Empurrando uma geladeira</h2>
-            <p>Uma pessoa conduz um carro, Carro 1, para a direita enquanto empurra um outro carro, Carro 2, este carregando uma geladeira enorme. A massa total do Carro 2, carro mais geladeira, é três vezes a massa total do Carro 1, carro mais pessoa. Se a pessoa está dirigindo com força suficiente para que os dois carros aceleram para a direita, o que pode ser dito com certeza sobre as magnitudes das forças sobre os carros?</p>
+            <p>Uma pessoa conduz um carro, Carro 1, para a direita enquanto empurra um outro carro, Carro 2, este carregando uma geladeira enorme. A massa total do Carro 2, carro mais geladeira, é três vezes a massa total do Carro 1, carro mais pessoa. Se a pessoa está dirigindo com força suficiente para que os dois carros aceleram para a direita, o que pode ser dito com certeza sobre as magnitudes das forças sobre os carros?
+            <img src="http://beto.abelha.network/static/img/mod_04_ex_img_01.png"></p>
             
             <p>A força no Carro 2 exercida pelo Carro 1 é igual em magnitude à força no Carro 1 exercida pelo Carro 2.</p>
             <p>Não importa se há aceleração ou se a massa de um objeto é maior do que o outro objeto. Pares de força reativas são sempre iguais em magnitude. Sabemos que as forças nesta questão são pares de força reativas uma vez que se trocar a ordem dos objetos na frase "força exercida no Carro 2 pelo Carro 1 nos dá a "força exercida no Carro 1 pelo Carro 2. Trocando a ordem dos objetos envolvidos na força—isto é, o objeto exercendo a força e o objeto em que a força é exercida—é uma maneira fácil de identificar par de força da terceira lei.</p>
@@ -799,6 +811,575 @@ export class Service {
             {
               texto: '-200N',
               correta: false,
+              selecionada: false
+            }
+          ]
+        }]
+      },
+
+      /* ---------- */
+      {
+        titulo: 'Força peso',
+        cover: 'http://beto.abelha.network/static/img/capas/05.jpg',
+        videoId: 'TfC4svFp6Vg',
+        habilitado: false,
+        videoWatched: false,
+        answered: false,
+        xps: 0,
+        teoria: {
+          timeRead: 10,
+          texto:
+            `
+            <h2>Força peso</h2>
+            <h3>O que é peso?</h3>
+            <p>Peso, P, é apenas outro nome para a força da gravidade $F_g$. O peso é uma força que age o tempo todo sobre todos os objetos próximos à Terra. A Terra puxa todos os objetos com uma força de gravidade para baixo, na direção do seu centro. A magnitude da força da gravidade pode ser encontrada multiplicando a massa m do objeto pela magnitude da aceleração da gravidade $g = + 9,8 m/s^2$.</p>
+            
+            <h3>Por que g não é negativo?<h3>
+            <p>A aceleração da gravidade $/{a}_{g}$ é negativa (considerando que você escolheu para baixo como a direção negativa), mas a letra g é normalmente usada para representar a magnitude da aceleração da gravidade. Em outras palavras,</p>
+            
+            $$g = |a_g|= | - 9,8 m/s^2 |= + 9,8 m/s^2 = \\text{magnitude da aceleração da gravidade}$$
+            
+            $$a_g= - 9,8 m/s^2 = \\text{magnitude da aceleração da gravidade}$$
+            
+            <img src="http://beto.abelha.network/static/img/mod_05_img_01.png">
+            
+            <p>Essa força da gravidade $F_g=m.g$ (ou "peso") é exercida pela Terra em todos os objetos, independentemente da forma como eles estão se movendo, e de que outras forças são exercidas sobre eles. Em outras palavras, haverá uma força gravitacional de magnitude m.g exercida para baixo em todos os objetos próximos da Terra, estejam eles caindo, voando com uma dada angulação, em repouso sobre uma mesa, ou acelerando para cima em um elevador. Pode haver outras forças que contribuem para a aceleração do objeto, mas a força da gravidade está sempre presente.</p>
+            
+            <h3>E se formos para o espaço?</h3>
+            
+            <p>A força da gravidade em um objeto fica cada vez menor quanto mais longe um objeto estiver da Terra. Contudo, a força da gravidade vai muito além da atmosfera terrestre. Por exemplo, na posição da Estação Espacial Internacional, a terra causa aceleração da gravidade de magnitude $g = 8,7 m/s^2$. Esse valor é menor que o valor de g na superfície da Terra, mas não tão pequeno quanto as pessoas pensam. Os astronautas na Estação Espacial Internacional experimentam uma ausência de peso não porque não há força da gravidade, mas porque eles estão em uma órbita em queda livre ao redor da Terra.
+            <img src="http://beto.abelha.network/static/img/mod_05_img_02.png"></p>
+             
+            <p>A força da gravidade exercida pela Terra tem alcance infinito (isto é, puxa coisas que estão infinitamente distantes), mas a força fica cada vez menor quanto maior a distância entre um objeto e a Terra.</p>
+            
+            <h3>O peso é diferente da massa?</h3>
+            <p>Sim, o peso é diferente da massa. O peso P é a força da gravidade $F_g$ exercida em um objeto. A massa m é uma medida da inércia do objeto (isto é, o quanto ele resiste a variações em sua velocidade). Elas estão relacionadas porque massas maiores têm pesos maiores, já que P = m.g. Por exemplo, uma massa e 2Kg terá um peso de magnitude $P = (2Kg).(9,8 m/s^2)=19,6N$.</p>
+            
+            <p>O peso de um objeto vai variar se o objeto for levado para longe da Terra, ou colocado em um planeta diferente, já que a força da gravidade sobre o objeto será menor. Contudo, a massa do objeto será a mesma, não importa onde o objeto esteja, seja na Terra, no espaço ou na Lua.</p> 
+            
+            <p>Muitas pessoas confundem massa com peso. Tenha em mente que a unidade da massa é o Kg, mas como o peso é uma força, sua unidade é N.</p> 
+            `
+        },
+        exemplos: {
+          timeRead: 3,
+          texto:
+            `
+<h2>Exemplo 1: O Peso do Avião</h2>
+
+<p>Um avião de massa 4.500Kg  está decolando, voando pelo ar e acelerando para a frente e para cima. Há uma força de empuxo de 6.700N  no avião na direção do movimento e uma força de resistência do ar de 4.300N.
+<img src="http://beto.abelha.network/static/img/mod_05_ex_img_01.png"></p>
+
+<h3>Qual é a força da gravidade sobre o avião durante a decolagem?</h3>
+
+<p>A força da gravidade nunca é maior ou menor que m.g, independentemente de quaisquer outras forças ou acelerações envolvidas. Então, podemos calcular a força da gravidade no avião (isto é, o peso) simplesmente usando:</p>
+
+<p>$F_g=m.g$ (use a fórmula para o peso)<br>
+$F_g=(4.500Kg).(9,8m/s^2)) ( insira os valores para a massa e para gravidade)<br>
+$F_g=44.100N$ (calcule e comemore)</p>
+
+<h2>Exemplo 2: Calculando a massa</h2>
+
+<p>Um elefante da floresta africana tem um peso de 25.000 N.
+<img src="http://beto.abelha.network/static/img/mod_05_ex_img_02.png"></p>
+ 
+<h3>Qual é a massa do elefante da floresta africana?</h3>
+
+<p>O peso é outro nome para a força da gravidade \\mathbit{m}.\\mathbit{g}. Podemos calcular a massa usando a fórmula
+ $$P=F_g= m.g$$</p>
+
+<p>F_g=m.g (use a fórmula para o peso)<br>
+
+$25.000N=m.9,8m/s^2$ (insira os valores para o peso e para gravidade)<br>
+
+$m=\\frac{25.000N}{9,8m/s^2}$ (calcule a massa m)<br>
+
+$m=2.551Kg $ (calcule e comemore)</p>
+
+<p>Lembre-se: A força peso é sempre VERTICAL PARA BAIXO em relação a terra. <img src="http://beto.abelha.network/static/img/mod_05_ex_img_03.png"></p>
+
+<p>Muitas pessoas confundem massa com peso. Tenha em mente que a unidade da massa é o Kg, mas como o peso é uma força, sua unidade é N.
+<img src="http://beto.abelha.network/static/img/mod_05_ex_img_04.png"></p>
+            `
+        },
+        questoes: [{
+          texto: 'Quando o astronauta Neil Armstrong desceu do módulo lunar e pisou na Lua, em 20 de julho de 1969, a sua massa total, incluindo seu corpo, trajes especiais e equipamento de sobrevivência, era de aproximadamente 300 kg. O campo gravitacional lunar é cerca de 1/6 do campo gravitacional terrestre. Se a aceleração da gravidade na Terra é aproximadamente 10,0 m/s^2, podemos afirmar que:',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: 'A massa total de Armstrong na Lua é de 300kg e seu peso é 500N',
+              correta: true,
+              selecionada: false
+            }, {
+              texto: 'A massa total de Armstrong na Terra é de 50,0 kg e seu peso é 3000N',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'A massa total de Armstrong na Terra é de 300 kg e seu peso é 500N.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'A massa total de Armstrong na Lua é de 50,0 kg e seu peso é 3000N.',
+              correta: false,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: 'Sobre a superfície da Terra, onde g = 10 m/s^2, um astronauta apresenta peso igual a 700 N. Em uma expedição à Lua, onde g = 1,6 m/s^2, a massa desse astronauta será igual a:',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: '70 kg e ele pesará 112N.',
+              correta: true,
+              selecionada: false
+            }, {
+              texto: '70 kg e ele pesará 700N.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: '112 kg e ele pesará 700N.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: '112 kg e ele pesará 112N.',
+              correta: false,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: 'Um objeto que pesa 650 N na Terra tem peso igual a 1625 N em Júpiter. Determine a gravidade desse planeta, em m/s^2, sabendo que a gravidade da Terra é de $10 m/s^2$.',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: '15',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: '22',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: '25',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '28',
+              correta: false,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: 'Leia as seguintes afirmações a respeito da força peso.<br>' +
+          'I- A força peso tem direção vertical e sentido para cima.<br>' +
+          'II – O peso é definido como o produto da massa do corpo pelo valor da aceleração da gravidade e sempre é medido, de acordo com o Sistema Internacional de Unidades, em newtons (N).<br>' +
+          'III – A unidade kgf (quilograma-força) não pode ser utilizada para determinar o peso de um corpo.<br>' +
+          'IV – A força normal, de acordo com a Terceira Lei de Newton, é uma reação à força peso.<br>' +
+          'Está correta a alternativa que apresenta:<br>',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: 'I e IV',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'I, II e IV',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'II',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: 'III e IV',
+              correta: false,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: 'Qual o peso de uma pessoa de 70 Kg na lua? Considere que a gravidade na lua é de 1,6m/s^2.',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: '160N',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: '150N',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: '112N',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '100N',
+              correta: false,
+              selecionada: false
+            }
+          ]
+        }]
+      },
+
+      /* ---------- */
+      {
+        titulo: 'Força normal',
+        cover: 'http://beto.abelha.network/static/img/capas/06.jpg',
+        videoId: 'TfC4svFp6Vg',
+        habilitado: false,
+        videoWatched: false,
+        answered: false,
+        xps: 0,
+        teoria: {
+          timeRead: 10,
+          texto:
+            ` <h3>Força Normal</h3>
+              
+              <p>Já fez uma curva rápido demais e deu de cara com uma parede? Eu já. Isso dói e faz eu me sentir um bobo. Podemos culpar a força normal pela dor que sentimos quando trombamos com objetos sólidos. A força normal é a força que as superfícies exercem para evitar que objetos sólidos atravessem uns aos outros.</p>
+              <p>A força normal é uma força de contato. Se duas superfícies não estão em contato, elas não podem exercer uma força normal uma sobre a outra. Por exemplo, as superfícies de uma mesa e de uma caixa não podem exercer forças normais uma na outra se elas não estiverem em contato. 
+              <img src="http://beto.abelha.network/static/img/mod_06_img_01.png"></p>
+               
+              <p>Contudo, quando duas superfícies estão em contato (por exemplo, uma caixa e uma mesa) elas exercem uma força normal uma na outra, perpendicular às superfícies de contato. Essa força normal será tão grande quanto necessário para evitar que as superfícies penetrem uma na outra.
+              <img src="http://beto.abelha.network/static/img/mod_06_img_02.png"></p>
+              
+              <p>O mecanismo pelo qual a mesa exerce uma força normal é semelhante ao de uma mola comprimida que exerce uma força. Quando um peso é colocado sobre uma mesa, a superfície se deforma suavemente e tem sua forma alterada (normalmente isso é imperceptível, a menos que o peso seja muito grande) e há uma força restauradora que tenta restaurar a mesa à sua forma natural e não comprimida (isto é, a forma quando não há peso algum em cima). Chamamos essa força que a mesa exerce para restaurar a si mesma de força normal. Se você fizer força suficiente sobre a mesa, a grande deformação é capaz de quebrá-la.</p>
+              <p>Claro, a caixa também seria comprimida suavemente e tentaria se restaurar para sua forma natural.</p>
+              <p>As deformações reais dos objetos em contato sob condições normais (não extremas) são normalmente minúsculas, então qualquer alteração na forma ou no volume quase sempre pode ser ignorada em um dado problema.</p>
+              <p>A palavra "normal" em força normal não quer dizer corriqueira ou comum. O "normal" aqui se refere a perpendicular. Isso porque a força normal, normalmente representada por FN, ou apenas N, é uma força direcionada perpendicularmente às duas superfícies em contato. Faz sentido que a força seja perpendicular à superfície porque a força normal é o que evita que objetos sólidos atravessem uns os outros. As superfícies também podem exercer forças de contato na direção paralela às superfícies, mas normalmente chamamos essas forças de forças de atrito (já que elas trabalham para evitar que as superfícies deslizem uma sobre a outra) ao invés de chamá-las de forças normais.</p>
+              
+              <h3>Como superfícies inanimadas "sabem" exercer uma força normal?</h3>
+              
+              <p>Faz sentido para a maioria das pessoas que uma pessoa teria que exercer uma força para cima com suas mãos ao carregar um pacote pesado de ração, como visto na Figura (a) abaixo.</p>
+              <p>Mas algumas pessoas acham que é difícil de acreditar que um objeto inanimado, como uma mesa, possa exercer uma força normal ascendente sobre um saco de ração de cachorro como pode ser visto na Figura  (b) abaixo. Às vezes as pessoas acreditam que a mesa não está de fato exercendo uma força para cima, mas simplesmente "ficando no caminho" da comida de cachorro que está caindo. Mas não é assim que as leis de Newton funcionam. Se houvesse apenas uma força descendente da gravidade sobre o pacote de ração este teria que acelerar para baixo. A mesa deve fazer mais do que "ficar no caminho". A mesa deve exercer uma força para cima para evitar que o pacote de ração a atravesse.</p>
+              
+              <p>Estranhamente, se um objeto pesado for colocado sobre uma mesa, esta deve exercer mais força normal para evitar que o peso a atravesse. Como a mesa sabe exercer apenas a quantidade certa de força para evitar que o objeto a atravesse?</p>
+              <p>Basicamente, a mesa "sabe" quanta força precisa ser exercida com base em quanto a superfície/objeto está sendo comprimido ou deformado. Quando objetos sólidos se deformam, eles normalmente tentam se restaurar e "voltar" à sua forma natural. Quanto maior o peso, maior a deformação, e maior é a força restauradora que tenta fazer a superfície voltar a sua forma natural. Essa deformação seria perceptível se a carga fosse colocada em uma mesa, mas até mesmo objetos rígidos se deformam quando uma força é aplicada a eles. A menos que o objeto seja deformado além do seu limite, ele vai exercer uma força restauradora bem parecida com a de uma mola deformada (ou um trampolim, ou uma cama elástica). Então, quando a carga é colocada sobre a mesa, a mesa cede até que a força restauradora se torne tão grande quanto o peso da carga. Nesse ponto a força resultante externa na carga é zero. Essa é a situação na qual a carga está em repouso sobre a mesa. A mesa cede rapidamente, e a depressão é leve, então normalmente não a percebemos.
+              <img src="http://beto.abelha.network/static/img/mod_06_img_03.png"></p>
+              
+               
+              <p>Figura: (a) A pessoa segurando o pacote de ração deve exercer uma força para cima $F_{mão}$ igual em magnitude e na direção oposta ao peso do pacote de ração  $W$,   (b) A mesa cede quando o pacote de ração é colocado sobre ela, como um trampolim rígido. As forças de restauração elástica na mesa aumentam conforme ela cede, até que exerçam uma força normal $N$ ou $F_n$  de igual magnitude e direção oposta ao peso da carga.</p>
+              
+              <h3>Como se calcula a força normal?</h3>
+              
+              <p>Não existe, na verdade, uma fórmula criada especificamente para calcular a força normal. Para encontrar a força normal, normalmente usamos o fato de que sabemos algo sobre a aceleração perpendicular às superfícies (já que consideramos que as superfícies não podem atravessar uma a outra). Portanto, quase sempre usamos a segunda lei de Newton para calcular a força normal usando essa estratégia.</p>
+              
+                <ul>
+                  <li>Desenhe um diagrama de forças mostrando todas as forças agindo no objeto em questão.</li>
+                  <li>Escolha a direção para a segunda lei de Newton na mesma direção da força normal (isto é, perpendicular às superfícies de contato)</li>
+                  <li>Insira a aceleração, a massa e as forças atuantes na segunda lei de Newton $a =\\frac{\\sum F}{m}$ para essa direção.</li>
+                  <li>Calcule a força normal  $F_n$.</li>
+                </ul>
+              
+              <p>Essencialmente, estamos calculando a força normal considerando que ela será tão grande ou tão pequena quanto necessário para evitar que as superfícies penetrem uma na outra.</p>
+              
+              <p>Vamos aplicar essa estratégia ao exemplo simples a seguir. Considere o caso simples de uma caixa de massa m que está em repouso sobre uma mesa, como mostrado abaixo. 
+              <img src="http://beto.abelha.network/static/img/mod_06_img_04.png"></p>
+              
+               
+              <p>Seguindo o procedimento, obtemos<br>
+              
+              $a_y = \\frac{\\sum F_y}{m}$  (use a segunda lei de Newton para a direção vertical, porque $F_n$ é vertical)<br>
+              
+              $0=\\frac{F_n-F_g}{m}$ (insira a aceleração vertical e as forças verticais)</p>
+              
+              <h3>Por que a aceleração vertical não é -9,8?</h3>
+              <p>Cuidado, os objetos em queda livre têm uma aceleração vertical de $a_y = 9,8m/s^2$, mas uma caixa em repouso sobre uma mesa não tem aceleração (isto é, $a_y=0$).</p>
+              
+              <p>$F_n = F_g$  (calcule a força normal)<br>
+              $F_n = m.g$  (use o fato de que $F_g = m.g$)</p>
+              
+              <p>Nesse caso simples de um objeto sobre uma superfície horizontal, a força normal será igual à força da gravidade $F_n = m.g$</p>  
+              
+              <h3>E se a caixa estivesse deslizando sobre a mesa?</h3>
+              <p>Nada mudaria em nossos cálculos e a força normal continuaria sendo $F_n = m.g$. O fato de haver ou não um movimento horizontal não afeta as forças ou a aceleração na direção vertical.</p>
+              <p>Agora, se adicionássemos uma aceleração vertical ou forças verticais, isso poderia afetar nossos cálculos acima e a força normal não seria necessariamente $F_n = m.g$.</p>
+              
+              <p>A força normal nem sempre será igual a $m.g$.  Se considerarmos um caso mais complicado, no qual a superfície de contato não é horizontal, ou em que haja forças verticais adicionais presentes, ou ainda, em que haja aceleração vertical, a força normal não será necessariamente igual a $m.g . Contudo, mesmo em um caso mais complicado, ainda podemos calcular a força normal usando o processo mostrado acima. Podemos inserir uma aceleração diferente, ou pode haver mais forças para incluir, mas a estratégia geral para resolver o problema de calcular a força normal usando a segunda lei de Newton seria o mesmo.</p>
+              `
+        },
+        exemplos: {
+          timeRead: 3,
+          texto:
+            `
+            <h2>Exemplo 1: Força normal em um elevador</h2>
+            <p>Um pacote de gomas de mascar sabor kiwi de $4,5Kg$ está sendo entregue no último andar de um prédio comercial. A caixa está no chão de um elevador, que acelera para cima com uma aceleração de magnitude de $a=3,0m/s^2. O entregador também está com um pé sobre a caixa, exercendo no pacote uma força para baixo de magnitude de $5N$.</p>
+            
+            <h3>Qual é a força normal exercida pelo chão do elevador no pacote?</h3>
+            
+            <p>Primeiro desenhamos um diagrama de forças mostrando todas as forças que agem no pacote (não incluímos a aceleração no diagrama porque a aceleração não é uma força. Além disso, não incluímos uma força de elevador adicional porque a força normal é a força exercida na caixa pelo elevador).
+            <img src="http://beto.abelha.network/static/img/mod_06_ex_img_01.png"></p>
+            
+            <p>$a_y=\\frac{\\sum F_y}{m}$ (usamos a segunda lei de Newton para a direção vertical)</p>
+            
+            <p>$3,0m/s^2 = frac{F_n-F_g-5N}{m} (insira a aceleração vertical, a massa e as forças verticais)</p>
+            
+            <p>$13,5N= F_n-m.g-5N$ (use $F_n = m.g$, e multiplique os dois lados pela massa $4,5Kg$)</p>
+            
+            <p>$13,5N = F_n - 4,5Kg.9,8m/s^2-5N$  (insira os valores para a massa m e g)</p>
+            
+            <p>$F_n=62,6N$ (comemore)</p>
+            
+            <p>Observe que, se tivéssemos inocentemente usado $F_n=m.g=44, 1N$, teríamos encontrado a resposta errada. A força normal aqui é diferente de $g$ porque havia uma aceleração vertical e uma força vertical adicional.</p>
+            
+            <h2>Exemplo 2: Força normal com força diagonal</h2>
+            <p>Uma pessoa está empurrando uma caixa de cookies de chocolate com menta de usado $1kg$ em uma mesa sem atrito com uma força diagonal para baixo de usado $F_A=10N$, com um ângulo de \\theta=30^0 , como mostrado abaixo.</p>
+            
+            
+            <h3>Qual é a força normal exercida pela mesa na caixa de cookies?<h3>
+            
+            <img src="http://beto.abelha.network/static/img/mod_06_ex_img_02.png">
+             
+            <p>Mesmo que esse pareça um tipo diferente de problema, o abordamos com a mesma estratégia de antes. Primeiro desenhamos um diagrama de forças de todas as forças agindo sobre a caixa.[img3]</p>
+              
+            <h3>Por que não desenhamos as forças na direção do ponto?</h3>
+            <p>A convenção típica para desenhar diagramas de forças (isto é, diagramas de corpo livre) é desenhar todas as forças emanando do centro do ponto (o qual representa o objeto em questão) e não direcionadas para o ponto.
+            <img src="http://beto.abelha.network/static/img/mod_06_ex_img_03.png"></p>
+            
+            <p>$F_Ay=\\frac{\\sum F_y}{m}$ (Agora, usamos a segunda lei de Newton para a direção vertical porque F_n é vertical)<br>
+            $0=\\frac{F_n-F_g-10N.\\sen 30^0}{1kg}$ (insira a aceleração vertical, a massa e as forças verticais)</p>
+            
+            <h3>De onde veio o termo $10N.\\sen 30°$, e por que ele é negativo?</h3>
+            <p>Precisamos decompor a força diagonal em componentes vertical e horizontal, como mostrado abaixo. 
+            <img src="http://beto.abelha.network/static/img/mod_06_ex_img_04.png"></p>
+             
+            <p>A componente vertical pode ser encontrada usando trigonometria e a definição de $\\sen$, <br>
+            $\\sen 30^0=\\frac{oposto}{hipotenusa}=\\frac{F_Ay}{F_A}$<br>
+            $\\sen 30^0=\\frac{F_Ay}{10N}$<br>
+            $F_Ay = 10N.(sen30^0)$</p>
+            
+            <p>Observe também que essa componente vertical F_Ay está direcionada para baixo, e é por isso que a incluímos como um termo negativo na segunda lei de Newton para a direção vertical.</p>
+            
+            <p>$F_n=F_g+10N.\\sen30^0$  (calcule algebricamente o $F_n$)<br>
+            $F_n=m.g+10N.sen30^0$  (use $F_g=m.g$)<br>
+            $F_n=1kg.9,8m/s^2 + 10N.\\sen30^0=14,8N$ (calcule comemore)</p>
+            
+            <p>Lembre-se: A decomposição da força norma é sempre perpendicular a superfície de apoio. 
+            <img src="http://beto.abelha.network/static/img/mod_06_ex_img_05.png"></p>
+            `
+        },
+        questoes: [{
+          texto: 'Vamos supor que você esteja em um supermercado, aguardando a pesagem de uma quantidade de maçãs em uma balança de molas cuja unidade de medida é o quilograma-força.\n' +
+          'A leitura da balança corresponde:',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: 'ao módulo da força normal, pois essa é a força de interação entre as maçãs e a balança, cujo valor é supostamente igual ao do módulo do peso das maçãs.',
+              correta: true,
+              selecionada: false
+            }, {
+              texto: 'tanto ao valor do módulo da força peso quanto ao do módulo da força normal, pois ambas constituem um par ação-reação, segundo a terceira lei de Newton.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'ao módulo do peso das maçãs, pois essa é a força de interação entre as maçãs e a balança.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'ao módulo da força resultante sobre as maçãs.',
+              correta: false,
+              selecionada: false
+            }
+          ]
+        }]
+      },
+
+      /* ---------- */
+      {
+        titulo: 'Força elástica',
+        cover: 'http://beto.abelha.network/static/img/capas/07.jpg',
+        videoId: 'oE5ICFXuvn8',
+        habilitado: false,
+        videoWatched: false,
+        answered: false,
+        xps: 0,
+        teoria: {
+          timeRead: 10,
+          texto:
+            ` `
+        },
+        exemplos: {
+          timeRead: 3,
+          texto:
+            `
+            `
+        },
+        questoes: [{
+          texto: '',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: '',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '',
+              correta: true,
+              selecionada: false
+            }
+          ]
+        }]
+      },
+
+      /* ---------- */
+      {
+        titulo: 'Força de tração',
+        cover: 'http://beto.abelha.network/static/img/capas/08.jpg',
+        videoId: 'tfD7v4Nz4CY',
+        habilitado: false,
+        videoWatched: false,
+        answered: false,
+        xps: 0,
+        teoria: {
+          timeRead: 10,
+          texto:
+            ` `
+        },
+        exemplos: {
+          timeRead: 3,
+          texto:
+            `
+            `
+        },
+        questoes: [{
+          texto: '',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: '',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '',
+              correta: true,
+              selecionada: false
+            }
+          ]
+        }]
+      },
+
+      /* ---------- */
+      {
+        titulo: 'Força de atrito',
+        cover: 'http://beto.abelha.network/static/img/capas/09.jpg',
+        videoId: 'gHe26-eI4fc',
+        habilitado: false,
+        videoWatched: false,
+        answered: false,
+        xps: 0,
+        teoria: {
+          timeRead: 10,
+          texto:
+            ` `
+        },
+        exemplos: {
+          timeRead: 3,
+          texto:
+            `
+            `
+        },
+        questoes: [{
+          texto: '',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: '',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '',
+              correta: true,
+              selecionada: false
+            }
+          ]
+        }]
+      },
+
+      /* ---------- */
+      {
+        titulo: 'Força centrípeta',
+        cover: 'http://beto.abelha.network/static/img/capas/10.jpg',
+        videoId: 'ArHh_7kSv4M',
+        habilitado: false,
+        videoWatched: false,
+        answered: false,
+        xps: 0,
+        teoria: {
+          timeRead: 10,
+          texto:
+            ` `
+        },
+        exemplos: {
+          timeRead: 3,
+          texto:
+            `
+            `
+        },
+        questoes: [{
+          texto: '',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: '',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '',
+              correta: true,
               selecionada: false
             }
           ]

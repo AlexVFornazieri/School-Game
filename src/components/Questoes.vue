@@ -14,7 +14,7 @@
     <v-container>
       <section id="questoes">
         <div class="questao">
-          <div class="pergunta">{{pergunta.texto}}
+          <div class="pergunta" v-html="pergunta.texto">
             <div class="valor">Valendo: <span>{{pergunta.pontuacao}}</span> pontos.</div>
           </div>
 
@@ -159,6 +159,7 @@
       },
       change () {
         MathJax.Hub.Queue(['Typeset', MathJax.Hub, 'editor-output'])
+        this.$vuetify.goTo(0)
       }
     },
     computed: {

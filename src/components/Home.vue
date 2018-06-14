@@ -110,7 +110,7 @@
                   <div class="span">50 Pontos</div>
                   <div class="span">10 Pontos (bonus)</div>
                   <div class="span">10 Pontos (bonus)</div>
-                  <div class="span">200 Pontos</div>
+                  <div class="span">1000 Pontos</div>
                 </v-flex>
                 <v-flex xs6>
                   <v-btn

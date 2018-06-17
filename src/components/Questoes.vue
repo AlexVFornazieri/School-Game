@@ -43,6 +43,10 @@
 </template>
 
 <style>
+  #questoes img {
+    width: 100%;
+  }
+
   .alternativa {
     display: block;
     padding: 10px;

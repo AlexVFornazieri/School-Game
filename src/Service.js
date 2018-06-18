@@ -234,7 +234,7 @@ export class Service {
             `
         },
         exemplos: {
-          timeRead: 3,
+          timeRead: 10,
           texto: `
           <h2>Exemplo 1: Sonda espacial à deriva</h2> 
           <p>Uma sonda espacial está à deriva com uma velocidade constante no espaço (longe de qualquer influência de planetas e estrelas) com seus propulsores desligados. Se dois propulsores forem ligados simultaneamente exercendo forças idênticas para as direções esquerda e direita nas direções mostradas, o que aconteceria com o movimento do foguete?
@@ -470,7 +470,7 @@ export class Service {
             `
         },
         exemplos: {
-          timeRead: 3,
+          timeRead: 10,
           texto:
             `
             <h2>Exemplo 1: Newton, a tartaruga</h2>
@@ -668,7 +668,7 @@ export class Service {
             `
         },
         exemplos: {
-          timeRead: 3,
+          timeRead: 10,
           texto:
             `
             <h2>Exemplo 1: Empurrando uma geladeira</h2>
@@ -861,7 +861,7 @@ export class Service {
             `
         },
         exemplos: {
-          timeRead: 3,
+          timeRead: 10,
           texto:
             `
 <h2>Exemplo 1: O Peso do Avião</h2>
@@ -902,7 +902,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             `
         },
         questoes: [{
-          texto: 'Quando o astronauta Neil Armstrong desceu do módulo lunar e pisou na Lua, em 20 de julho de 1969, a sua massa total, incluindo seu corpo, trajes especiais e equipamento de sobrevivência, era de aproximadamente 300 kg. O campo gravitacional lunar é cerca de 1/6 do campo gravitacional terrestre. Se a aceleração da gravidade na Terra é aproximadamente 10,0_{m/s^2}, podemos afirmar que:',
+          texto: 'Quando o astronauta Neil Armstrong desceu do módulo lunar e pisou na Lua, em 20 de julho de 1969, a sua massa total, incluindo seu corpo, trajes especiais e equipamento de sobrevivência, era de aproximadamente 300 kg. O campo gravitacional lunar é cerca de 1/6 do campo gravitacional terrestre. Se a aceleração da gravidade na Terra é aproximadamente $10,0_{m/s^2}$, podemos afirmar que:',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -1104,7 +1104,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
               `
         },
         exemplos: {
-          timeRead: 3,
+          timeRead: 10,
           texto:
             `
             <h2>Exemplo 1: Força normal em um elevador</h2>
@@ -1384,7 +1384,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             `
         },
         exemplos: {
-          timeRead: 3,
+          timeRead: 10,
           texto:
             `
             <h2>Exemplo 1: Força peso comprimindo uma mola</h2>
@@ -1583,7 +1583,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             `
         },
         exemplos: {
-          timeRead: 3,
+          timeRead: 10,
           texto:
             `
             <h2>Exemplo 1: Corda com ângulo puxando uma caixa</h2>
@@ -1830,129 +1830,307 @@ $m=2.551Kg $ (calcule e comemore)</p>
           <h2>FORÇA DE ATRITO</h2>
 
           <h3>O que são as forças de atrito estático e cinético?</h3>
-          Estacionar seu carro nas ladeiras íngremes de São Francisco é assustador, e seria impossível fazer isso sem a força de atrito estático.[img1]
+          <p>Estacionar seu carro nas ladeiras íngremes de São Francisco é assustador, e seria impossível fazer isso sem a força de atrito estático.
+          <img src="http://beto.abelha.network/static/img/mod_09_img_01.png"></p>
           
-          A força de atrito estático F_e é uma força entre duas superfícies que evita que essas superfícies deslizem ou escorreguem uma sobre a outra. Essa é a mesma força que permite que você acelere para a frente quando corre. Seu pé de apoio pode se firmar no chão e empurrá-lo para trás, o que faz com que o chão empurre seu pé para a frente. Chamamos esse tipo de atrito "aderente", que evita que as superfícies deslizem uma sobre a outra, de força de atrito estático. Se não houvesse atrito entre seu pé o chão, você não poderia impulsionar-se para a frente e correr, e acabaria simplesmente correndo sem sair do lugar (a mesma coisa que acontece quando você tenta correr sobre o gelo muito escorregadio).
+          <p>A força de atrito estático $F_e$ é uma força entre duas superfícies que evita que essas superfícies deslizem ou escorreguem uma sobre a outra. Essa é a mesma força que permite que você acelere para a frente quando corre. Seu pé de apoio pode se firmar no chão e empurrá-lo para trás, o que faz com que o chão empurre seu pé para a frente. Chamamos esse tipo de atrito "aderente", que evita que as superfícies deslizem uma sobre a outra, de força de atrito estático. Se não houvesse atrito entre seu pé o chão, você não poderia impulsionar-se para a frente e correr, e acabaria simplesmente correndo sem sair do lugar (a mesma coisa que acontece quando você tenta correr sobre o gelo muito escorregadio).</p>
           
-          Agora, se você estacionar em uma ladeira muito íngreme, ou estiver sendo empurrado para trás por um lutador de sumô, provavelmente vai começar a deslizar. Mesmo que as duas superfícies estejam deslizando uma sobre a outra, ainda pode haver uma força de atrito entre elas, mas chamamos esse atrito deslizante de força de atrito cinético. Essa força de atrito cinético $F_c$ é sempre oposta ao movimento e tenta reduzir a velocidade com a qual as superfícies deslizam uma sobre a outra. Por exemplo, uma pessoa deslizando para a segunda base durante um jogo de beisebol está usando a força de atrito cinético para diminuir sua velocidade. Se não houvesse atrito cinético, o jogador de beisebol continuaria deslizando (sim, isso dificultaria o roubo de bases no beisebol).
+          <p>Agora, se você estacionar em uma ladeira muito íngreme, ou estiver sendo empurrado para trás por um lutador de sumô, provavelmente vai começar a deslizar. Mesmo que as duas superfícies estejam deslizando uma sobre a outra, ainda pode haver uma força de atrito entre elas, mas chamamos esse atrito deslizante de força de atrito cinético. Essa força de atrito cinético $F_c$ é sempre oposta ao movimento e tenta reduzir a velocidade com a qual as superfícies deslizam uma sobre a outra. Por exemplo, uma pessoa deslizando para a segunda base durante um jogo de beisebol está usando a força de atrito cinético para diminuir sua velocidade. Se não houvesse atrito cinético, o jogador de beisebol continuaria deslizando (sim, isso dificultaria o roubo de bases no beisebol).</p>
           
-          Fisicamente, por que existem forças de atrito?
-          A maioria das superfícies (como madeira e plástico) parecem bastante lisas a olho nu. Mas, se você pudesse ampliá-las, veria que as superfícies são ásperas no nível microscópico. Por exemplo, as superfícies da caixa e do chão, como mostradas abaixo, são na verdade ásperas e irregulares no nível microscópico. [img2]
+          <h4>Fisicamente, por que existem forças de atrito?</h4>
+          <p>A maioria das superfícies (como madeira e plástico) parecem bastante lisas a olho nu. Mas, se você pudesse ampliá-las, veria que as superfícies são ásperas no nível microscópico. Por exemplo, as superfícies da caixa e do chão, como mostradas abaixo, são na verdade ásperas e irregulares no nível microscópico.
+          <img src="http://beto.abelha.network/static/img/mod_09_img_02.png"></p>
           
-          O atrito surge em parte por causa da aspereza das superfícies em contato, como visto na visualização expandida. Para que o objeto se mova, ele deve subir até o ponto em que os picos de sua superfície possam escapar da superfície na qual ele está. Portanto, uma força é necessária apenas para colocar o objeto em movimento. Alguns dos picos vão se quebrar, o que também requer uma força para manter o movimento. Boa parte do atrito é, na verdade, devida a forças de atração entre as moléculas que compõem os dois objetos, então mesmo superfícies perfeitamente lisas não estão livres de atrito. Tais forças de aderência também dependem das substâncias das quais as superfícies são feitas, explicando, por exemplo, por que sapatos com sola de borracha escorregam menos que sapatos com sola de couro. Mas, para ser completamente honestos, não temos uma compreensão completa das causas microscópicas do atrito. As pesquisas mais recentes em tribologia (o estudo de superfícies deslizantes) sugerem que a vibração nas superfícies, levando à perda de energia pelo calor, é a principal fonte de fricção.
+          <p>O atrito surge em parte por causa da aspereza das superfícies em contato, como visto na visualização expandida. Para que o objeto se mova, ele deve subir até o ponto em que os picos de sua superfície possam escapar da superfície na qual ele está. Portanto, uma força é necessária apenas para colocar o objeto em movimento. Alguns dos picos vão se quebrar, o que também requer uma força para manter o movimento. Boa parte do atrito é, na verdade, devida a forças de atração entre as moléculas que compõem os dois objetos, então mesmo superfícies perfeitamente lisas não estão livres de atrito. Tais forças de aderência também dependem das substâncias das quais as superfícies são feitas, explicando, por exemplo, por que sapatos com sola de borracha escorregam menos que sapatos com sola de couro. Mas, para ser completamente honestos, não temos uma compreensão completa das causas microscópicas do atrito. As pesquisas mais recentes em tribologia (o estudo de superfícies deslizantes) sugerem que a vibração nas superfícies, levando à perda de energia pelo calor, é a principal fonte de fricção.</p>
           
-          Teste de conceito: para cada um dos casos de variação da velocidade de um carro descritos na tabela abaixo, escolha qual força de atrito, estático ou cinético, é a mais provável causadora da variação na velocidade.
+          <p>Teste de conceito: para cada um dos casos de variação da velocidade de um carro descritos na tabela abaixo, escolha qual força de atrito, estático ou cinético, é a mais provável causadora da variação na velocidade.</p>
+          <table>
+            <tr>
+              <th></th>
+              <th>Força de atrito estático</th>
+              <th>Força de atrito cinético</th>
+            </tr>
+            <tr>
+              <td>Um carro diminui a sua velocidade suavemente até parar.</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>O carro freia bruscamente e derrapa até parar.</td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>Um carro acelera suavemente para atingir uma velocidade maior.</td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            
+            <tr>
+              <td>Um motorista “pisa fundo” e sai do semáforo cantando pneu.</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Um carro faz uma curva suavemente</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+          </table>
+          <p>Espere, como é? Você pode explicar como um carro em movimento pode usar a força de atrito estático?</p>
           
-          <tr>
-            <td></td>
-            <td>Força de atrito estático</td>
-            <td>Força de atrito cinético</td>
-          </tr>
-          <tr>
-            <td>Um carro diminui a sua velocidade suavemente até parar.</td>
-            <td>X</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>O carro freia bruscamente e derrapa até parar.</td>
-            <td></td>
-            <td>X</td>
-          </tr>
-          <tr>
-            <td>Um carro acelera suavemente para atingir uma velocidade maior.<td>
-            <td></td>
-            <td>X<td>
-          </tr>
+          <p>Se os pneus do carro estão funcionando como deveriam (rodando, sem deslizar) é a força de aderência do atrito estático que está agindo nos pneus. A força de atrito estático entre os pneus e o chão é o que permite que os carros aumentem e diminuam de velocidade, e façam curvas de forma suave e segura. Para aumentar a velocidade, os pneus começam a girar mais rapidamente e aderem à estrada usando a força de atrito estático. Os pneus podem então empurrar a rua para trás, e a terceira lei diz que a rua tem que empurrar os pneus para a frente. É a força de aderência do atrito estático torna isso possível. 
+          <img src="http://beto.abelha.network/static/img/mod_09_img_03.png"></p>
           
-          <tr>
-            <td>Um motorista “pisa fundo” e sai do semáforo cantando pneu.</td>
-            <td>X</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Um carro faz uma curva suavemente</td>
-            <td>X</td>
-            <td></td>
-          </tr>
-
-Espere, como é? Você pode explicar como um carro em movimento pode usar a força de atrito estático?
-
-Se os pneus do carro estão funcionando como deveriam (rodando, sem deslizar) é a força de aderência do atrito estático que está agindo nos pneus. A força de atrito estático entre os pneus e o chão é o que permite que os carros aumentem e diminuam de velocidade, e façam curvas de forma suave e segura. Para aumentar a velocidade, os pneus começam a girar mais rapidamente e aderem à estrada usando a força de atrito estático. Os pneus podem então empurrar a rua para trás, e a terceira lei diz que a rua tem que empurrar os pneus para a frente. É a força de aderência do atrito estático torna isso possível. [img3]
-
-Se os pneus começarem a girar muito rápido ("pisar fundo"), ou pararem de girar muito rápido ("pisar forte no freio"), vai acontecer uma derrapagem (e também fumaça e marcas de derrapagem) entre os pneus e o chão. Essa derrapagem é uma forma fácil de dizer que a força agindo é o atrito cinético, ao invés do atrito estático.
-As pessoas normalmente acham estranho pensar que o pneu de um carro em movimento tem atrito estático agindo sobre ele. Os alunos normalmente pensam, de forma equivocada, que o atrito estático significa que o objeto não pode se mover. 
-Mas o atrito estático implica apenas em que as superfícies não estão uma sobre a outra, e não que o objeto não tem movimento. 
-No caso dos pneus do carro, a parte de baixo do pneu, que está em contato com a rua, está momentaneamente em repouso com relação à rua, já que ela não está deslizando. O resto do pneu gira ao redor do ponto de contato. O ponto em contato continua mudando conforme o pneu continua girando para a frente.
-
-Qual é a fórmula da força de atrito cinético ?
-Se você juntar as mãos e esfregá-las uma contra a outra, a força do atrito cinético será maior do que se você estivesse apenas pressionando-as suavemente. Isso porque a força de atrito cinético entre duas superfícies é maior quanto maior for a pressão que as superfícies exercem uma na outra (isto é, a força normal F_n é maior).
-Além disso, alterar os tipos das superfícies que deslizam uma sobre a outra vai alterar a força de atrito cinético. A "aspereza" das duas superfícies que se esfregam é caracterizada por uma grandeza chamada coeficiente de atrito cinético  \\mu_c. 
-O parâmetro \\mu_c depende apenas das duas superfícies em contato e terá um valor diferente para superfícies diferentes (por exemplo, gelo e madeira, ferro e concreto, etc.). Duas superfícies que não deslizam facilmente uma sobre a outra terão um coeficiente de atrito cinético \\mu_c maior.
-
-Podemos colocar essas ideias em uma forma matemática com a seguinte equação.
-
- F_c=\\ \\mu_c\\ .\\ F_n 
-
-Observe que podemos reescrever essa equação como  \\mu_c=\\ \\frac{F_c}{F_n}  o que mostra que o coeficiente de atrito cinético \\mu_c  é uma grandeza adimensional.
-
-O que significa "grandeza adimensional"?
-Como \\mu_c=\\ \\frac{F_c}{F_n} , sabemos que as unidades do coeficiente de atrito cinético \\mu_c são iguais às da fração \\frac{F_c}{F_n} .
-Mas ambas, F_c e F_n têm unidades em Newtons, então a taxa de \\frac{F_c}{F_n} não tem unidades (as unidades se cancelam).
-
-
-Isso mostra que o coeficiente de atrito cinético \\mu_c é um número sem unidades. Chamamos esses tipos de grandezas de grandezas adimensionais, porque elas não têm unidades (isto é, não têm dimensões físicas).
-
-Qual é a fórmula da força de atrito estático F_e ?
-
-A força de atrito estático é um pouco diferente da força de atrito cinético. Por um lado, a força de atrito estático vai variar com base na força que está sendo aplicada ao objeto em repouso. Imagine, por exemplo, tentar empurrar uma caixa pesada pelo chão de concreto. Você pode empurrar cada vez mais forte e, ainda assim, a caixa não vai se mover. Isso significa que o atrito estático responde ao que você faz. Ele aumenta para ser igual e na direção oposta àquela do seu empurrão. Mas se você empurrar com força o bastante, a caixa parece deslizar de repente e começa a se mover. Uma vez em movimento, é mais fácil mantê-la em movimento do que foi fazê-la entrar em movimento, o que indica que a força de atrito cinético é menor que a força de atrito estático máxima.
-
-Se você adicionar massa à caixa, por exemplo colocando outra caixa em cima dela (aumentando assim a força normal F_n ) você precisa empurrar com ainda mais força para que ela comece a se mover e continue se movendo. Além disso, se você passar óleo no concreto (reduzindo o coeficiente de atrito estático \\mu_e )  será mais fácil fazer a caixa começar a se mover (como você deve ter imaginado).
-
-Podemos colocar essas ideias na forma matemática escrevendo a seguinte fórmula, que nos permite encontrar a força de atrito estático máxima possível entre duas superfícies.
-
-F_{e\\left(max\\right)}=\\ \\mu_e\\ .\\ F_n 
-
-Ao invés disso, podemos escrever essa equação com uma desigualdade?
-Sim. Como essa equação dá apenas o valor máximo para a força de atrito estático F_{e\\left(max\\right)}, podemos, ao invés disso, escolher escrever uma fórmula para o valor real da força de atrito cinético F_c escrevendo,
-
-F_c\\le \\mu_e\\ .\\ F_n
-
-Essa equação diz que a verdadeira magnitude da força de atrito estático F_e ser tão grande quanto a grandeza \\mu_e\\ .\\ F_n.
-
-Cuidado, a grandeza  F_{e\\left(max\\right)} dá apenas a força de atrito estático máxima possível, e não a força de atrito estático real para um dado cenário. Por exemplo, suponha que a força de atrito estático máxima possível entre uma máquina de lavar e um piso de azulejo seja de F_{e\\left(max\\right)}=50N. Se você fosse tentar mover a máquina de lavar com 30N, a força de atrito estático seria de apenas 30N. Se você aumentar a força exercida para 40N, a força de atrito estático também aumentaria para 40N. Isso continuará até que a força que você aplica seja maior que a força de atrito estático máxima, que é o ponto no qual a máquina de lavar se move e começa a deslizar. Quando a máquina de lavar começa a deslizar, não há mais força de atrito estático, somente a força de atrito cinético.
-
-COMPARAÇÃO ENTRE ATRITO CINÉTICO E ESTÁTICO
-Na prática, verifica-se que é mais difícil tirar um corpo do repouso do que mantê-lo em movimento:
-\\mu_c\\le \\mu_e
+          <p>Se os pneus começarem a girar muito rápido ("pisar fundo"), ou pararem de girar muito rápido ("pisar forte no freio"), vai acontecer uma derrapagem (e também fumaça e marcas de derrapagem) entre os pneus e o chão. Essa derrapagem é uma forma fácil de dizer que a força agindo é o atrito cinético, ao invés do atrito estático.</p>
+          <p>As pessoas normalmente acham estranho pensar que o pneu de um carro em movimento tem atrito estático agindo sobre ele. Os alunos normalmente pensam, de forma equivocada, que o atrito estático significa que o objeto não pode se mover.</p>
+          <p>Mas o atrito estático implica apenas em que as superfícies não estão uma sobre a outra, e não que o objeto não tem movimento.</p> 
+          <p>No caso dos pneus do carro, a parte de baixo do pneu, que está em contato com a rua, está momentaneamente em repouso com relação à rua, já que ela não está deslizando. O resto do pneu gira ao redor do ponto de contato. O ponto em contato continua mudando conforme o pneu continua girando para a frente.</p>
+          
+          <h4>Qual é a fórmula da força de atrito cinético?</h4>
+          <p>Se você juntar as mãos e esfregá-las uma contra a outra, a força do atrito cinético será maior do que se você estivesse apenas pressionando-as suavemente. Isso porque a força de atrito cinético entre duas superfícies é maior quanto maior for a pressão que as superfícies exercem uma na outra (isto é, a força normal F_n é maior).</p>
+          <p>Além disso, alterar os tipos das superfícies que deslizam uma sobre a outra vai alterar a força de atrito cinético. A "aspereza" das duas superfícies que se esfregam é caracterizada por uma grandeza chamada coeficiente de atrito cinético  $\\mu_c$.</p>
+          <p>O parâmetro $\\mu_c$ depende apenas das duas superfícies em contato e terá um valor diferente para superfícies diferentes (por exemplo, gelo e madeira, ferro e concreto, etc.). Duas superfícies que não deslizam facilmente uma sobre a outra terão um coeficiente de atrito cinético $\\mu_c$ maior.</p>
+          
+          <p>Podemos colocar essas ideias em uma forma matemática com a seguinte equação.</p>
+          
+          $$F_c=\\ \\mu_c\\ .\\ F_n$$
+          
+          <p>Observe que podemos reescrever essa equação como $\\mu_c=\\ \\frac{F_c}{F_n}$ o que mostra que o coeficiente de atrito cinético \\mu_c  é uma grandeza adimensional.</p>
+          
+          <h4>O que significa "grandeza adimensional"?</h4>
+          <p>Como $\\mu_c=\\ \\frac{F_c}{F_n}$, sabemos que as unidades do coeficiente de atrito cinético $\\mu_c$ são iguais às da fração $\\frac{F_c}{F_n}$.
+          Mas ambas, $F_c$ e $F_n$ têm unidades em Newtons, então a taxa de $\\frac{F_c}{F_n}$ não tem unidades (as unidades se cancelam).</p>
+          
+          <p>Isso mostra que o coeficiente de atrito cinético \\mu_c é um número sem unidades. Chamamos esses tipos de grandezas de grandezas adimensionais, porque elas não têm unidades (isto é, não têm dimensões físicas).</p>
+          
+          <h4>Qual é a fórmula da força de atrito estático F_e?</h4>
+          
+          <p>A força de atrito estático é um pouco diferente da força de atrito cinético. Por um lado, a força de atrito estático vai variar com base na força que está sendo aplicada ao objeto em repouso. Imagine, por exemplo, tentar empurrar uma caixa pesada pelo chão de concreto. Você pode empurrar cada vez mais forte e, ainda assim, a caixa não vai se mover. Isso significa que o atrito estático responde ao que você faz. Ele aumenta para ser igual e na direção oposta àquela do seu empurrão. Mas se você empurrar com força o bastante, a caixa parece deslizar de repente e começa a se mover. Uma vez em movimento, é mais fácil mantê-la em movimento do que foi fazê-la entrar em movimento, o que indica que a força de atrito cinético é menor que a força de atrito estático máxima.</p>
+          
+          <p>Se você adicionar massa à caixa, por exemplo colocando outra caixa em cima dela (aumentando assim a força normal F_n ) você precisa empurrar com ainda mais força para que ela comece a se mover e continue se movendo. Além disso, se você passar óleo no concreto (reduzindo o coeficiente de atrito estático \\mu_e )  será mais fácil fazer a caixa começar a se mover (como você deve ter imaginado).</p>
+          
+          <p>Podemos colocar essas ideias na forma matemática escrevendo a seguinte fórmula, que nos permite encontrar a força de atrito estático máxima possível entre duas superfícies.</p>
+          
+          $$F_{e\\left(max\\right)}=\\ \\mu_e\\ .\\ F_n$$
+          
+          <h4>Ao invés disso, podemos escrever essa equação com uma desigualdade?</h4>
+          
+          <p>Sim. Como essa equação dá apenas o valor máximo para a força de atrito estático F_{e\\left(max\\right)}, podemos, ao invés disso, escolher escrever uma fórmula para o valor real da força de atrito cinético F_c escrevendo,</p>
+          
+          $$F_c\\le \\mu_e\\ .\\ F_n$$
+          
+          <p>Essa equação diz que a verdadeira magnitude da força de atrito estático F_e ser tão grande quanto a grandeza $\\mu_e\\ .\\ F_n$.</p>
+          
+          <p>Cuidado, a grandeza  F_{e\\left(max\\right)} dá apenas a força de atrito estático máxima possível, e não a força de atrito estático real para um dado cenário. Por exemplo, suponha que a força de atrito estático máxima possível entre uma máquina de lavar e um piso de azulejo seja de F_{e\\left(max\\right)}=50N. Se você fosse tentar mover a máquina de lavar com 30N, a força de atrito estático seria de apenas 30N. Se você aumentar a força exercida para 40N, a força de atrito estático também aumentaria para 40N. Isso continuará até que a força que você aplica seja maior que a força de atrito estático máxima, que é o ponto no qual a máquina de lavar se move e começa a deslizar. Quando a máquina de lavar começa a deslizar, não há mais força de atrito estático, somente a força de atrito cinético.</p>
+          
+          <h3>COMPARAÇÃO ENTRE ATRITO CINÉTICO E ESTÁTICO</h3>
+          <p>Na prática, verifica-se que é mais difícil tirar um corpo do repouso do que mantê-lo em movimento:</p>
+          $$\\mu_c\\le \\mu_e$$
           `
         },
         exemplos: {
-          timeRead: 3,
-          texto: `Texto`
+          timeRead: 10,
+          texto:
+            `
+          <h2>Exemplo 1: Empurrando a geladeira</h2>
+          <p>Uma geladeira de 110kg está inicialmente parada sobre o chão. O coeficiente de atrito estático entre a geladeira e o chão é de 0,60 e o coeficiente de atrito cinético entre a geladeira e o chão é de 0,40. A pessoa empurrando a geladeira tenta movimentá-la com as seguintes forças.</p>
+          
+          <p>$F_{empurrar}=400N$
+          $F_{empurrar}=600N$<br>
+          $F_{empurrar}=800N$</p>
+          <p>Para cada caso individual listado acima, determine a magnitude da força de atrito que vai existir entre a geladeira e o chão. 
+          <img src="http://beto.abelha.network/static/img/mod_09_img_04.png"></p>
+          
+          <p>Para começar, vamos calcular a força máxima de atrito estático possível.</p>
+          
+          <p>\${F_e}_{máx} = mu_e.F_n$ (comece com a fórmula da força de atrito estático máxima)</p>
+          
+          <p>\${F_e}_{máx} = mu_e.(m.g)$ (nesse caso, a força normal vai ser igual à força da gravidade)</p>
+          
+          <p>\${F_e}_{máx} = 0,60.110kg.9,8\\frac{m}{s^2}$ (nesse caso, a força normal vai ser igual à força da gravidade)</p>
+          
+          <p>\${F_e}_{máx} = 647N$ (calcule e comemore)</p>
+          
+          <p>Agora que sabemos que a força máxima de atrito estático é 647N, sabemos que qualquer força que a pessoa exerça abaixo desse valor será derrotada pela força de atrito estático. Em outras palavras,</p>
+          
+          <p>Se a pessoa empurra com $F_{empurrar}=400N$ haverá uma força de atrito estático correspondente de $F_e=400N$ impedindo a geladeira de se mexer. Não haverá atrito cinético, já que a geladeira não vai deslizar.</p>
+          <p>Se a pessoa empurra com $F_{empurrar}=600N$ haverá uma força de atrito estático correspondente de $F_e=600N$ impedindo a geladeira de se mexer. Não haverá atrito cinético, já que a geladeira não vai deslizar.</p>
+          <p>No caso iii F_{empurrar}=800N é maior que a força de atrito estático máxima, então a geladeira vai começar a deslizar. Agora que a geladeira está deslizando, haverá uma força de atrito cinético exercida sobre ela. Podemos encontrar a força de atrito cinético como mostrado a seguir.</p>
+          
+          <p>$F_c=\\mu_c . F_n$ (comece com a fórmula da força de atrito cinético)</p>
+          
+          <p>$F_c= mu_c.(m.g)$ (insira o coeficiente de atrito cinético e a força normal)</p>
+          
+          <p>$F_c = 0,40 . 110kg . 9,8_{m/s^2}$ (nesse caso, a força normal vai ser igual à força da gravidade)</p>
+          
+          <p>$F_c = 431N$  (calcule e comemore)</p>
+          
+          <p>Então, se a pessoa empurrar com $F_{empurrar} = 800N$ haverá uma força de atrito cinético de $F_c=431N4 exercida na geladeira. Não haverá força de atrito estático, já que a geladeira estará deslizando.</p>
+          
+          <h2>Exemplo 2: Caixa puxada sobre uma mesa áspera</h2>
+          <p>Uma caixa de 1,3kg de chocolate congelados é puxada com velocidade constante sobre uma mesa por uma corda. A corda está em um ângulo de $\\theta={60}^0$ e sob uma tração de 4N.</p>
+          <p>Qual é o coeficiente de atrito cinético entre a mesa e a caixa? 
+          <img src="http://beto.abelha.network/static/img/mod_09_img_05.png"></p>
+           
+          <p>Como não sabemos o coeficiente de atrito cinético, podemos usar a fórmula $F_c=\\\\ \\\\mu_c\\\\ .\\\\ F_n$  para calcular diretamente a força de atrito. Contudo, como conhecemos a aceleração na direção horizontal (ela é zero porque a caixa se move a uma velocidade constante) devemos começar com a segunda lei de Newton.</p>
+          
+          <p>Sempre que usamos a segunda lei de Newton devemos desenhar um diagrama de forças. 
+          <img src="http://beto.abelha.network/static/img/mod_09_img_06.png"></p>
+          
+          <p>$a_x=\\frac{\\sum F_x}{m}$ (use a segunda lei de Newton para a direção horizontal)</p>
+          
+          <p>$0=\\frac{T_x-F_c}{1,3kg}$ (insira as forças horizontais, a aceleração e a massa)</p>
+          
+          <p>$0=\\frac{T.cos{60}^0-\\mu_c.F_n}{1,3kg}$ (insira a componente horizontal da tração e a fórmula do atrito cinético)</p>
+          
+          <p>$0=T.cos{60}^0-\\mu_c.\\F_n$ (multiplique os dois lados pela massa)</p>
+          
+          <p>$\\mu_c=\\frac{T.cos{60}^0}{F_n}$ (calcule o coeficiente de atrito cinético algebricamente)</p>
+          
+          <p>Nesse ponto você pode achar que deveríamos inserir a força normal como $m.g$, mas como a corda também está puxando a caixa para cima, a força normal será menor que m.g. A força normal será reduzida pelo valor da força com que puxamos a caixa para cima. Nesse caso, a componente vertical da tração é $T_y=\\\\ T.sen{60}^0$. Então, a força normal nesse caso será $F_n=m.g-\\\\ T.sen{60}^0$.</p>
+          
+          <p>Agora, podemos inserir essa expressão da força normal $F_n$ na fórmula para o coeficiente de atrito cinético que encontramos acima.</p>
+          
+          <p>$\\mu_c=\\frac{T.cos{60}^0}{F_n}$ (use a fórmula que encontramos acima para o coeficiente de atrito cinético)</p>
+          
+          <p>$\\mu_c=\\frac{T.cos{60}^0}{m.g-T.cos{60}^0}$ (insira a expressão encontrada para a força normal)</p>
+          
+          <p>$\\mu_c=\\frac{4N.cos{60}^0}{1,3kg.9,8\\frac{m}{s^2}-4N.sen{60}^0}$ (insira os valores da tensão e para a massa)</p>
+          
+          <p>$\\mu_c=0,216$ (calcule e comemore)</p>
+            `
         },
         questoes: [{
-          texto: '',
+          texto: `O bloco da figura, de massa 5 Kg, move-se com velocidade constante de $1,0_{m/s}$ num plano horizontal, sob a ação da força $F$, constante e horizontal.
+          <img src="http://beto.abelha.network/static/img/mod_09_q_01.png">
+          Se o coeficiente de atrito entre o bloco e o plano vale 0,20, e a aceleração da gravidade, $10_{m/s2}$, então o módulo da força $F$, em Newtons, vale:
+          `,
           respondiada: false,
           pontuacao: 200,
           alternativas: [
             {
-              texto: '',
+              texto: '25',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '20',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '15',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '10',
+              correta: true,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: `Um bloco de massa 20 kg é puxado horizontalmente por um barbante. O coeficiente de atrito entre o bloco e o plano horizontal de apoio é 0,25. Adota-se g = 10_{m/s^2}. Sabendo que o bloco tem aceleração de módulo igual a 2,0_{m/s^2}, concluímos que a força de tração no barbante tem intensidade igual a:`,
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: '40N',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '90N',
               correta: true,
               selecionada: false
             },
             {
-              texto: '',
+              texto: '60N',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '70N',
+              correta: false,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: `Um bloco com massa de 3 kg está em movimento com aceleração constante na superfície de uma mesa. Sabendo que o coeficiente de atrito dinâmico entre o bloco e a mesa é 0,4, calcule a força de atrito entre os dois. Considere g = 10_{m/s^2}.`,
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: '10N',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '11N',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '12N',
               correta: true,
               selecionada: false
             },
             {
-              texto: '',
+              texto: '13N',
+              correta: false,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: `Um bloco de madeira com massa de 10 kg é submetido a uma força $F$ que tenta colocá-lo em movimento. Sabendo que o coeficiente de atrito estático entre o bloco e a superfície é 0,6, calcule o valor da força $F$ necessária para colocar o bloco na situação de iminência do movimento. Considere $g = 10_{m/s^2}$.`,
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: '40N',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '50N',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '55N',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '60N',
+              correta: true,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: `Um motorista conduzia seu automóvel de massa 2.000 kg que trafegava em linha reta, com velocidade constante de 72_{km/h}, quando avistou uma carreta atravessada na pista. Transcorreu 1 s entre o momento em que o motorista avistou a carreta e o momento em que acionou o sistema de freios para iniciar a frenagem, com desaceleração constante igual a 10_{m/s^2}. Antes de o automóvel iniciar a frenagem, pode-se afirmar que a intensidade da resultante das forças horizontais que atuavam sobre ele era`,
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: 'nula, pois não havia forças atuando sobre o automóvel.',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: 'nula, pois a força aplicada pelo motor e a força de atrito resultante atuavam em sentidos opostos com intensidades iguais.',
               correta: true,
               selecionada: false
             },
             {
-              texto: '',
-              correta: true,
+              texto: 'maior do que zero, pois a força aplicada pelo motor e a força de atrito resultante atuavam em sentidos opostos, sendo a força aplicada pelo motor a de maior intensidade.',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: 'menor do que zero, pois a força aplicada pelo motor e a força de atrito resultante atuavam em sentidos opostos, sendo a força de atrito a de maior intensidade.',
+              correta: false,
               selecionada: false
             }
           ]
@@ -1971,36 +2149,208 @@ Na prática, verifica-se que é mais difícil tirar um corpo do repouso do que m
         teoria: {
           timeRead: 10,
           texto:
-            ` `
+            `
+            <h2>Força centrípeta</h2>
+
+            <p>Uma força centrípeta é a força resultante que age sobre um objeto para mantê-lo em movimento ao longo de um trajeto circular.  Aprendemos que qualquer objeto viajando ao longo de um caminho circular de raio r com velocidade v sofre uma aceleração direcionada ao centro deste caminho,</p> 
+            $$a=\\frac{v^2}{r}$$
+            <p>No entanto, primeiramente devemos discutir como o objeto começou a mover-se pelo trajeto circular. A 1ª lei de Newton nos diz que um objeto irá continuar seu movimento em um trajeto contínuo a não ser que sofra a ação de uma força externa. A força externa neste caso é a força centrípeta. É importante compreender que a força centrípeta não é uma força fundamental, mas apenas um rótulo dado para a força resultante que faz o objeto mover-se em um trajeto circular. A força de tensão em uma bola amarrada em uma corda e a força gravitacional mantendo um satélite em órbita são ambos exemplos de forças centrípetas. Múltiplas forças individuais podem ser relacionada desde que elas se adicionem (por adição vetorial) para dar a força resultante para o centro de um trajeto circular.</p>
+            
+            <p>Começando com a 2ª lei de Newton:</p>
+            
+            $$a=\\frac{F}{m}$$
+            
+            <p>e, então, igualar à aceleração centrípeta,</p>
+            
+            $$\\frac{v^2}{r}=\\ \\frac{F}{m}$$
+            
+            <p>Podemos mostrar que a força centrípeta F_c tem magnitude</p>
+            
+            $$F_c=\\frac{{mv}^2}{r}$$
+            
+            <p>e é sempre dirigido para o centro da trajetória circular. De forma equivalente, se \\omega é a velocidade angular e porque \\omega=v.r então F_c=m.r.\\omega^2
+            <img src="http://beto.abelha.network/static/img/mod_10_img_01.png"></p>
+            `
         },
         exemplos: {
-          timeRead: 3,
+          timeRead: 10,
           texto:
-            ``
+            `
+            <h2>Exemplo 1: Bola amarrada</h2>
+            <p>Um aparato que ilustra claramente a força centrípeta consiste em uma massa $m_1$ que gira em um círculo horizontal, conectada à uma corda leve que passa por um tubo vertical para contra-balancear \\left(m_2\\right) como mostrado na Figura.</p>
+            <p>Se $m_1$ é uma massa 1kg rodando em um círculo de raio 1m  e $m_2=4kg$,  qual é a velocidade angular assumindo que a massa está se movendo verticalmente e há uma mínima fricção entre a corda e o tubo?
+            <img src="http://beto.abelha.network/static/img/mod_10_img_02.png"></p>
+            
+            <p>Quando a corda passa pelo tubo ela redireciona a força gerada pela gravidade atuando em m_2  para o plano horizontal. Esta é a força centrípeta que permite m_1 rodar em círculo. Nenhuma massa está se movendo verticalmente, então a força centrípeta deve ser exatamente equilibrada.</p>
+            
+            <p>$F_c=F_g$</p>
+            
+            <p>$m_1.r.\\omega^2=m_2.g$</p>
+            
+            <p>Que podem ser reorganizadas e resolvidas para a velocidade rotacional, Que podem ser reorganizadas e resolvidas para a velocidade rotacional,</p>
+            
+            <p>$\\omega^2=\\frac{m_2.g}{m_1.r}$</p>
+            
+            <p>$\\omega=\\sqrt{\\frac{m_2.g}{m_1.r}}$</p>
+            
+            <p>$\\omega=\\sqrt{\\frac{\\left(4kg\\right).\\left(9,8\\frac{m}{s^2}\\right)}{1kg.1m}}$</p>
+            
+            <p>$\\omega=6,25\\ rad/s$</p>
+            
+            <p>ou cerca de 2 rotações por segundo.</p>
+            
+            <h2>Exemplo 2: Turbina de vento</h2>
+            
+            <p>Uma grande turbina de vento possui pás de 35 m de comprimento, cada uma pesando 10.000 kg. O centro de massa de uma pá está localizado no meio de seu comprimento. Se a turbina está rodando a 20 rotações por minuto, Qual a força de tensão sobre os parafusos que prendem uma pá girando ao eixo?</p>
+            
+            <p>Primeiro, converter a velocidade de rotação para rad/s:</p>
+            
+            <p>$f=20\\frac{rot}{min}=20\\frac{rot}{60s}=\\frac{1.rot}{3s}=\\frac{1}{3}hz$</p>
+            
+            <p>$\\omega=2\\pi.f$</p>
+            
+            <p>$\\omega=2.\\left(3,14\\right).\\left(\\frac{1}{3}\\right)$</p>
+            
+            <p>$\\omega\\cong2,1\\ rad/s$</p>
+            
+            <p>E, agora, encontrando a força centrípeta:</p>
+            
+            <p>$F_c=m.r.\\omega^2$</p>
+            
+            <p>$F_c={(10}^4kg).\\left(\\frac{35}{2}.m\\right).\\left(2,1\\frac{rad}{s}\\right)^2$</p>
+            
+            <p>$F_c\\cong7,7\\ {.10}^4N$</p>
+            
+            <p>Note que aqui estamos utilizando a distância para o centro da massa para obter o raio da rotação. Nós podemos fazer isso porque o centro da massa é o ponto pelo qual uma força uniforme age sobre a pá. Apesar da tensão interna requerida para manter a ponta da pá ser maior que no centro da massa, o todo é balanceado pela pequena tensão na seção perto da base.</p>
+            `
         },
         questoes: [{
-          texto: '',
+          texto: 'Determine a força centrípeta descrita por uma montanha russa com massa de 1000 kg e aceleração centrípeta de 200_{m/s^2}.',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
             {
-              texto: '',
+              texto: '100.000 N',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '200.000 N',
               correta: true,
               selecionada: false
             },
             {
-              texto: '',
+              texto: '300.000 N',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '400.000 N',
+              correta: false,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: 'Na estrada um caminhão descreve uma trajetória circular com aceleração centrípeta de 2 m/s2. Sendo o raio da pista de 1800 m, calcule a velocidade do veículo.',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: '50 m/s',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '70 m/s',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '60 m/s',
               correta: true,
               selecionada: false
             },
             {
-              texto: '',
+              texto: '20 m/s',
+              correta: false,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: ' Um carro deve fazer uma curva de raio 50 m. numa pista plana com velocidade de 70 m/s. Determine o coeficiente de atrito entre os pneus e a estrada para que o veículo não derrape na pista. Adote g = 10 m/s².',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: '$\\mu=8,9$',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '$4\\mu=6,9$',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '$4\\mu=9,8$',
               correta: true,
               selecionada: false
             },
             {
-              texto: '',
+              texto: '$4\\mu=6,8$',
+              correta: false,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: 'Um motorista descreve uma circunferência vertical num "globo da morte" de 4m. de raio. Que força é exercida sobre o globo no ponto mais alto da trajetória, se a velocidade da moto ai é de 12 m/s? A massa total (motociclista + moto) é de 150 kg. Adote $g = 10_{m/s^2}$.',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: '$N=3800$',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '$N=3900$',
               correta: true,
+              selecionada: false
+            },
+            {
+              texto: '$N=3500$',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '$N=3200$',
+              correta: false,
+              selecionada: false
+            }
+          ]
+        }, {
+          texto: 'Um motociclista pilota sua moto em uma pista circular de 20 metros de diâmetro. Calcule a força centrípeta, sabendo que a massa do piloto mais a massa da moto valem 150 Kg e que a velocidade da moto é de 60 Km/h.',
+          respondiada: false,
+          pontuacao: 200,
+          alternativas: [
+            {
+              texto: '5.166,67 N',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '6.166,67 N',
+              correta: false,
+              selecionada: false
+            },
+            {
+              texto: '4.166,67 N',
+              correta: true,
+              selecionada: false
+            },
+            {
+              texto: '2.166,67 N',
+              correta: false,
               selecionada: false
             }
           ]

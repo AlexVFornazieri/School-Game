@@ -1,7 +1,7 @@
 <template>
   <v-content>
     <v-toolbar fixed>
-      <v-btn icon :to="{name: 'Home'}">
+      <v-btn icon :to="{name: 'Home'}" @click="exit">
         <v-icon>arrow_back</v-icon>
       </v-btn>
       <v-toolbar-title>{{id + 1}}ª Fase - Teoria</v-toolbar-title>
@@ -39,6 +39,11 @@
       }
     },
     mounted () {
+      const self = this
+      window.addEventListener('hashchange', function () {
+        console.log('Hash changed to', window.location.hash)
+        self.exit()
+      })
       this.$vuetify.goTo(0)
       setTimeout(() => {
         if (!this.$service.getTeoriaRead(this.id)) {
@@ -50,6 +55,11 @@
       this.$nextTick(function () {
         MathJax.Hub.Queue(['Typeset', MathJax.Hub, 'editor-output'])
       })
+    },
+    methods: {
+      exit () {
+        clearTimeout(this.$timer)
+      }
     }
   }
 </script>

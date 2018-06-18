@@ -105,9 +105,11 @@
       }
     },
     mounted () {
-      this.$vuetify.goTo(0)
       this.questoes = this.$service.getQuestoes(this.id)
       this.pergunta = this.questoes[0]
+      this.$nextTick(() => {
+        this.change()
+      })
     },
     methods: {
       check (index) {

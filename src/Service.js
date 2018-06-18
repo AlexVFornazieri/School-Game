@@ -62,15 +62,8 @@ export class Service {
         exemplos: {
           timeRead: 10,
           texto: `
-          
-        <h2>Noções de Força</h2>
-
-        <br>
-        <v-alert color="info" icon="info" :value="true">
-          <b>Exemplos:</b> Os exemplos ajuram a fixar o conteúdo do módulo. Veja todos e ganhe um bobus!</b>
-        </v-alert>
-        <br>
-
+        <p><b>Exemplos:</b> Os exemplos ajuram a fixar o conteúdo do módulo. Veja todos e ganhe um bobus!</b></p>
+        
         <div class="exemplo">
           <p class="textoExemplo">Duas forças concorrentes, F1 E F2, de intensidade 4N e 3N, atuam num mesmo ponto
             material, formando um
@@ -207,7 +200,7 @@ export class Service {
           timeRead: 10,
           texto:
             `
-            <h2>1ª LEI DE NEWTON OU PRINCÍPIO DA INÉRCIA<h2>
+            <h2>1ª LEI DE NEWTON OU PRINCÍPIO DA INÉRCIA</h2>
             
             <h3>O que é a primeira lei de Newton?</h3>
             <p>Também chamada de Lei da Inércia, essa é a coisa mais importante para entender sobre movimento.</p>
@@ -367,7 +360,7 @@ export class Service {
             {
               texto: 'Um objeto sob a ação de várias forças está em equilíbrio, isso significa que ele pode estar em repouso ou em movimento retilíneo uniforme.',
               correta: true,
-              selecionada: true
+              selecionada: false
             }
           ]
         }, {
@@ -410,7 +403,7 @@ export class Service {
           timeRead: 10,
           texto:
             `
-            <h2>2ª Lei de Newton ou princípio fundamental da dinâmica<h2>
+            <h2>2ª Lei de Newton ou princípio fundamental da dinâmica</h2>
             
             <h3>O que é a segunda lei de Newton?<h3>
             <p>No mundo da física introdutória, a Segunda Lei de Newton é uma das leis mais importantes que você irá aprender. Ela é usada em quase todos os capítulos de todo livro de física, por isso é importante a dominar esta lei o quanto antes.</p>
@@ -482,12 +475,12 @@ export class Service {
             <p>$a_x=\\frac{\\sum F_x}{m}$ (Comece com a Segunda Lei de Newton para a direção horizontal.)</p>
             <p>$a_x=\\frac{\\left(30N\\right).cos{30}^o-22N}{1,2Kg}$ (Substitua as forças horizontais com os sinais negativos corretos.)</p>
             <p>$a_x=\\frac{26N-22N}{1,2Kg}$ (Certifique-se que sua calculadora está modo "graus", se calculando em graus.)</p>
-            <p>$a_x=3,3\\frac{m}{s^2}$ (Calcule e comemore!)</p>
+            <p>$a_x=3,3_{m/s^2}$ (Calcule e comemore!)</p>
             <p>Para encontrar a aceleração vertical, usaremos a Segunda Lei de Newton para a direção vertical.</p>
             <p>$a_y=\\frac{\\sum F_y}{m}$ (Comece com a Segunda Lei de Newton para a direção vertical.)</p>
             <p>$a_y=\\frac{16N-12N-\\left(30N\\right).sen{30}^o}{1,2Kg}$ (Substitua as forças verticais com os sinais negativos corretos.)
             </p><p>$a_y=\\frac{16N-12N-15N}{1,2Kg}$ (Certifique-se que sua calculadora está modo "graus", se calculando em graus.)</p>
-            <p>$a_y=-9,2\\frac{m}{s^2}$ (Calcule e comemore!)</p>
+            <p>$a_y=-9,2_{m/s^2}$ (Calcule e comemore!)</p>
             
             <h2>Exemplo 2: O queijo suspenso</h2>
             <p>Uma fatia de queijo é suspensa em repouso por dois fios que exercem forças de magnitude \\mathbit{F}_\\mathbf{1} e \\mathbit{F}_\\mathbf{2}, como pode ser visto abaixo. Há também uma força da gravidade para baixo sobre o queijo de magnitude 20N.
@@ -874,7 +867,7 @@ export class Service {
 <p>A força da gravidade nunca é maior ou menor que m.g, independentemente de quaisquer outras forças ou acelerações envolvidas. Então, podemos calcular a força da gravidade no avião (isto é, o peso) simplesmente usando:</p>
 
 <p>$F_g=m.g$ (use a fórmula para o peso)<br>
-$F_g=(4.500Kg).(9,8_{m/s^2})) ( insira os valores para a massa e para gravidade)<br>
+$F_g=4.500Kg.9,8_{m/s^2}$ ( insira os valores para a massa e para gravidade)<br>
 $F_g=44.100N$ (calcule e comemore)</p>
 
 <h2>Exemplo 2: Calculando a massa</h2>
@@ -925,7 +918,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             }
           ]
         }, {
-          texto: 'Sobre a superfície da Terra, onde g = 10_{m/s^2}, um astronauta apresenta peso igual a 700 N. Em uma expedição à Lua, onde g = 1,6_{m/s^2}, a massa desse astronauta será igual a:',
+          texto: 'Sobre a superfície da Terra, onde $g = 10_{m/s^2}$, um astronauta apresenta peso igual a 700 N. Em uma expedição à Lua, onde $g = 1,6_{m/s^2}$, a massa desse astronauta será igual a:',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -1001,7 +994,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             }
           ]
         }, {
-          texto: 'Qual o peso de uma pessoa de 70 Kg na lua? Considere que a gravidade na lua é de 1,6_{m/s^2}.',
+          texto: 'Qual o peso de uma pessoa de 70 Kg na lua? Considere que a gravidade na lua é de $1,6_{m/s^2}$.',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -1069,13 +1062,13 @@ $m=2.551Kg $ (calcule e comemore)</p>
               
               <p>Não existe, na verdade, uma fórmula criada especificamente para calcular a força normal. Para encontrar a força normal, normalmente usamos o fato de que sabemos algo sobre a aceleração perpendicular às superfícies (já que consideramos que as superfícies não podem atravessar uma a outra). Portanto, quase sempre usamos a segunda lei de Newton para calcular a força normal usando essa estratégia.</p>
               
-                <ul>
+                <ul style="padding-left: 2em">
                   <li>Desenhe um diagrama de forças mostrando todas as forças agindo no objeto em questão.</li>
                   <li>Escolha a direção para a segunda lei de Newton na mesma direção da força normal (isto é, perpendicular às superfícies de contato)</li>
                   <li>Insira a aceleração, a massa e as forças atuantes na segunda lei de Newton $a =\\frac{\\sum F}{m}$ para essa direção.</li>
                   <li>Calcule a força normal  $F_n$.</li>
                 </ul>
-              
+              <br>
               <p>Essencialmente, estamos calculando a força normal considerando que ela será tão grande ou tão pequena quanto necessário para evitar que as superfícies penetrem uma na outra.</p>
               
               <p>Vamos aplicar essa estratégia ao exemplo simples a seguir. Considere o caso simples de uma caixa de massa m que está em repouso sobre uma mesa, como mostrado abaixo. 
@@ -1128,10 +1121,10 @@ $m=2.551Kg $ (calcule e comemore)</p>
             <p>Observe que, se tivéssemos inocentemente usado $F_n=m.g=44, 1N$, teríamos encontrado a resposta errada. A força normal aqui é diferente de $g$ porque havia uma aceleração vertical e uma força vertical adicional.</p>
             
             <h2>Exemplo 2: Força normal com força diagonal</h2>
-            <p>Uma pessoa está empurrando uma caixa de cookies de chocolate com menta de usado $1kg$ em uma mesa sem atrito com uma força diagonal para baixo de usado $F_A=10N$, com um ângulo de \\theta=30^0 , como mostrado abaixo.</p>
+            <p>Uma pessoa está empurrando uma caixa de cookies de chocolate com menta de usado $1kg$ em uma mesa sem atrito com uma força diagonal para baixo de usado $F_A=10N$, com um ângulo de $\\theta=30^0$, como mostrado abaixo.</p>
             
             
-            <h3>Qual é a força normal exercida pela mesa na caixa de cookies?<h3>
+            <h3>Qual é a força normal exercida pela mesa na caixa de cookies?</h3>
             
             <img src="http://beto.abelha.network/static/img/mod_06_ex_img_02.png">
              
@@ -1142,22 +1135,22 @@ $m=2.551Kg $ (calcule e comemore)</p>
             <img src="http://beto.abelha.network/static/img/mod_06_ex_img_03.png"></p>
             
             <p>$F_Ay=\\frac{\\sum F_y}{m}$ (Agora, usamos a segunda lei de Newton para a direção vertical porque F_n é vertical)<br>
-            $0=\\frac{F_n-F_g-10N.\\sen 30^0}{1kg}$ (insira a aceleração vertical, a massa e as forças verticais)</p>
+            $0=\\frac{F_n-F_g-10N . sen 30^0}{1kg}$ (insira a aceleração vertical, a massa e as forças verticais)</p>
             
-            <h3>De onde veio o termo $10N.\\sen 30°$, e por que ele é negativo?</h3>
+            <h3>De onde veio o termo $10N.sen 30°$, e por que ele é negativo?</h3>
             <p>Precisamos decompor a força diagonal em componentes vertical e horizontal, como mostrado abaixo. 
             <img src="http://beto.abelha.network/static/img/mod_06_ex_img_04.png"></p>
              
-            <p>A componente vertical pode ser encontrada usando trigonometria e a definição de $\\sen$, <br>
-            $\\sen 30^0=\\frac{oposto}{hipotenusa}=\\frac{F_Ay}{F_A}$<br>
-            $\\sen 30^0=\\frac{F_Ay}{10N}$<br>
-            $F_Ay = 10N.(sen30^0)$</p>
+            <p>A componente vertical pode ser encontrada usando trigonometria e a definição de $sen$, <br>
+            $sen 30^0=\\frac{oposto}{hipotenusa}=\\frac{F_Ay}{F_A}$<br>
+            $sen 30^0=\\frac{F_Ay}{10N}$<br>
+            $F_Ay = 10N.(sen 30^0)$</p>
             
             <p>Observe também que essa componente vertical F_Ay está direcionada para baixo, e é por isso que a incluímos como um termo negativo na segunda lei de Newton para a direção vertical.</p>
             
-            <p>$F_n=F_g+10N.\\sen30^0$  (calcule algebricamente o $F_n$)<br>
-            $F_n=m.g+10N.sen30^0$  (use $F_g=m.g$)<br>
-            $F_n=1kg.9,8_{m/s^2} + 10N.\\sen30^0=14,8N$ (calcule comemore)</p>
+            <p>$F_n=F_g+10N.sen 30^0$  (calcule algebricamente o $F_n$)<br>
+            $F_n=m.g+10N.sen 30^0$  (use $F_g=m.g$)<br>
+            $F_n=1kg.9,8_{m/s^2}+10N.sen 30^0=14,8N$ (calcule comemore)</p>
             
             <p>Lembre-se: A decomposição da força norma é sempre perpendicular a superfície de apoio. 
             <img src="http://beto.abelha.network/static/img/mod_06_ex_img_05.png"></p>
@@ -1337,7 +1330,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             `
             <h2>Força elástica</h2>
 
-            <p>Força elástica ($F_e$) é a força exercida sobre um corpo que possui elasticidade, por exemplo, uma mola, borracha ou elástico. Essa força determina, portanto, a deformação desse corpo, quando ele se estica ou se comprime. Isso dependerá da direção da força aplicada.  Como exemplo, vamos pensar numa mola presa num suporte. Se não houver uma força atuante sobre ela, dizemos que ela está em repouso. Por sua vez, quando esticamos essa mola, ela criará uma força em sentido contrário. Note que a deformação sofrida pela mola é diretamente proporcional à intensidade da força aplicada. Sendo assim, quanto maior for a força aplicada ($P$) maior será a deformação da mola ($x$), como vemos na imagem abaixo.</p> 
+            <p>Força elástica ($F_e$) é a força exercida sobre um corpo que possui elasticidade, por exemplo, uma mola, borracha ou elástico. Essa força determina, portanto, a deformação desse corpo, quando ele se estica ou se comprime. Isso dependerá da direção da força aplicada.  Como exemplo, vamos pensar numa mola presa num suporte. Se não houver uma força atuante sobre ela, dizemos que ela está em repouso. Por sua vez, quando esticamos essa mola, ela criará uma força em sentido contrário. Note que a deformação sofrida pela mola é diretamente proporcional à intensidade da força aplicada. Sendo assim, quanto maior for a força aplicada $P$ maior será a deformação da mola $x$, como vemos na imagem abaixo.</p> 
             
             <h3>Lei de hooke</h3>
             <h4>O que é uma mola?</h4>
@@ -1394,7 +1387,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             
             $x=\\frac{F}{K}$<br>
             $x=\\frac{m.g}{K}$<br> 
-            $x=\\frac{75kg.9,8\\frac{m}{s^2}}{5000_{N/m}}$<br>
+            $x=\\frac{75kg.9,8_{m/s^2}}{5000_{N/m}}$<br>
             $x\\cong 0,15m$ </p>
             
             <p>Nós agora subtraímos isto do comprimento nominal da mola:</p>
@@ -1587,7 +1580,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           texto:
             `
             <h2>Exemplo 1: Corda com ângulo puxando uma caixa</h2>
-            <p>Uma caixa de extrato de pepino de for 2\\ kg. está sendo puxada sobre uma mesa sem atrito por uma corda com um ângulo de \\theta={60}^0, como mostrado abaixo. A tração na corda faz com que a caixa deslize pela mesa para a direita com uma aceleração de 3,0\\frac{m}{s^2}.</p>
+            <p>Uma caixa de extrato de pepino de 2kg está sendo puxada sobre uma mesa sem atrito por uma corda com um ângulo de $\\theta={60}^0$, como mostrado abaixo. A tração na corda faz com que a caixa deslize pela mesa para a direita com uma aceleração de $3,0_{m/s^2}$.</p>
             
             <h3>Qual é a tração na corda?</h3>
             <img src="http://beto.abelha.network/static/img/mod_08_ex_img_01.png">
@@ -1605,7 +1598,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             
             <p>$a_x=\\frac{\\sum F_x}{m}$ (Comece com a Segunda Lei de Newton para a direção horizontal.)</p>
             
-            <p>$3,0\\frac{m}{s^2} =\\frac{T.cos{60}^o}{2Kg}$ (insira a aceleração horizontal, a massa e as forças horizontais.)</p>
+            <p>$3,0_{m/s^2} =\\frac{T.cos{60}^o}{2Kg}$ (insira a aceleração horizontal, a massa e as forças horizontais.)</p>
             
             <p><b>De onde veio o termo Tcos60?</b></p>
             
@@ -1617,18 +1610,18 @@ $m=2.551Kg $ (calcule e comemore)</p>
             
             <p>$cos{60}^o=\\frac{adjacente}{hipotenusa}=\\frac{T_x\\ }{T}$</p>
             
-            <p>T_x=T.cos{60}^o</p> 
+            <p>$T_x=T.cos{60}^o$</p> 
             
             <p>$T$ aqui é a magnitude total da força de tração e $T_x$ é apenas a componente horizontal dessa força (por exemplo, quanto a tração puxa horizontalmente).</p>
             
             <p>Observe que não inserimos a força da gravidade ou a força normal nessa equação porque essas forças são direcionadas na vertical e estamos usando a segunda lei de Newton na direção horizontal.</p>
             
-            <p>$T.cos{60}^o=\\left(3,0\\frac{m}{s^2}\\ \\right).\\left(2kg\\right)$ (deixe $T$ isolado em um lado)<br>
-            $T=\\frac{\\left(3,0\\frac{m}{s^2}\\ \\right).\\left(2kg\\right)}{cos{60}^o}$  (calcule algebricamente $T$)<br>
+            <p>$T.cos{60}^o=\\left(3,0_{m/s^2}\\ \\right).\\left(2kg\\right)$ (deixe $T$ isolado em um lado)<br>
+            $T=\\frac{\\left(3,0_{m/s^2}\\ \\right).\\left(2kg\\right)}{cos{60}^o}$  (calcule algebricamente $T$)<br>
             $T=12N$  (calcule e comemore)</p>
             
             <h3>Exemplo 2: Caixa pendurada por duas cordas</h3>
-            <p>Uma caixa de biscoitos em forma de animais de 0,25\\ kg  está pendurada, em repouso, por duas cordas ligadas ao teto e à parede, respectivamente. A corda na diagonal sob tração T_2 está direcionada em um ângulo de \\theta={30}^0 a partir da direção horizontal, como mostrado abaixo.
+            <p>Uma caixa de biscoitos em forma de animais de 0,25\\ kg  está pendurada, em repouso, por duas cordas ligadas ao teto e à parede, respectivamente. A corda na diagonal sob tração T_2 está direcionada em um ângulo de $\\theta={30}^0$ a partir da direção horizontal, como mostrado abaixo.
             <img src="http://beto.abelha.network/static/img/mod_08_ex_img_04.png"></p>
             
             <p>Quais são as trações $T_1$ e $T_2$ nas duas cordas?</p>
@@ -1641,7 +1634,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             
             <p>$0 =\\frac{T_2sen{30}^o-F_g}{0,25kg}$ (insira a aceleração vertical, a massa e as forças verticais)</p>
             
-            <p><b>De onde veio Tsen30?</b></p>
+            <p><b>De onde veio Tsen 30?</b></p>
             
             <p>Como estamos a segunda lei de Newton para a direção vertical, podemos incluir apenas forças verticais.</p>
             <p>A força da gravidade (de magnitude F_g) é direcionada na vertical e para baixo, então a incluímos com um sinal negativo.</p>
@@ -1654,17 +1647,17 @@ $m=2.551Kg $ (calcule e comemore)</p>
             
             <p>$T_{2y}=T_2.sen\\theta=T_2.sen{30}^o$</p>
             
-            <p>Essa é a componente que incluímos na segunda lei de Newton para a direção vertical. Além disso, observe que essa componente vertical da tração T_2 deve ser igual à força da gravidade, assim as forças verticais podem se cancelar, garantindo que não há aceleração vertical.</p>
+            <p>Essa é a componente que incluímos na segunda lei de Newton para a direção vertical. Além disso, observe que essa componente vertical da tração $T_2$ deve ser igual à força da gravidade, assim as forças verticais podem se cancelar, garantindo que não há aceleração vertical.</p>
             
             <p>$T_2=\\frac{F_g}{sen{30}^o}$ (calcule $T_2$)</p>
             
             <p>$T_2=\\frac{m.g}{sen{30}^o}$   (use o fato de que $F_g=m.g$)</p>
             
-            <p>$T_2=\\frac{\\left(0,25kg\\right).\\left(9,8\\frac{m}{s^2}\\right)}{sen{30}^o}=4,9N$ (calcule e comemore) </p>
+            <p>$T_2=\\frac{\\left(0,25kg\\right).\\left(9,8_{m/s^2}\\right)}{sen{30}^o}=4,9N$ (calcule e comemore) </p>
             
             <p>Agora que sabemos que $T_2$, podemos calcular a tração $T_1$ usando a segunda lei de Newton para a direção horizontal.</p>
             
-            <p>$a_x$=\\frac{\\sum $F_x$}{m}  (Comece com a Segunda Lei de Newton para a direção horizontal.)</p>
+            <p>$a_x=\\frac{\\sum $F_x}{m}$  (Comece com a Segunda Lei de Newton para a direção horizontal.)</p>
             
             <p>$0=\\frac{T_2.cos{30}^o-T_1}{0,25kg}$ (insira a aceleração horizontal, a massa e as forças horizontais.)</p>
             
@@ -1948,7 +1941,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           
           <p>\${F_e}_{máx} = mu_e.(m.g)$ (nesse caso, a força normal vai ser igual à força da gravidade)</p>
           
-          <p>\${F_e}_{máx} = 0,60.110kg.9,8\\frac{m}{s^2}$ (nesse caso, a força normal vai ser igual à força da gravidade)</p>
+          <p>\${F_e}_{máx} = 0,60.110kg.9,8_{m/s^2}$ (nesse caso, a força normal vai ser igual à força da gravidade)</p>
           
           <p>\${F_e}_{máx} = 647N$ (calcule e comemore)</p>
           
@@ -1996,7 +1989,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           
           <p>$\\mu_c=\\frac{T.cos{60}^0}{m.g-T.cos{60}^0}$ (insira a expressão encontrada para a força normal)</p>
           
-          <p>$\\mu_c=\\frac{4N.cos{60}^0}{1,3kg.9,8\\frac{m}{s^2}-4N.sen{60}^0}$ (insira os valores da tensão e para a massa)</p>
+          <p>$\\mu_c=\\frac{4N.cos{60}^0}{1,3kg.9,8_{m/s^2}-4N.sen{60}^0}$ (insira os valores da tensão e para a massa)</p>
           
           <p>$\\mu_c=0,216$ (calcule e comemore)</p>
             `
@@ -2193,7 +2186,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             
             <p>$\\omega=\\sqrt{\\frac{m_2.g}{m_1.r}}$</p>
             
-            <p>$\\omega=\\sqrt{\\frac{\\left(4kg\\right).\\left(9,8\\frac{m}{s^2}\\right)}{1kg.1m}}$</p>
+            <p>$\\omega=\\sqrt{\\frac{\\left(4kg\\right).\\left(9,8_{m/s^2}\\right)}{1kg.1m}}$</p>
             
             <p>$\\omega=6,25\\ rad/s$</p>
             

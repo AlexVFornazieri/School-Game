@@ -40,6 +40,9 @@
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+  h3, h2 {
+    padding-bottom: 2em;
+  }
 </style>
 
 <script>

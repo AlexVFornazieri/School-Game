@@ -1,7 +1,7 @@
 <template>
   <v-content>
     <v-toolbar fixed>
-      <v-btn icon :to="{name: 'Home'}">
+      <v-btn icon :to="{name: 'Home'}" @click="exit()">
         <v-icon>arrow_back</v-icon>
       </v-btn>
       <v-toolbar-title>{{(id + 1)}}ª Fase - Exemplos</v-toolbar-title>
@@ -23,6 +23,7 @@
   #exemplos {
     margin-top: 5em;
   }
+
   #exemplos img {
     width: 100%;
   }
@@ -39,8 +40,13 @@
       }
     },
     mounted () {
+      const self = this
+      window.addEventListener('hashchange', function () {
+        console.log('Hash changed to', window.location.hash)
+        self.exit()
+      })
       this.$vuetify.goTo(0)
-      setTimeout(() => {
+      this.$timer = setTimeout(() => {
         if (!this.$service.getExemplosRead(this.id)) {
           this.$service.setExemplosRead(this.id)
           this.$bus.$emit('add-score', 10, 0)
@@ -50,6 +56,11 @@
       this.$nextTick(function () {
         MathJax.Hub.Queue(['Typeset', MathJax.Hub, 'editor-output'])
       })
+    },
+    methods: {
+      exit () {
+        clearTimeout(this.$timer)
+      }
     }
   }
 </script>

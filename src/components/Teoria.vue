@@ -4,7 +4,7 @@
       <v-btn icon :to="{name: 'Home'}" @click="exit">
         <v-icon>arrow_back</v-icon>
       </v-btn>
-      <v-toolbar-title>{{id + 1}}ª Fase - Teoria</v-toolbar-title>
+      <v-toolbar-title>{{parseInt(id) + 1}}ª Fase - Teoria</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon>
         <v-icon>more_vert</v-icon>
@@ -45,7 +45,7 @@
         self.exit()
       })
       this.$vuetify.goTo(0)
-      setTimeout(() => {
+      this.$timer = setTimeout(() => {
         if (!this.$service.getTeoriaRead(this.id)) {
           this.$service.setTeoriaRead(this.id)
           this.$bus.$emit('add-score', 50, 0)

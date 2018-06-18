@@ -4,7 +4,7 @@
       <v-btn icon :to="{name: 'Home'}" @click="exit()">
         <v-icon>arrow_back</v-icon>
       </v-btn>
-      <v-toolbar-title>{{(id + 1)}}ª Fase - Exemplos</v-toolbar-title>
+      <v-toolbar-title>{{(parseInt(id) + 1)}}ª Fase - Exemplos</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon>
         <v-icon>more_vert</v-icon>

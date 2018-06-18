@@ -4,7 +4,7 @@
       <v-btn icon :to="{name: 'Home'}">
         <v-icon>arrow_back</v-icon>
       </v-btn>
-      <v-toolbar-title>{{id + 1}}ª Fase - Questionário</v-toolbar-title>
+      <v-toolbar-title>{{parseInt(id) + 1}}ª Fase - Questionário</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon>
         <v-icon>more_vert</v-icon>
@@ -23,7 +23,7 @@
              v-for="(alternativa, index) in pergunta.alternativas"
              @click="check(index)">
             <span class="letra">{{letras[index]}}</span>
-            <span class="texto">{{alternativa.texto}}</span>
+            <span class="texto" v-html="alternativa.texto"></span>
           </a>
         </div>
       </section>
@@ -79,6 +79,10 @@
 
   .pergunta {
     font-size: 2rem;
+  }
+
+  #questoes {
+    margin-bottom: 2em;
   }
 
   .alternativa .letra {

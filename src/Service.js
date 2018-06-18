@@ -128,61 +128,58 @@ export class Service {
         }, {
           texto: 'Um garoto arma um estilingue com uma pedra. Supondo que a força de cada ramo do estilingue seja de 40N e o ângulo α  entre eles tal que cos α=0,805, determine o módulo da força resultante sobre a pedra.',
           pontuacao: 200,
-          alternativas: [{texto: '72 N', correta: true, selecionada: false},
+          alternativas: [
+            {texto: '72 N', correta: false, selecionada: false},
             {texto: '71 N', correta: false, selecionada: false},
-            {texto: '76 N', correta: false, selecionada: false},
-            {texto: '75 N', correta: false, selecionada: false},
-            {texto: '78 N', correta: false, selecionada: false}]
+            {texto: '76 N', correta: true, selecionada: false},
+            {texto: '75 N', correta: false, selecionada: false}
+          ]
         }, {
           texto: 'O que é equilíbrio estático?',
           pontuacao: 200,
           respondiada: false,
-          alternativas: [{
-            texto: 'Um ponto material está em equilíbrio estático quando se encontra em repouso, isto é, sua velocidade vetorial é positiva no decorrer do tempo.',
-            correta: false,
-            selecionada: false
-          }, {
-            texto: 'Um ponto material está em equilíbrio estático quando se encontra em repouso, isto é, sua velocidade vetorial é negativa no decorrer do tempo.',
-            correta: false,
-            selecionada: false
-          }, {
-            texto: 'Um ponto material está em equilíbrio estático quando se encontra em repouso, isto é, sua velocidade vetorial varia no decorrer do tempo.',
-            correta: false,
-            selecionada: false
-          }, {
-            texto: 'Um ponto material está em equilíbrio estático quando se encontra em repouso, isto é, sua velocidade vetorial é nula no decorrer do tempo.',
-            correta: false,
-            selecionada: false
-          }, {
-            texto: 'Um ponto material está em equilíbrio estático quando se encontra em repouso, isto é, sua velocidade vetorial é igual a massa.',
-            correta: true,
-            selecionada: false
-          }]
+          alternativas: [
+            {
+              texto: 'Um ponto material está em equilíbrio estático quando se encontra em repouso, isto é, sua velocidade vetorial é positiva no decorrer do tempo.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'Um ponto material está em equilíbrio estático quando se encontra em repouso, isto é, sua velocidade vetorial é negativa no decorrer do tempo.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'Um ponto material está em equilíbrio estático quando se encontra em repouso, isto é, sua velocidade vetorial varia no decorrer do tempo.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'Um ponto material está em equilíbrio estático quando se encontra em repouso, isto é, sua velocidade vetorial é nula no decorrer do tempo.',
+              correta: true,
+              selecionada: false
+            }
+          ]
         }, {
           texto: 'O que é equilíbrio dinâmico?',
           pontuacao: 200,
           respondiada: false,
-          alternativas: [{
-            texto: 'O equilíbrio é dito dinâmico quando o ponto material está em movimento retilíneo uniforme, isto é, sua velocidade é constante e igual de zero.',
-            correta: false,
-            selecionada: false
-          }, {
-            texto: 'O equilíbrio é dito dinâmico quando o ponto material está em movimento retilíneo uniforme, isto é, sua velocidade é constante e sempre negativa.',
-            correta: false,
-            selecionada: false
-          }, {
-            texto: 'O equilíbrio é dito dinâmico quando o ponto material está em movimento retilíneo uniforme, isto é, sua velocidade é constante e sempre positiva.',
-            correta: false,
-            selecionada: false
-          }, {
-            texto: 'O equilíbrio é dito dinâmico quando o ponto material está em movimento retilíneo uniforme, isto é, sua velocidade é constante e diferente de zero.',
-            correta: false,
-            selecionada: false
-          }, {
-            texto: 'O equilíbrio é dito dinâmico quando o ponto material está em movimento retilíneo uniforme, isto é, sua velocidade é igual a sua massa.',
-            correta: true,
-            selecionada: false
-          }]
+          alternativas: [
+            {
+              texto: 'O equilíbrio é dito dinâmico quando o ponto material está em movimento retilíneo uniforme, isto é, sua velocidade é constante e igual de zero.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'O equilíbrio é dito dinâmico quando o ponto material está em movimento retilíneo uniforme, isto é, sua velocidade é constante e sempre negativa.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'O equilíbrio é dito dinâmico quando o ponto material está em movimento retilíneo uniforme, isto é, sua velocidade é constante e sempre positiva.',
+              correta: false,
+              selecionada: false
+            }, {
+              texto: 'O equilíbrio é dito dinâmico quando o ponto material está em movimento retilíneo uniforme, isto é, sua velocidade é constante e diferente de zero.',
+              correta: true,
+              selecionada: false
+            }
+          ]
         }
         ]
       },
@@ -405,7 +402,8 @@ export class Service {
             `
             <h2>2ª Lei de Newton ou princípio fundamental da dinâmica</h2>
             
-            <h3>O que é a segunda lei de Newton?<h3>
+            <h3>O que é a segunda lei de Newton?</h3>
+            
             <p>No mundo da física introdutória, a Segunda Lei de Newton é uma das leis mais importantes que você irá aprender. Ela é usada em quase todos os capítulos de todo livro de física, por isso é importante a dominar esta lei o quanto antes.</p>
             <p>Sabemos que os objetos só podem ser acelerados se houver forças atuando sobre eles. A segunda lei de Newton nos diz exatamente quanto um objeto será acelerado por uma dada força resultante. $$a=\\frac{\\sum F}{m}$$</p>
             
@@ -443,7 +441,7 @@ export class Service {
              
             <p>As forças \${F}_\\mathbf{1}$ e \${F}_\\mathbf{3}$ afetam a aceleração horizontal, uma vez que elas atuam ao longo da direção horizontal. Aplicando a Segunda Lei de Newton para a direção horizontal e assumindo o sentido positivo para a direita, temos 
             $$a_x=\\frac{\\sum F_x}{m}=\\frac{F_1-F_3}{m}$$</p>
-            <p>Da mesma forma, as forças {F}_\\mathbf{2} e {F}_\\mathbf{4} afetam a aceleração vertical, já que elas atuam ao longo da direção vertical. Aplicando a Segunda Lei de Newton para a direção vertical e assumindo o sentido positivo para cima, temos
+            <p>Da mesma forma, as forças $F_2$ e $F_4$ afetam a aceleração vertical, já que elas atuam ao longo da direção vertical. Aplicando a Segunda Lei de Newton para a direção vertical e assumindo o sentido positivo para cima, temos
             $$a_y=\\frac{\\sum F_y}{m}=\\frac{F_2-F_4}{m}$$</p>
             <p><b>Atenção:</b> um erro comum que as pessoas cometem é inserir uma força vertical em uma equação de força horizontal, ou vice-versa.</p>
             
@@ -467,7 +465,7 @@ export class Service {
           texto:
             `
             <h2>Exemplo 1: Newton, a tartaruga</h2>
-            <p>Uma tartaruga de 1,2 kg chamada Newton tem quatro forças exercidas sobre ela, como mostrado no diagrama abaixo.</p>
+            <p>Uma tartaruga de 1,2kg chamada Newton tem quatro forças exercidas sobre ela, como mostrado no diagrama abaixo.</p>
             <p>Qual é a aceleração horizontal da tartaruga Newton?<br>
             Qual é a aceleração vertical da tartaruga Newton?
             <img src="http://beto.abelha.network/static/img/mod_03_ex_img_01.png"></p>
@@ -483,28 +481,28 @@ export class Service {
             <p>$a_y=-9,2_{m/s^2}$ (Calcule e comemore!)</p>
             
             <h2>Exemplo 2: O queijo suspenso</h2>
-            <p>Uma fatia de queijo é suspensa em repouso por dois fios que exercem forças de magnitude \\mathbit{F}_\\mathbf{1} e \\mathbit{F}_\\mathbf{2}, como pode ser visto abaixo. Há também uma força da gravidade para baixo sobre o queijo de magnitude 20N.
+            <p>Uma fatia de queijo é suspensa em repouso por dois fios que exercem forças de magnitude $F_1$ e $F_2$, como pode ser visto abaixo. Há também uma força da gravidade para baixo sobre o queijo de magnitude 20N.
             <img src="http://beto.abelha.network/static/img/mod_03_ex_img_02.png"></p>
             <p>Começaremos usando ou a versão horizontal ou a vertical da Segunda Lei de Newton. Não sabemos o valor de nenhuma das forças horizontais, mas sabemos a magnitude de uma das forças verticais 20N. Uma vez que temos mais informações sobre a direção vertical, vamos analisar nesse sentido primeiro.</p>
             <p>$a_y=\\frac{\\sum F_y}{m}$ (Comece com a Segunda Lei de Newton para a direção vertical.)</p>
             <p>$a_y=\\frac{F_1.sen{60}^o-20N}{m}$ (Substitua as forças verticais com os sinais negativos corretos.)</p>
             <p>$0=\\frac{F_1.sen{60}^o-20N}{m}$ (A aceleração vertical é zero, já que o queijo está em repouso.)</p>
             <p>$0=F_1.sen{60}^o-20N$ (Multiplique ambos os lados pela massa m.)</p>
-            <p>$F_1=\\frac{20N}{sen{60}^o}$ (Resolva para \\mathbit{F}_\\mathbf{1}.)</p>
+            <p>$F_1=\\frac{20N}{sen{60}^o}$ (Resolva para $F_1$.)</p>
             <p>$F_1=23N$ (Calcule e comemore!)</p>
-            <p>Agora para encontrar a força \\mathbit{F}_\\mathbf{2}, vamos usar a Segunda Lei de Newton para a direção horizontal.</p>
+            <p>Agora para encontrar a força $F_2$, vamos usar a Segunda Lei de Newton para a direção horizontal.</p>
             <p>$a_x=\\frac{\\sum F_x}{m}$ (Comece com a Segunda Lei de Newton para a direção horizontal.)</p>
-            <p>a_x=\\frac{F_1.cos{60}^o-F_2}{m} (Substitua as forças horizontais com os sinais negativos corretos.)</p>
-            <p>$a_x=\\frac{\\left(23N\\right).cos{60}^o-F_2}{m}$ (Substitua o valor de \\mathbit{F}_\\mathbf{1}=23N, obtido no cálculo vertical.)</p>
+            <p>$a_x=\\frac{F_1.cos{60}^o-F_2}{m}$ (Substitua as forças horizontais com os sinais negativos corretos.)</p>
+            <p>$a_x=\\frac{\\left(23N\\right).cos{60}^o-F_2}{m}$ (Substitua o valor de $F_1 = 23N$, obtido no cálculo vertical.)</p>
             <p>$0=\\frac{\\left(23N\\right).cos{60}^o-F_2}{m}$ (A aceleração horizontal é zero, já que o queijo está em repouso.)</p>
             <p>$0=\\left(23N\\right).cos{60}^o-F_2$ (Multiplique ambos os lados pela massa m.)</p>
-            <p>$F_2=\\left(23N\\right).cos{60}^o$  (Resolva para $\{F}_\\mathbf{2}$.)</p>
+            <p>$F_2=\\left(23N\\right).cos{60}^o$  (Resolva para $F_2$.)</p>
             <p>$F_2=11,5N$ (Calcule e comemore!)</p>
             `
         },
         questoes: [{
-          texto: 'Em um acidente, um carro de 1200 kg e velocidade de 162 Km/h chocou-se com um muro e gastou 0,3 s para parar. Marque a alternativa que indica a comparação correta entre o peso do carro e a força, considerada constante, que atua sobre o veículo em virtude da colisão.<br>' +
-          'ADOTE: g = 10_{m/s^2}<br>',
+          texto: 'Em um acidente, um carro de 1200kg e velocidade de $162_{Km/h}$ chocou-se com um muro e gastou $0,3_s$ para parar. Marque a alternativa que indica a comparação correta entre o peso do carro e a força, considerada constante, que atua sobre o veículo em virtude da colisão.<br>' +
+          'Adote: $g = 10_{m/s^2}$<br>',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -527,7 +525,7 @@ export class Service {
             }
           ]
         }, {
-          texto: ') Um corpo de massa m está sujeito à ação de uma força F que o desloca segundo um eixo vertical em sentido contrário ao da gravidade. Se esse corpo se move com velocidade constante, é porque:',
+          texto: 'Um corpo de massa m está sujeito à ação de uma força F que o desloca segundo um eixo vertical em sentido contrário ao da gravidade. Se esse corpo se move com velocidade constante, é porque:',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -551,7 +549,7 @@ export class Service {
             }
           ]
         }, {
-          texto: ') Sobre um corpo de massa igual a 20 kg atuam duas forças de mesma direção e sentidos opostos que correspondem a 60 N e 20 N. Determine a aceleração em que esse objeto movimenta-se.',
+          texto: 'Sobre um corpo de massa igual a 20kg atuam duas forças de mesma direção e sentidos opostos que correspondem a 60 N e 20 N. Determine a aceleração em que esse objeto movimenta-se.',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -599,7 +597,7 @@ export class Service {
             }
           ]
         }, {
-          texto: 'Durante um intervalo de tempo de 4s atua uma força constante sobre um corpo de massa 8,0kg que está inicialmente em movimento retilíneo com velocidade escalar de 9m/s. Sabendo-se que no fim desse intervalo de tempo a velocidade do corpo tem módulo de 6m/s, na direção e sentido do movimento original, a força que atuou sobre ele tem intensidade de:',
+          texto: 'Durante um intervalo de tempo de 4s atua uma força constante sobre um corpo de massa 8,0kg que está inicialmente em movimento retilíneo com velocidade escalar de $9_{m/s}$. Sabendo-se que no fim desse intervalo de tempo a velocidade do corpo tem módulo de $6_{m/s}$, na direção e sentido do movimento original, a força que atuou sobre ele tem intensidade de:',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -672,7 +670,7 @@ export class Service {
             <p>Não importa se há aceleração ou se a massa de um objeto é maior do que o outro objeto. Pares de força reativas são sempre iguais em magnitude. Sabemos que as forças nesta questão são pares de força reativas uma vez que se trocar a ordem dos objetos na frase "força exercida no Carro 2 pelo Carro 1 nos dá a "força exercida no Carro 1 pelo Carro 2. Trocando a ordem dos objetos envolvidos na força—isto é, o objeto exercendo a força e o objeto em que a força é exercida—é uma maneira fácil de identificar par de força da terceira lei.</p>
             
             <h2>Exemplo 2: Movimento de um Corpo</h2>
-            <p>Qual a massa de um corpo que, partindo do repouso, atinge uma velocidade de 12m/s em 20s? Sabendo que a força aplicada nele tem módulo igual a 30N.</p>
+            <p>Qual a massa de um corpo que, partindo do repouso, atinge uma velocidade de $12_{m/s}$ em $20_s$? Sabendo que a força aplicada nele tem módulo igual a 30N.</p>
             
             $$\{V}={V}_{0}+{a}.{t}$$
             
@@ -827,12 +825,11 @@ export class Service {
             <h3>O que é peso?</h3>
             <p>Peso, P, é apenas outro nome para a força da gravidade $F_g$. O peso é uma força que age o tempo todo sobre todos os objetos próximos à Terra. A Terra puxa todos os objetos com uma força de gravidade para baixo, na direção do seu centro. A magnitude da força da gravidade pode ser encontrada multiplicando a massa m do objeto pela magnitude da aceleração da gravidade $g = + 9,8_{m/s^2}$.</p>
             
-            <h3>Por que g não é negativo?<h3>
-            <p>A aceleração da gravidade $/{a}_{g}$ é negativa (considerando que você escolheu para baixo como a direção negativa), mas a letra g é normalmente usada para representar a magnitude da aceleração da gravidade. Em outras palavras,</p>
+            <h3>Por que g não é negativo?</h3>
+            <p>A aceleração da gravidade $a_g$ é negativa (considerando que você escolheu para baixo como a direção negativa), mas a letra g é normalmente usada para representar a magnitude da aceleração da gravidade. Em outras palavras, magnitude da aceleração da gravidade</p>
             
-            $$g = |a_g|= | - 9,8_{m/s^2} |= + 9,8_{m/s^2} = \\text{magnitude da aceleração da gravidade}$$
-            
-            $$a_g= - 9,8_{m/s^2} = \\text{magnitude da aceleração da gravidade}$$
+            $$g = |a_g|= | - 9,8_{m/s^2} |= + 9,8_{m/s^2}$$
+            $$a_g= - 9,8_{m/s^2}$$
             
             <img src="http://beto.abelha.network/static/img/mod_05_img_01.png">
             
@@ -846,11 +843,11 @@ export class Service {
             <p>A força da gravidade exercida pela Terra tem alcance infinito (isto é, puxa coisas que estão infinitamente distantes), mas a força fica cada vez menor quanto maior a distância entre um objeto e a Terra.</p>
             
             <h3>O peso é diferente da massa?</h3>
-            <p>Sim, o peso é diferente da massa. O peso P é a força da gravidade $F_g$ exercida em um objeto. A massa m é uma medida da inércia do objeto (isto é, o quanto ele resiste a variações em sua velocidade). Elas estão relacionadas porque massas maiores têm pesos maiores, já que P = m.g. Por exemplo, uma massa e 2Kg terá um peso de magnitude $P = (2Kg).(9,8_{m/s^2})=19,6N$.</p>
+            <p>Sim, o peso é diferente da massa. O peso P é a força da gravidade $F_g$ exercida em um objeto. A massa m é uma medida da inércia do objeto (isto é, o quanto ele resiste a variações em sua velocidade). Elas estão relacionadas porque massas maiores têm pesos maiores, já que $P = m.g$. Por exemplo, uma massa e 2Kg terá um peso de magnitude $P = (2Kg).(9,8_{m/s^2})=19,6N$.</p>
             
             <p>O peso de um objeto vai variar se o objeto for levado para longe da Terra, ou colocado em um planeta diferente, já que a força da gravidade sobre o objeto será menor. Contudo, a massa do objeto será a mesma, não importa onde o objeto esteja, seja na Terra, no espaço ou na Lua.</p> 
             
-            <p>Muitas pessoas confundem massa com peso. Tenha em mente que a unidade da massa é o Kg, mas como o peso é uma força, sua unidade é N.</p> 
+            <p>Muitas pessoas confundem massa com peso. Tenha em mente que a unidade da massa é o kg, mas como o peso é uma força, sua unidade é N.</p> 
             `
         },
         exemplos: {
@@ -877,10 +874,10 @@ $F_g=44.100N$ (calcule e comemore)</p>
  
 <h3>Qual é a massa do elefante da floresta africana?</h3>
 
-<p>O peso é outro nome para a força da gravidade \\mathbit{m}.\\mathbit{g}. Podemos calcular a massa usando a fórmula
+<p>O peso é outro nome para a força da gravidade $m_g$. Podemos calcular a massa usando a fórmula
  $$P=F_g= m.g$$</p>
 
-<p>F_g=m.g (use a fórmula para o peso)<br>
+<p>$F_g=m.g$ (use a fórmula para o peso)<br>
 
 $25.000N=m.9,8_{m/s^2}$ (insira os valores para o peso e para gravidade)<br>
 
@@ -888,14 +885,14 @@ $m=\\frac{25.000N}{9,8_{m/s^2}}$ (calcule a massa m)<br>
 
 $m=2.551Kg $ (calcule e comemore)</p>
 
-<p>Lembre-se: A força peso é sempre VERTICAL PARA BAIXO em relação a terra. <img src="http://beto.abelha.network/static/img/mod_05_ex_img_03.png"></p>
+<p><b>Lembre-se:</b> A força peso é sempre VERTICAL PARA BAIXO em relação a terra. <img src="http://beto.abelha.network/static/img/mod_05_ex_img_03.png"></p>
 
-<p>Muitas pessoas confundem massa com peso. Tenha em mente que a unidade da massa é o Kg, mas como o peso é uma força, sua unidade é N.
+<p>Muitas pessoas confundem massa com peso. Tenha em mente que a unidade da massa é o kg, mas como o peso é uma força, sua unidade é N.
 <img src="http://beto.abelha.network/static/img/mod_05_ex_img_04.png"></p>
             `
         },
         questoes: [{
-          texto: 'Quando o astronauta Neil Armstrong desceu do módulo lunar e pisou na Lua, em 20 de julho de 1969, a sua massa total, incluindo seu corpo, trajes especiais e equipamento de sobrevivência, era de aproximadamente 300 kg. O campo gravitacional lunar é cerca de 1/6 do campo gravitacional terrestre. Se a aceleração da gravidade na Terra é aproximadamente $10,0_{m/s^2}$, podemos afirmar que:',
+          texto: 'Quando o astronauta Neil Armstrong desceu do módulo lunar e pisou na Lua, em 20 de julho de 1969, a sua massa total, incluindo seu corpo, trajes especiais e equipamento de sobrevivência, era de aproximadamente 300kg. O campo gravitacional lunar é cerca de 1/6 do campo gravitacional terrestre. Se a aceleração da gravidade na Terra é aproximadamente $10,0_{m/s^2}$, podemos afirmar que:',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -904,15 +901,15 @@ $m=2.551Kg $ (calcule e comemore)</p>
               correta: true,
               selecionada: false
             }, {
-              texto: 'A massa total de Armstrong na Terra é de 50,0 kg e seu peso é 3000N',
+              texto: 'A massa total de Armstrong na Terra é de 50,0kg e seu peso é 3000N',
               correta: false,
               selecionada: false
             }, {
-              texto: 'A massa total de Armstrong na Terra é de 300 kg e seu peso é 500N.',
+              texto: 'A massa total de Armstrong na Terra é de 300kg e seu peso é 500N.',
               correta: false,
               selecionada: false
             }, {
-              texto: 'A massa total de Armstrong na Lua é de 50,0 kg e seu peso é 3000N.',
+              texto: 'A massa total de Armstrong na Lua é de 50,0kg e seu peso é 3000N.',
               correta: false,
               selecionada: false
             }
@@ -923,25 +920,25 @@ $m=2.551Kg $ (calcule e comemore)</p>
           pontuacao: 200,
           alternativas: [
             {
-              texto: '70 kg e ele pesará 112N.',
+              texto: '70kg e ele pesará 112N.',
               correta: true,
               selecionada: false
             }, {
-              texto: '70 kg e ele pesará 700N.',
+              texto: '70kg e ele pesará 700N.',
               correta: false,
               selecionada: false
             }, {
-              texto: '112 kg e ele pesará 700N.',
+              texto: '112kg e ele pesará 700N.',
               correta: false,
               selecionada: false
             }, {
-              texto: '112 kg e ele pesará 112N.',
+              texto: '112kg e ele pesará 112N.',
               correta: false,
               selecionada: false
             }
           ]
         }, {
-          texto: 'Um objeto que pesa 650 N na Terra tem peso igual a 1625 N em Júpiter. Determine a gravidade desse planeta, em_{m/s^2}, sabendo que a gravidade da Terra é de $10_{m/s^2}$.',
+          texto: 'Um objeto que pesa 650 N na Terra tem peso igual a 1625 N em Júpiter. Determine a gravidade desse planeta, em $m/s^2$, sabendo que a gravidade da Terra é de $10_{m/s^2}$.',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -994,7 +991,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             }
           ]
         }, {
-          texto: 'Qual o peso de uma pessoa de 70 Kg na lua? Considere que a gravidade na lua é de $1,6_{m/s^2}$.',
+          texto: 'Qual o peso de uma pessoa de 70kg na lua? Considere que a gravidade na lua é de $1,6_{m/s^2}$.',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -1079,7 +1076,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
               
               $a_y = \\frac{\\sum F_y}{m}$  (use a segunda lei de Newton para a direção vertical, porque $F_n$ é vertical)<br>
               
-              $0=\\frac{F_n-F_g}{m}$ (insira a aceleração vertical e as forças verticais)</p>
+              $0=\\frac{{F_n}}-{F_g}}{m}$ (insira a aceleração vertical e as forças verticais)</p>
               
               <h3>Por que a aceleração vertical não é -9,8?</h3>
               <p>Cuidado, os objetos em queda livre têm uma aceleração vertical de $a_y = 9,8_{m/s^2}$, mas uma caixa em repouso sobre uma mesa não tem aceleração (isto é, $a_y=0$).</p>
@@ -1093,7 +1090,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
               <p>Nada mudaria em nossos cálculos e a força normal continuaria sendo $F_n = m.g$. O fato de haver ou não um movimento horizontal não afeta as forças ou a aceleração na direção vertical.</p>
               <p>Agora, se adicionássemos uma aceleração vertical ou forças verticais, isso poderia afetar nossos cálculos acima e a força normal não seria necessariamente $F_n = m.g$.</p>
               
-              <p>A força normal nem sempre será igual a $m.g$.  Se considerarmos um caso mais complicado, no qual a superfície de contato não é horizontal, ou em que haja forças verticais adicionais presentes, ou ainda, em que haja aceleração vertical, a força normal não será necessariamente igual a $m.g . Contudo, mesmo em um caso mais complicado, ainda podemos calcular a força normal usando o processo mostrado acima. Podemos inserir uma aceleração diferente, ou pode haver mais forças para incluir, mas a estratégia geral para resolver o problema de calcular a força normal usando a segunda lei de Newton seria o mesmo.</p>
+              <p>A força normal nem sempre será igual a $m.g$.  Se considerarmos um caso mais complicado, no qual a superfície de contato não é horizontal, ou em que haja forças verticais adicionais presentes, ou ainda, em que haja aceleração vertical, a força normal não será necessariamente igual a $m.g$. Contudo, mesmo em um caso mais complicado, ainda podemos calcular a força normal usando o processo mostrado acima. Podemos inserir uma aceleração diferente, ou pode haver mais forças para incluir, mas a estratégia geral para resolver o problema de calcular a força normal usando a segunda lei de Newton seria o mesmo.</p>
               `
         },
         exemplos: {
@@ -1101,7 +1098,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           texto:
             `
             <h2>Exemplo 1: Força normal em um elevador</h2>
-            <p>Um pacote de gomas de mascar sabor kiwi de $4,5Kg$ está sendo entregue no último andar de um prédio comercial. A caixa está no chão de um elevador, que acelera para cima com uma aceleração de magnitude de $a=3,0_{m/s^2}. O entregador também está com um pé sobre a caixa, exercendo no pacote uma força para baixo de magnitude de $5N$.</p>
+            <p>Um pacote de gomas de mascar sabor kiwi de $4,5Kg$ está sendo entregue no último andar de um prédio comercial. A caixa está no chão de um elevador, que acelera para cima com uma aceleração de magnitude de $a=3,0_{m/s^2}$. O entregador também está com um pé sobre a caixa, exercendo no pacote uma força para baixo de magnitude de $5N$.</p>
             
             <h3>Qual é a força normal exercida pelo chão do elevador no pacote?</h3>
             
@@ -1110,9 +1107,9 @@ $m=2.551Kg $ (calcule e comemore)</p>
             
             <p>$a_y=\\frac{\\sum F_y}{m}$ (usamos a segunda lei de Newton para a direção vertical)</p>
             
-            <p>$3,0_{m/s^2} = frac{F_n-F_g-5N}{m} (insira a aceleração vertical, a massa e as forças verticais)</p>
+            <p>$3,0_{m/s^2} = \\frac{{F_n}-{F_g}-{5N}}{m}$ (insira a aceleração vertical, a massa e as forças verticais)</p>
             
-            <p>$13,5N= F_n-m.g-5N$ (use $F_n = m.g$, e multiplique os dois lados pela massa $4,5Kg$)</p>
+            <p>$13,5N = {F_n} - {m.g} - {5N}$ (use $F_n = m.g$, e multiplique os dois lados pela massa $4,5Kg$)</p>
             
             <p>$13,5N = F_n - 4,5Kg.9,8_{m/s^2}-5N$  (insira os valores para a massa m e g)</p>
             
@@ -1128,14 +1125,14 @@ $m=2.551Kg $ (calcule e comemore)</p>
             
             <img src="http://beto.abelha.network/static/img/mod_06_ex_img_02.png">
              
-            <p>Mesmo que esse pareça um tipo diferente de problema, o abordamos com a mesma estratégia de antes. Primeiro desenhamos um diagrama de forças de todas as forças agindo sobre a caixa.[img3]</p>
+            <p>Mesmo que esse pareça um tipo diferente de problema, o abordamos com a mesma estratégia de antes. Primeiro desenhamos um diagrama de forças de todas as forças agindo sobre a caixa.
+            <img src="http://beto.abelha.network/static/img/mod_06_ex_img_03.png"></p>
               
             <h3>Por que não desenhamos as forças na direção do ponto?</h3>
-            <p>A convenção típica para desenhar diagramas de forças (isto é, diagramas de corpo livre) é desenhar todas as forças emanando do centro do ponto (o qual representa o objeto em questão) e não direcionadas para o ponto.
-            <img src="http://beto.abelha.network/static/img/mod_06_ex_img_03.png"></p>
+            <p>A convenção típica para desenhar diagramas de forças (isto é, diagramas de corpo livre) é desenhar todas as forças emanando do centro do ponto (o qual representa o objeto em questão) e não direcionadas para o ponto.</p>
             
-            <p>$F_Ay=\\frac{\\sum F_y}{m}$ (Agora, usamos a segunda lei de Newton para a direção vertical porque F_n é vertical)<br>
-            $0=\\frac{F_n-F_g-10N . sen 30^0}{1kg}$ (insira a aceleração vertical, a massa e as forças verticais)</p>
+            <p>$F_Ay=\\frac{\\sum F_y}{m}$ (Agora, usamos a segunda lei de Newton para a direção vertical porque $F_n$ é vertical)<br>
+            $3,0_{m/s^2}=\\frac{{F_n}-{F_g}-{5N}}{m}$ (insira a aceleração vertical, a massa e as forças verticais)</p>
             
             <h3>De onde veio o termo $10N.sen 30°$, e por que ele é negativo?</h3>
             <p>Precisamos decompor a força diagonal em componentes vertical e horizontal, como mostrado abaixo. 
@@ -1146,13 +1143,13 @@ $m=2.551Kg $ (calcule e comemore)</p>
             $sen 30^0=\\frac{F_Ay}{10N}$<br>
             $F_Ay = 10N.(sen 30^0)$</p>
             
-            <p>Observe também que essa componente vertical F_Ay está direcionada para baixo, e é por isso que a incluímos como um termo negativo na segunda lei de Newton para a direção vertical.</p>
+            <p>Observe também que essa componente vertical $F_Ay$ está direcionada para baixo, e é por isso que a incluímos como um termo negativo na segunda lei de Newton para a direção vertical.</p>
             
             <p>$F_n=F_g+10N.sen 30^0$  (calcule algebricamente o $F_n$)<br>
             $F_n=m.g+10N.sen 30^0$  (use $F_g=m.g$)<br>
             $F_n=1kg.9,8_{m/s^2}+10N.sen 30^0=14,8N$ (calcule comemore)</p>
             
-            <p>Lembre-se: A decomposição da força norma é sempre perpendicular a superfície de apoio. 
+            <p><b>Lembre-se:</b> A decomposição da força norma é sempre perpendicular a superfície de apoio. 
             <img src="http://beto.abelha.network/static/img/mod_06_ex_img_05.png"></p>
             `
         },
@@ -1181,33 +1178,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             }
           ]
         }, {
-          texto: 'Um homem tenta levantar uma caixa de 5 kg, que está sobre uma mesa, aplicando uma força vertical de 10 N. Nessa situação, o valor da força que a mesa aplica na caixa é: (g=10m/s2).',
-          respondiada: false,
-          pontuacao: 200,
-          alternativas: [
-            {
-              texto: '0 N',
-              correta: false,
-              selecionada: false
-            },
-            {
-              texto: '4 N',
-              correta: false,
-              selecionada: false
-            },
-            {
-              texto: '10 N',
-              correta: false,
-              selecionada: false
-            },
-            {
-              texto: '40 N',
-              correta: true,
-              selecionada: false
-            }
-          ]
-        }, {
-          texto: 'Um homem tenta levantar uma caixa de 5 kg, que está sobre uma mesa, aplicando uma força vertical de 10 N. Nessa situação, o valor da força que a mesa aplica na caixa é: (g=10m/s2).',
+          texto: 'Um homem tenta levantar uma caixa de 5kg, que está sobre uma mesa, aplicando uma força vertical de 10 N. Nessa situação, o valor da força que a mesa aplica na caixa é: <br> $g = 10_{m/s^2}$.',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -1381,14 +1352,18 @@ $m=2.551Kg $ (calcule e comemore)</p>
           texto:
             `
             <h2>Exemplo 1: Força peso comprimindo uma mola</h2>
-            <p>Uma pessoa de 75\\ kg está em cima de uma mola de compressão com constante de mola de $5000_{N/m}$ e comprimento nominal $0,25m$. Qual é o comprimento total da mola carregada?</p>
             
-            <p>Usando a lei de Hooke encontramos a extensão,
+            <p>Uma pessoa de 75kg está em cima de uma mola de compressão com constante de mola de $5000_{N/m}$ e comprimento nominal $0,25m$. Qual é o comprimento total da mola carregada?</p>
             
-            $x=\\frac{F}{K}$<br>
-            $x=\\frac{m.g}{K}$<br> 
-            $x=\\frac{75kg.9,8_{m/s^2}}{5000_{N/m}}$<br>
-            $x\\cong 0,15m$ </p>
+            <p>Usando a lei de Hooke encontramos a extensão,</p>
+            
+            <p>$x=\\frac{F}{K}$</p>
+            
+            <p>$x=\\frac{m.g}{K}$</p>
+            
+            <p>$x=\\frac{75kg.9,8_{m/s^2}}{5000_{N/m}}$</p>
+            
+            <p>$x\\cong 0,15m$</p>
             
             <p>Nós agora subtraímos isto do comprimento nominal da mola:</p>
             <p>
@@ -1397,23 +1372,24 @@ $m=2.551Kg $ (calcule e comemore)</p>
             
             <h2>Exemplo 2: Força peso comprimindo uma mola</h2>
             
-            <p>Você está projetando um suporte para mover uma câmera de 1kg suavemente ao longo de uma distância vertical de 50\\ mm. O projeto requer que a câmera deslize em um par de trilhos, com uma mola apoiando a câmera e puxá-la contra a ponta de um parafuso de ajuste, conforme mostrado na Figura 1.</p> 
+            <p>Você está projetando um suporte para mover uma câmera de 1kg suavemente ao longo de uma distância vertical de 50mm. O projeto requer que a câmera deslize em um par de trilhos, com uma mola apoiando a câmera e puxá-la contra a ponta de um parafuso de ajuste, conforme mostrado na Figura 1.</p> 
             <p>O comprimento nominal da mola é $L_0 = 50mm$. Qual é a constante de mola mínima necessária para este projeto?</p>
             <p>Explique: Por que não se conectar a câmera diretamente no parafuso?</p>
             <p>Embora isso pudesse funcionar, não resultaria em um mecanismo com um movimento suave e repetitivo conforme o parafuso fosse ajustado. Isto é porque há folga em todos os mecanismos onde um parafuso gira dentro de uma porca ou de uma seção rosqueada. Isto é devido ao espaçamento finito das roscas. Uma solução de engenharia comum ao problema da folga é usar um parafuso empurrando contra uma mola, como neste exemplo.
             <img src="http://beto.abelha.network/static/img/mod_07_ex_img_01.png"></p>
-            <p>A mola deve ser elástica o suficiente para fornecer a força necessária para puxar a câmera contra a ponta do parafuso o tempo todo. A força estará mais fraca quando a mola estiver na sua extensão mínima , isto é, quando a distância entre a parte superior e inferior da mola for $100mm.</p>
-            <p>Porque a mola é especificada para ter comprimento nominal de $50mm$, a mola vai ter uma extensão mínima de x=100mm-50\\ mm=50mm. A força da mola deve se opor à força devida à gravidade na câmera de de $m.g=1kg.9,8_{m/s^2}=9,8N$</p>
+            <p>A mola deve ser elástica o suficiente para fornecer a força necessária para puxar a câmera contra a ponta do parafuso o tempo todo. A força estará mais fraca quando a mola estiver na sua extensão mínima , isto é, quando a distância entre a parte superior e inferior da mola for 100mm.</p>
+            <p>Porque a mola é especificada para ter comprimento nominal de $50mm$, a mola vai ter uma extensão mínima de $x = 100mm - 50mm = 50mm$. A força da mola deve se opor à força devida à gravidade na câmera de de $m.g=1kg.9,8_{m/s^2}=9,8N$</p>
             <p>Usando a lei de Hooke encontramos a constante da mola necessária:</p>
-            <p>
-            $K=\\frac{F}{x}$<br>
-            $K=\\frac{9,8N}{5.{10}^{-3}m}$<br> 
-            $K\\cong\\ 196 _{N/m}$
-            </p>            
+            
+            <p>$K=\\frac{F}{x}$</p>
+            
+            <p>$K=\\frac{9,8N}{5.{10}^{-3}m}$</p>
+            
+            <p>$K\\cong\\ 196 _{N/m}$</p>
             `
         },
         questoes: [{
-          texto: 'Para proteção e conforto, os tênis modernos são equipados com amortecedores constituídos de molas. Um determinado modelo, que possui três molas idênticas, sofre uma deformação de $4 mm$ ao ser calçado por uma pessoa de $84 kg$. Considerando-se que essa pessoa permaneça parada, a constante elástica de uma das molas será, em $k_{N/m}$, de',
+          texto: 'Para proteção e conforto, os tênis modernos são equipados com amortecedores constituídos de molas. Um determinado modelo, que possui três molas idênticas, sofre uma deformação de 4mm ao ser calçado por uma pessoa de $84kg$. Considerando-se que essa pessoa permaneça parada, a constante elástica de uma das molas será, em $k_{N/m}$, de',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -1580,6 +1556,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           texto:
             `
             <h2>Exemplo 1: Corda com ângulo puxando uma caixa</h2>
+            
             <p>Uma caixa de extrato de pepino de 2kg está sendo puxada sobre uma mesa sem atrito por uma corda com um ângulo de $\\theta={60}^0$, como mostrado abaixo. A tração na corda faz com que a caixa deslize pela mesa para a direita com uma aceleração de $3,0_{m/s^2}$.</p>
             
             <h3>Qual é a tração na corda?</h3>
@@ -1606,7 +1583,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             <img src="http://beto.abelha.network/static/img/mod_08_ex_img_03.png"></p>
             
              
-            <p>A componente horizontal da tração T_x pode ser encontrada usando trigonometria e a definição de cosseno,</p>
+            <p>A componente horizontal da tração $T_x$ pode ser encontrada usando trigonometria e a definição de cosseno,</p>
             
             <p>$cos{60}^o=\\frac{adjacente}{hipotenusa}=\\frac{T_x\\ }{T}$</p>
             
@@ -1620,8 +1597,9 @@ $m=2.551Kg $ (calcule e comemore)</p>
             $T=\\frac{\\left(3,0_{m/s^2}\\ \\right).\\left(2kg\\right)}{cos{60}^o}$  (calcule algebricamente $T$)<br>
             $T=12N$  (calcule e comemore)</p>
             
-            <h3>Exemplo 2: Caixa pendurada por duas cordas</h3>
-            <p>Uma caixa de biscoitos em forma de animais de 0,25\\ kg  está pendurada, em repouso, por duas cordas ligadas ao teto e à parede, respectivamente. A corda na diagonal sob tração T_2 está direcionada em um ângulo de $\\theta={30}^0$ a partir da direção horizontal, como mostrado abaixo.
+            <h2>Exemplo 2: Caixa pendurada por duas cordas</h2>
+            
+            <p>Uma caixa de biscoitos em forma de animais de 0,25kg  está pendurada, em repouso, por duas cordas ligadas ao teto e à parede, respectivamente. A corda na diagonal sob tração $T_2$ está direcionada em um ângulo de $\\theta={30}^0$ a partir da direção horizontal, como mostrado abaixo.
             <img src="http://beto.abelha.network/static/img/mod_08_ex_img_04.png"></p>
             
             <p>Quais são as trações $T_1$ e $T_2$ nas duas cordas?</p>
@@ -1637,7 +1615,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             <p><b>De onde veio Tsen 30?</b></p>
             
             <p>Como estamos a segunda lei de Newton para a direção vertical, podemos incluir apenas forças verticais.</p>
-            <p>A força da gravidade (de magnitude F_g) é direcionada na vertical e para baixo, então a incluímos com um sinal negativo.</p>
+            <p>A força da gravidade (de magnitude $F_g$) é direcionada na vertical e para baixo, então a incluímos com um sinal negativo.</p>
             <p>Além disso, como a tração $T_2$ está direcionada na diagonal, precisamos dividi-la em componentes horizontal e vertical, como mostrado abaixo.
             <img src="http://beto.abelha.network/static/img/mod_08_ex_img_06.png"></p>
              
@@ -1657,7 +1635,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             
             <p>Agora que sabemos que $T_2$, podemos calcular a tração $T_1$ usando a segunda lei de Newton para a direção horizontal.</p>
             
-            <p>$a_x=\\frac{\\sum $F_x}{m}$  (Comece com a Segunda Lei de Newton para a direção horizontal.)</p>
+            <p>$a_x=\\frac{\\sum F_x}{m}$  (Comece com a Segunda Lei de Newton para a direção horizontal.)</p>
             
             <p>$0=\\frac{T_2.cos{30}^o-T_1}{0,25kg}$ (insira a aceleração horizontal, a massa e as forças horizontais.)</p>
             
@@ -1669,7 +1647,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             `
         },
         questoes: [{
-          texto: 'Veja a figura abaixo, nela temos um bloco de massa m = 8 kg suspenso por uma corda. Adotando g = 10 m/s2, determine o valor da tração na corda e marque a opção correta.' +
+          texto: 'Veja a figura abaixo, nela temos um bloco de massa m = 8kg suspenso por uma corda. Adotando $g = 10_{m/s^2}$, determine o valor da tração na corda e marque a opção correta.' +
           '<img src="http://beto.abelha.network/static/img/mod_08_q_01.png">',
           respondiada: false,
           pontuacao: 200,
@@ -1696,7 +1674,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             }
           ]
         }, {
-          texto: 'Suponha que uma pessoa de massa igual a 50 kg esteja suspensa numa corda, como na ilustração abaixo. A outra extremidade dessa corda está presa num bloco de massa de 56 kg que está em repouso em uma superfície plana. Supondo que a aceleração da gravidade local é igual a 10 m/s2, determine o valor da força de reação normal trocada entre o bloco e a superfície onde está apoiado' +
+          texto: 'Suponha que uma pessoa de massa igual a 50kg esteja suspensa numa corda, como na ilustração abaixo. A outra extremidade dessa corda está presa num bloco de massa de 56kg que está em repouso em uma superfície plana. Supondo que a aceleração da gravidade local é igual a $10_{m/s^2}$, determine o valor da força de reação normal trocada entre o bloco e a superfície onde está apoiado' +
           '<img src="http://beto.abelha.network/static/img/mod_08_q_02.png">',
           respondiada: false,
           pontuacao: 200,
@@ -1723,34 +1701,34 @@ $m=2.551Kg $ (calcule e comemore)</p>
             }
           ]
         }, {
-          texto: 'Na figura abaixo temos dois blocos que estão ligados entre si por uma corda ideal, isto é, cuja massa é desprezível. Podemos ver que o bloco A encontra-se apoiado sobre uma superfície plana. Adote g = 10 m/s2, mA = 9 kg e mB = 6 kg, determine o valor da tração na corda e marque a alternativa correta.' +
+          texto: 'Na figura abaixo temos dois blocos que estão ligados entre si por uma corda ideal, isto é, cuja massa é desprezível. Podemos ver que o bloco A encontra-se apoiado sobre uma superfície plana. Adote $g = 10_{m/s^2}$, $m_A = 9kg$ e $m_B = 6kg$, determine o valor da tração na corda e marque a alternativa correta.' +
           '<img src="http://beto.abelha.network/static/img/mod_08_q_03.png">',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
             {
-              texto: '24N',
+              texto: '$24N$',
               correta: false,
               selecionada: false
             },
             {
-              texto: '36N',
+              texto: '$36N$',
               correta: true,
               selecionada: false
             },
             {
-              texto: '42N',
+              texto: '$42N$',
               correta: false,
               selecionada: false
             },
             {
-              texto: '56N',
+              texto: '$56N$',
               correta: false,
               selecionada: false
             }
           ]
         }, {
-          texto: 'Dois blocos A e B, de massas 2,0 kg e 6,0 kg, respectivamente, e ligados por um fio, estão em repouso sobre um plano horizontal. Quando puxado para a direita pela força F mostrada na figura, o conjunto adquire aceleração de 2,0 m/s2.' +
+          texto: 'Dois blocos A e B, de massas 2,0kg e 6,0kg, respectivamente, e ligados por um fio, estão em repouso sobre um plano horizontal. Quando puxado para a direita pela força F mostrada na figura, o conjunto adquire aceleração de $2,0_{m/s^2}$.' +
           '<img src="http://beto.abelha.network/static/img/mod_08_q_04.png">' +
           'Nestas condições, pode-se afirmar que o módulo da resultante das forças que atuam em A e o módulo da resultante das forças que atuam em B valem, em newtons, respectivamente,',
           respondiada: false,
@@ -1778,7 +1756,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             }
           ]
         }, {
-          texto: 'A figura ao lado representa um sistema que liga os objetos A com massa de 3 kg, B com 5 kg e C com 2 kg. O corpo B e sustentado pela superfície da mesa com atrito desprezível, os fios são inextensíveis e suas massas desprezíveis. Nessas condições, pode-se afirmar que a tração no fio que liga os corpos A e B vale em Newton: (considere g = 10 m/s²)' +
+          texto: 'A figura ao lado representa um sistema que liga os objetos A com massa de $3kg$, B com $5kg$ e C com $2kg$. O corpo B e sustentado pela superfície da mesa com atrito desprezível, os fios são inextensíveis e suas massas desprezíveis. Nessas condições, pode-se afirmar que a tração no fio que liga os corpos A e B vale em Newton: considere $g = 10_{m/s^2}$' +
           '<img src="http://beto.abelha.network/static/img/mod_08_q_05.png">',
           respondiada: false,
           pontuacao: 200,
@@ -1870,6 +1848,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
               <td></td>
             </tr>
           </table>
+          <br>
           <p>Espere, como é? Você pode explicar como um carro em movimento pode usar a força de atrito estático?</p>
           
           <p>Se os pneus do carro estão funcionando como deveriam (rodando, sem deslizar) é a força de aderência do atrito estático que está agindo nos pneus. A força de atrito estático entre os pneus e o chão é o que permite que os carros aumentem e diminuam de velocidade, e façam curvas de forma suave e segura. Para aumentar a velocidade, os pneus começam a girar mais rapidamente e aderem à estrada usando a força de atrito estático. Os pneus podem então empurrar a rua para trás, e a terceira lei diz que a rua tem que empurrar os pneus para a frente. É a força de aderência do atrito estático torna isso possível. 
@@ -1881,7 +1860,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           <p>No caso dos pneus do carro, a parte de baixo do pneu, que está em contato com a rua, está momentaneamente em repouso com relação à rua, já que ela não está deslizando. O resto do pneu gira ao redor do ponto de contato. O ponto em contato continua mudando conforme o pneu continua girando para a frente.</p>
           
           <h4>Qual é a fórmula da força de atrito cinético?</h4>
-          <p>Se você juntar as mãos e esfregá-las uma contra a outra, a força do atrito cinético será maior do que se você estivesse apenas pressionando-as suavemente. Isso porque a força de atrito cinético entre duas superfícies é maior quanto maior for a pressão que as superfícies exercem uma na outra (isto é, a força normal F_n é maior).</p>
+          <p>Se você juntar as mãos e esfregá-las uma contra a outra, a força do atrito cinético será maior do que se você estivesse apenas pressionando-as suavemente. Isso porque a força de atrito cinético entre duas superfícies é maior quanto maior for a pressão que as superfícies exercem uma na outra (isto é, a força normal $F_n$ é maior).</p>
           <p>Além disso, alterar os tipos das superfícies que deslizam uma sobre a outra vai alterar a força de atrito cinético. A "aspereza" das duas superfícies que se esfregam é caracterizada por uma grandeza chamada coeficiente de atrito cinético  $\\mu_c$.</p>
           <p>O parâmetro $\\mu_c$ depende apenas das duas superfícies em contato e terá um valor diferente para superfícies diferentes (por exemplo, gelo e madeira, ferro e concreto, etc.). Duas superfícies que não deslizam facilmente uma sobre a outra terão um coeficiente de atrito cinético $\\mu_c$ maior.</p>
           
@@ -1889,33 +1868,33 @@ $m=2.551Kg $ (calcule e comemore)</p>
           
           $$F_c=\\ \\mu_c\\ .\\ F_n$$
           
-          <p>Observe que podemos reescrever essa equação como $\\mu_c=\\ \\frac{F_c}{F_n}$ o que mostra que o coeficiente de atrito cinético \\mu_c  é uma grandeza adimensional.</p>
+          <p>Observe que podemos reescrever essa equação como $\\mu_c=\\ \\frac{F_c}{F_n}$ o que mostra que o coeficiente de atrito cinético $\\mu_c$  é uma grandeza adimensional.</p>
           
           <h4>O que significa "grandeza adimensional"?</h4>
           <p>Como $\\mu_c=\\ \\frac{F_c}{F_n}$, sabemos que as unidades do coeficiente de atrito cinético $\\mu_c$ são iguais às da fração $\\frac{F_c}{F_n}$.
           Mas ambas, $F_c$ e $F_n$ têm unidades em Newtons, então a taxa de $\\frac{F_c}{F_n}$ não tem unidades (as unidades se cancelam).</p>
           
-          <p>Isso mostra que o coeficiente de atrito cinético \\mu_c é um número sem unidades. Chamamos esses tipos de grandezas de grandezas adimensionais, porque elas não têm unidades (isto é, não têm dimensões físicas).</p>
+          <p>Isso mostra que o coeficiente de atrito cinético $\\mu_c$ é um número sem unidades. Chamamos esses tipos de grandezas de grandezas adimensionais, porque elas não têm unidades (isto é, não têm dimensões físicas).</p>
           
-          <h4>Qual é a fórmula da força de atrito estático F_e?</h4>
+          <h4>Qual é a fórmula da força de atrito estático $F_e$?</h4>
           
           <p>A força de atrito estático é um pouco diferente da força de atrito cinético. Por um lado, a força de atrito estático vai variar com base na força que está sendo aplicada ao objeto em repouso. Imagine, por exemplo, tentar empurrar uma caixa pesada pelo chão de concreto. Você pode empurrar cada vez mais forte e, ainda assim, a caixa não vai se mover. Isso significa que o atrito estático responde ao que você faz. Ele aumenta para ser igual e na direção oposta àquela do seu empurrão. Mas se você empurrar com força o bastante, a caixa parece deslizar de repente e começa a se mover. Uma vez em movimento, é mais fácil mantê-la em movimento do que foi fazê-la entrar em movimento, o que indica que a força de atrito cinético é menor que a força de atrito estático máxima.</p>
           
-          <p>Se você adicionar massa à caixa, por exemplo colocando outra caixa em cima dela (aumentando assim a força normal F_n ) você precisa empurrar com ainda mais força para que ela comece a se mover e continue se movendo. Além disso, se você passar óleo no concreto (reduzindo o coeficiente de atrito estático \\mu_e )  será mais fácil fazer a caixa começar a se mover (como você deve ter imaginado).</p>
+          <p>Se você adicionar massa à caixa, por exemplo colocando outra caixa em cima dela (aumentando assim a força normal $F_n$) você precisa empurrar com ainda mais força para que ela comece a se mover e continue se movendo. Além disso, se você passar óleo no concreto (reduzindo o coeficiente de atrito estático $\\mu_e$)  será mais fácil fazer a caixa começar a se mover (como você deve ter imaginado).</p>
           
           <p>Podemos colocar essas ideias na forma matemática escrevendo a seguinte fórmula, que nos permite encontrar a força de atrito estático máxima possível entre duas superfícies.</p>
           
-          $$F_{e\\left(max\\right)}=\\ \\mu_e\\ .\\ F_n$$
+          $$F_e= \\mu_e\\ .\\ F_n$$
           
           <h4>Ao invés disso, podemos escrever essa equação com uma desigualdade?</h4>
           
-          <p>Sim. Como essa equação dá apenas o valor máximo para a força de atrito estático F_{e\\left(max\\right)}, podemos, ao invés disso, escolher escrever uma fórmula para o valor real da força de atrito cinético F_c escrevendo,</p>
+          <p>Sim. Como essa equação dá apenas o valor máximo para a força de atrito estático $F_e$, podemos, ao invés disso, escolher escrever uma fórmula para o valor real da força de atrito cinético $F_c$ escrevendo,</p>
           
           $$F_c\\le \\mu_e\\ .\\ F_n$$
           
-          <p>Essa equação diz que a verdadeira magnitude da força de atrito estático F_e ser tão grande quanto a grandeza $\\mu_e\\ .\\ F_n$.</p>
+          <p>Essa equação diz que a verdadeira magnitude da força de atrito estático $F_e$ ser tão grande quanto a grandeza $\\mu_e\\ .\\ F_n$.</p>
           
-          <p>Cuidado, a grandeza  F_{e\\left(max\\right)} dá apenas a força de atrito estático máxima possível, e não a força de atrito estático real para um dado cenário. Por exemplo, suponha que a força de atrito estático máxima possível entre uma máquina de lavar e um piso de azulejo seja de F_{e\\left(max\\right)}=50N. Se você fosse tentar mover a máquina de lavar com 30N, a força de atrito estático seria de apenas 30N. Se você aumentar a força exercida para 40N, a força de atrito estático também aumentaria para 40N. Isso continuará até que a força que você aplica seja maior que a força de atrito estático máxima, que é o ponto no qual a máquina de lavar se move e começa a deslizar. Quando a máquina de lavar começa a deslizar, não há mais força de atrito estático, somente a força de atrito cinético.</p>
+          <p>Cuidado, a grandeza  $F_e$ dá apenas a força de atrito estático máxima possível, e não a força de atrito estático real para um dado cenário. Por exemplo, suponha que a força de atrito estático máxima possível entre uma máquina de lavar e um piso de azulejo seja de $F_e=50N$. Se você fosse tentar mover a máquina de lavar com 30N, a força de atrito estático seria de apenas 30N. Se você aumentar a força exercida para 40N, a força de atrito estático também aumentaria para 40N. Isso continuará até que a força que você aplica seja maior que a força de atrito estático máxima, que é o ponto no qual a máquina de lavar se move e começa a deslizar. Quando a máquina de lavar começa a deslizar, não há mais força de atrito estático, somente a força de atrito cinético.</p>
           
           <h3>COMPARAÇÃO ENTRE ATRITO CINÉTICO E ESTÁTICO</h3>
           <p>Na prática, verifica-se que é mais difícil tirar um corpo do repouso do que mantê-lo em movimento:</p>
@@ -1929,9 +1908,10 @@ $m=2.551Kg $ (calcule e comemore)</p>
           <h2>Exemplo 1: Empurrando a geladeira</h2>
           <p>Uma geladeira de 110kg está inicialmente parada sobre o chão. O coeficiente de atrito estático entre a geladeira e o chão é de 0,60 e o coeficiente de atrito cinético entre a geladeira e o chão é de 0,40. A pessoa empurrando a geladeira tenta movimentá-la com as seguintes forças.</p>
           
-          <p>$F_{empurrar}=400N$
-          $F_{empurrar}=600N$<br>
-          $F_{empurrar}=800N$</p>
+          <p>1° - $F_{empurrar}=400N$
+          2° - $F_{empurrar}=600N$<br>
+          3º - $F_{empurrar}=800N$</p>
+          
           <p>Para cada caso individual listado acima, determine a magnitude da força de atrito que vai existir entre a geladeira e o chão. 
           <img src="http://beto.abelha.network/static/img/mod_09_img_04.png"></p>
           
@@ -1949,7 +1929,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           
           <p>Se a pessoa empurra com $F_{empurrar}=400N$ haverá uma força de atrito estático correspondente de $F_e=400N$ impedindo a geladeira de se mexer. Não haverá atrito cinético, já que a geladeira não vai deslizar.</p>
           <p>Se a pessoa empurra com $F_{empurrar}=600N$ haverá uma força de atrito estático correspondente de $F_e=600N$ impedindo a geladeira de se mexer. Não haverá atrito cinético, já que a geladeira não vai deslizar.</p>
-          <p>No caso iii F_{empurrar}=800N é maior que a força de atrito estático máxima, então a geladeira vai começar a deslizar. Agora que a geladeira está deslizando, haverá uma força de atrito cinético exercida sobre ela. Podemos encontrar a força de atrito cinético como mostrado a seguir.</p>
+          <p>No 1º caso $F_{empurrar}=800N$ é maior que a força de atrito estático máxima, então a geladeira vai começar a deslizar. Agora que a geladeira está deslizando, haverá uma força de atrito cinético exercida sobre ela. Podemos encontrar a força de atrito cinético como mostrado a seguir.</p>
           
           <p>$F_c=\\mu_c . F_n$ (comece com a fórmula da força de atrito cinético)</p>
           
@@ -1959,14 +1939,14 @@ $m=2.551Kg $ (calcule e comemore)</p>
           
           <p>$F_c = 431N$  (calcule e comemore)</p>
           
-          <p>Então, se a pessoa empurrar com $F_{empurrar} = 800N$ haverá uma força de atrito cinético de $F_c=431N4 exercida na geladeira. Não haverá força de atrito estático, já que a geladeira estará deslizando.</p>
+          <p>Então, se a pessoa empurrar com $F_{empurrar} = 800N$ haverá uma força de atrito cinético de $F_c= 431N$ exercida na geladeira. Não haverá força de atrito estático, já que a geladeira estará deslizando.</p>
           
           <h2>Exemplo 2: Caixa puxada sobre uma mesa áspera</h2>
           <p>Uma caixa de 1,3kg de chocolate congelados é puxada com velocidade constante sobre uma mesa por uma corda. A corda está em um ângulo de $\\theta={60}^0$ e sob uma tração de 4N.</p>
           <p>Qual é o coeficiente de atrito cinético entre a mesa e a caixa? 
           <img src="http://beto.abelha.network/static/img/mod_09_img_05.png"></p>
            
-          <p>Como não sabemos o coeficiente de atrito cinético, podemos usar a fórmula $F_c=\\\\ \\\\mu_c\\\\ .\\\\ F_n$  para calcular diretamente a força de atrito. Contudo, como conhecemos a aceleração na direção horizontal (ela é zero porque a caixa se move a uma velocidade constante) devemos começar com a segunda lei de Newton.</p>
+          <p>Como não sabemos o coeficiente de atrito cinético, podemos usar a fórmula $F_c = \\mu_c . F_n$  para calcular diretamente a força de atrito. Contudo, como conhecemos a aceleração na direção horizontal (ela é zero porque a caixa se move a uma velocidade constante) devemos começar com a segunda lei de Newton.</p>
           
           <p>Sempre que usamos a segunda lei de Newton devemos desenhar um diagrama de forças. 
           <img src="http://beto.abelha.network/static/img/mod_09_img_06.png"></p>
@@ -1977,11 +1957,11 @@ $m=2.551Kg $ (calcule e comemore)</p>
           
           <p>$0=\\frac{T.cos{60}^0-\\mu_c.F_n}{1,3kg}$ (insira a componente horizontal da tração e a fórmula do atrito cinético)</p>
           
-          <p>$0=T.cos{60}^0-\\mu_c.\\F_n$ (multiplique os dois lados pela massa)</p>
+          <p>$0=T.cos{60}^0 - \\mu_c . F_n$ (multiplique os dois lados pela massa)</p>
           
           <p>$\\mu_c=\\frac{T.cos{60}^0}{F_n}$ (calcule o coeficiente de atrito cinético algebricamente)</p>
           
-          <p>Nesse ponto você pode achar que deveríamos inserir a força normal como $m.g$, mas como a corda também está puxando a caixa para cima, a força normal será menor que m.g. A força normal será reduzida pelo valor da força com que puxamos a caixa para cima. Nesse caso, a componente vertical da tração é $T_y=\\\\ T.sen{60}^0$. Então, a força normal nesse caso será $F_n=m.g-\\\\ T.sen{60}^0$.</p>
+          <p>Nesse ponto você pode achar que deveríamos inserir a força normal como $m.g$, mas como a corda também está puxando a caixa para cima, a força normal será menor que m.g. A força normal será reduzida pelo valor da força com que puxamos a caixa para cima. Nesse caso, a componente vertical da tração é $T_y = T.sen{60}^0$. Então, a força normal nesse caso será $F_n = m.g - T.sen{60}^0$.</p>
           
           <p>Agora, podemos inserir essa expressão da força normal $F_n$ na fórmula para o coeficiente de atrito cinético que encontramos acima.</p>
           
@@ -1995,7 +1975,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             `
         },
         questoes: [{
-          texto: `O bloco da figura, de massa 5 Kg, move-se com velocidade constante de $1,0_{m/s}$ num plano horizontal, sob a ação da força $F$, constante e horizontal.
+          texto: `O bloco da figura, de massa 5kg, move-se com velocidade constante de $1,0_{m/s}$ num plano horizontal, sob a ação da força $F$, constante e horizontal.
           <img src="http://beto.abelha.network/static/img/mod_09_q_01.png">
           Se o coeficiente de atrito entre o bloco e o plano vale 0,20, e a aceleração da gravidade, $10_{m/s2}$, então o módulo da força $F$, em Newtons, vale:
           `,
@@ -2024,7 +2004,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             }
           ]
         }, {
-          texto: `Um bloco de massa 20 kg é puxado horizontalmente por um barbante. O coeficiente de atrito entre o bloco e o plano horizontal de apoio é 0,25. Adota-se g = 10_{m/s^2}. Sabendo que o bloco tem aceleração de módulo igual a 2,0_{m/s^2}, concluímos que a força de tração no barbante tem intensidade igual a:`,
+          texto: `Um bloco de massa 20kg é puxado horizontalmente por um barbante. O coeficiente de atrito entre o bloco e o plano horizontal de apoio é 0,25. Adota-se $g = 10_{m/s^2}$. Sabendo que o bloco tem aceleração de módulo igual a $2,0_{m/s^2}$, concluímos que a força de tração no barbante tem intensidade igual a:`,
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -2050,7 +2030,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             }
           ]
         }, {
-          texto: `Um bloco com massa de 3 kg está em movimento com aceleração constante na superfície de uma mesa. Sabendo que o coeficiente de atrito dinâmico entre o bloco e a mesa é 0,4, calcule a força de atrito entre os dois. Considere g = 10_{m/s^2}.`,
+          texto: `Um bloco com massa de 3kg está em movimento com aceleração constante na superfície de uma mesa. Sabendo que o coeficiente de atrito dinâmico entre o bloco e a mesa é 0,4, calcule a força de atrito entre os dois. Considere $g = 10_{m/s^2}$`,
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -2076,7 +2056,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             }
           ]
         }, {
-          texto: `Um bloco de madeira com massa de 10 kg é submetido a uma força $F$ que tenta colocá-lo em movimento. Sabendo que o coeficiente de atrito estático entre o bloco e a superfície é 0,6, calcule o valor da força $F$ necessária para colocar o bloco na situação de iminência do movimento. Considere $g = 10_{m/s^2}$.`,
+          texto: `Um bloco de madeira com massa de 10kg é submetido a uma força $F$ que tenta colocá-lo em movimento. Sabendo que o coeficiente de atrito estático entre o bloco e a superfície é 0,6, calcule o valor da força $F$ necessária para colocar o bloco na situação de iminência do movimento. Considere $g = 10_{m/s^2}$.`,
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -2102,7 +2082,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             }
           ]
         }, {
-          texto: `Um motorista conduzia seu automóvel de massa 2.000 kg que trafegava em linha reta, com velocidade constante de 72_{km/h}, quando avistou uma carreta atravessada na pista. Transcorreu 1 s entre o momento em que o motorista avistou a carreta e o momento em que acionou o sistema de freios para iniciar a frenagem, com desaceleração constante igual a 10_{m/s^2}. Antes de o automóvel iniciar a frenagem, pode-se afirmar que a intensidade da resultante das forças horizontais que atuavam sobre ele era`,
+          texto: `Um motorista conduzia seu automóvel de massa 2.000kg que trafegava em linha reta, com velocidade constante de $72_{km/h}$, quando avistou uma carreta atravessada na pista. Transcorreu 1 s entre o momento em que o motorista avistou a carreta e o momento em que acionou o sistema de freios para iniciar a frenagem, com desaceleração constante igual a $10_{m/s^2}$. Antes de o automóvel iniciar a frenagem, pode-se afirmar que a intensidade da resultante das forças horizontais que atuavam sobre ele era`,
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -2161,7 +2141,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             
             $$F_c=\\frac{{mv}^2}{r}$$
             
-            <p>e é sempre dirigido para o centro da trajetória circular. De forma equivalente, se \\omega é a velocidade angular e porque \\omega=v.r então F_c=m.r.\\omega^2
+            <p>e é sempre dirigido para o centro da trajetória circular. De forma equivalente, se $\\omega$ é a velocidade angular e porque $\\omega=v.r$ então $F_c=m.r.\\omega^2$
             <img src="http://beto.abelha.network/static/img/mod_10_img_01.png"></p>
             `
         },
@@ -2170,11 +2150,11 @@ $m=2.551Kg $ (calcule e comemore)</p>
           texto:
             `
             <h2>Exemplo 1: Bola amarrada</h2>
-            <p>Um aparato que ilustra claramente a força centrípeta consiste em uma massa $m_1$ que gira em um círculo horizontal, conectada à uma corda leve que passa por um tubo vertical para contra-balancear \\left(m_2\\right) como mostrado na Figura.</p>
+            <p>Um aparato que ilustra claramente a força centrípeta consiste em uma massa $m_1$ que gira em um círculo horizontal, conectada à uma corda leve que passa por um tubo vertical para contra-balancear $m_2$ como mostrado na Figura.</p>
             <p>Se $m_1$ é uma massa 1kg rodando em um círculo de raio 1m  e $m_2=4kg$,  qual é a velocidade angular assumindo que a massa está se movendo verticalmente e há uma mínima fricção entre a corda e o tubo?
             <img src="http://beto.abelha.network/static/img/mod_10_img_02.png"></p>
             
-            <p>Quando a corda passa pelo tubo ela redireciona a força gerada pela gravidade atuando em m_2  para o plano horizontal. Esta é a força centrípeta que permite m_1 rodar em círculo. Nenhuma massa está se movendo verticalmente, então a força centrípeta deve ser exatamente equilibrada.</p>
+            <p>Quando a corda passa pelo tubo ela redireciona a força gerada pela gravidade atuando em $m_2$ para o plano horizontal. Esta é a força centrípeta que permite $m_1$ rodar em círculo. Nenhuma massa está se movendo verticalmente, então a força centrípeta deve ser exatamente equilibrada.</p>
             
             <p>$F_c=F_g$</p>
             
@@ -2194,7 +2174,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             
             <h2>Exemplo 2: Turbina de vento</h2>
             
-            <p>Uma grande turbina de vento possui pás de 35 m de comprimento, cada uma pesando 10.000 kg. O centro de massa de uma pá está localizado no meio de seu comprimento. Se a turbina está rodando a 20 rotações por minuto, Qual a força de tensão sobre os parafusos que prendem uma pá girando ao eixo?</p>
+            <p>Uma grande turbina de vento possui pás de 35 m de comprimento, cada uma pesando 10.000kg. O centro de massa de uma pá está localizado no meio de seu comprimento. Se a turbina está rodando a 20 rotações por minuto, Qual a força de tensão sobre os parafusos que prendem uma pá girando ao eixo?</p>
             
             <p>Primeiro, converter a velocidade de rotação para rad/s:</p>
             
@@ -2218,7 +2198,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             `
         },
         questoes: [{
-          texto: 'Determine a força centrípeta descrita por uma montanha russa com massa de 1000 kg e aceleração centrípeta de 200_{m/s^2}.',
+          texto: 'Determine a força centrípeta descrita por uma montanha russa com massa de 1000kg e aceleração centrípeta de $200_{m/s^2}$.',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -2244,33 +2224,33 @@ $m=2.551Kg $ (calcule e comemore)</p>
             }
           ]
         }, {
-          texto: 'Na estrada um caminhão descreve uma trajetória circular com aceleração centrípeta de 2 m/s2. Sendo o raio da pista de 1800 m, calcule a velocidade do veículo.',
+          texto: 'Na estrada um caminhão descreve uma trajetória circular com aceleração centrípeta de $2_{m/s^2}$. Sendo o raio da pista de $1800m$, calcule a velocidade do veículo.',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
             {
-              texto: '50 m/s',
+              texto: '$50_{m/s}$',
               correta: false,
               selecionada: false
             },
             {
-              texto: '70 m/s',
+              texto: '$70_{m/s}$',
               correta: false,
               selecionada: false
             },
             {
-              texto: '60 m/s',
+              texto: '$60_{m/s}$',
               correta: true,
               selecionada: false
             },
             {
-              texto: '20 m/s',
+              texto: '$20_{m/s}$',
               correta: false,
               selecionada: false
             }
           ]
         }, {
-          texto: ' Um carro deve fazer uma curva de raio 50 m. numa pista plana com velocidade de 70 m/s. Determine o coeficiente de atrito entre os pneus e a estrada para que o veículo não derrape na pista. Adote g = 10 m/s².',
+          texto: 'Um carro deve fazer uma curva de raio $50m$. numa pista plana com velocidade de $70m/s$. Determine o coeficiente de atrito entre os pneus e a estrada para que o veículo não derrape na pista. Adote $g = 10m/s^2$.',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -2296,7 +2276,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             }
           ]
         }, {
-          texto: 'Um motorista descreve uma circunferência vertical num "globo da morte" de 4m. de raio. Que força é exercida sobre o globo no ponto mais alto da trajetória, se a velocidade da moto ai é de 12 m/s? A massa total (motociclista + moto) é de 150 kg. Adote $g = 10_{m/s^2}$.',
+          texto: 'Um motorista descreve uma circunferência vertical num "globo da morte" de 4m. de raio. Que força é exercida sobre o globo no ponto mais alto da trajetória, se a velocidade da moto ai é de $12m/s$? A massa total (motociclista + moto) é de 150kg. Adote $g = 10_{m/s^2}$.',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -2322,7 +2302,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             }
           ]
         }, {
-          texto: 'Um motociclista pilota sua moto em uma pista circular de 20 metros de diâmetro. Calcule a força centrípeta, sabendo que a massa do piloto mais a massa da moto valem 150 Kg e que a velocidade da moto é de 60 Km/h.',
+          texto: 'Um motociclista pilota sua moto em uma pista circular de 20 metros de diâmetro. Calcule a força centrípeta, sabendo que a massa do piloto mais a massa da moto valem 150kg e que a velocidade da moto é de $60_{Km/h}$.',
           respondiada: false,
           pontuacao: 200,
           alternativas: [

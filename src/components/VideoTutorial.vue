@@ -1,7 +1,7 @@
 <template>
   <v-content>
     <v-toolbar fixed>
-      <v-btn icon :to="{name: 'Home'}">
+      <v-btn icon :to="{name: 'BackHome', params: {last: parseInt(id)}}" @click="exit">
         <v-icon>arrow_back</v-icon>
       </v-btn>
       <v-toolbar-title>{{id + 1}}ª Fase - Vídeo aula</v-toolbar-title>
@@ -39,6 +39,13 @@
         timePlaying: 0
       }
     },
+    mounted () {
+      const self = this
+      window.addEventListener('hashchange', function () {
+        console.log('Hash changed to', window.location.hash)
+        self.exit()
+      })
+    },
     methods: {
       playing (player) {
         if (!this.played) {
@@ -49,6 +56,9 @@
         this.interval = setInterval(() => {
           this.timePlaying += 1
         }, 1000)
+      },
+      exit () {
+        clearInterval(this.interval)
       },
       paused () {
         clearInterval(this.interval)
@@ -61,7 +71,7 @@
             const message = 'Oh no! Você não assistiu ao vídeo por completo, ficará sem bonus.'
             this.$bus.$emit('show-message', message, 'error')
           } else {
-            this.$bus.$emit('add-score', 10, 0)
+            this.$bus.$emit('add-score', 10, this.id)
           }
         }
         this.$router.push({name: 'Home'})

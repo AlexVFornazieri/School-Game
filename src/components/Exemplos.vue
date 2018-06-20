@@ -1,7 +1,7 @@
 <template>
   <v-content>
     <v-toolbar fixed>
-      <v-btn icon :to="{name: 'Home'}" @click="exit()">
+      <v-btn icon :to="{name: 'BackHome', params: {last: parseInt(id)}}" @click="exit">
         <v-icon>arrow_back</v-icon>
       </v-btn>
       <v-toolbar-title>{{(parseInt(id) + 1)}}ª Fase - Exemplos</v-toolbar-title>
@@ -49,7 +49,7 @@
       this.$timer = setTimeout(() => {
         if (!this.$service.getExemplosRead(this.id)) {
           this.$service.setExemplosRead(this.id)
-          this.$bus.$emit('add-score', 10, 0)
+          this.$bus.$emit('add-score', 10, this.id)
         }
       }, this.$service.getExemplos(this.id).timeRead * 1000)
 

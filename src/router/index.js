@@ -13,6 +13,11 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
+      component: Home
+    },
+    {
+      path: '/:last',
+      name: 'BackHome',
       component: Home,
       props: true
     },

@@ -1,7 +1,7 @@
 <template>
   <v-content>
     <v-toolbar fixed>
-      <v-btn icon :to="{name: 'Home'}" @click="exit">
+      <v-btn icon :to="{name: 'BackHome', params: {last: parseInt(id)}}" @click="exit">
         <v-icon>arrow_back</v-icon>
       </v-btn>
       <v-toolbar-title>{{parseInt(id) + 1}}ª Fase - Teoria</v-toolbar-title>
@@ -47,8 +47,14 @@
       this.$vuetify.goTo(0)
       this.$timer = setTimeout(() => {
         if (!this.$service.getTeoriaRead(this.id)) {
-          this.$service.setTeoriaRead(this.id)
-          this.$bus.$emit('add-score', 50, 0)
+          if (this.$service.setTeoriaRead(this.id)) {
+            setTimeout(() => {
+              const message = `Muito bem! Próxima fase foi desbloqueada.`
+              this.$bus.$emit('show-message', message, 'success')
+            }, 5000)
+          }
+
+          this.$bus.$emit('add-score', 50, this.id)
         }
       }, this.$service.getTeoria(this.id).timeRead * 1000)
 

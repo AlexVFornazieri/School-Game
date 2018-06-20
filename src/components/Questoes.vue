@@ -1,7 +1,7 @@
 <template>
   <v-content>
     <v-toolbar fixed>
-      <v-btn icon :to="{name: 'Home'}">
+      <v-btn icon :to="{name: 'BackHome', params: {last: parseInt(id)}}">
         <v-icon>arrow_back</v-icon>
       </v-btn>
       <v-toolbar-title>{{parseInt(id) + 1}}ª Fase - Questionário</v-toolbar-title>
@@ -134,7 +134,7 @@
             this.pergunta.respondiada = true
             this.total += this.pergunta.pontuacao
             const message = `Muito bem! Respota correta (+${this.pergunta.pontuacao} pontos).`
-            this.$service.addScore(this.pergunta.pontuacao, 0)
+            this.$service.addScore(this.pergunta.pontuacao, this.id)
             this.$bus.$emit('show-message', message, 'success')
             this.respondidas += 1
           }
@@ -163,9 +163,13 @@
         if (!this.$service.getAnswered(this.id)) {
           const message = `Questionário concluído, ${this.total} pontos acumulados.`
           this.$bus.$emit('show-message', message, 'info')
-          this.$service.setAnswered(this.id)
+          if (this.$service.setAnswered(this.id)) {}
+          setTimeout(() => {
+            const message = `Muito bem! Próxima fase foi desbloqueada.`
+            this.$bus.$emit('show-message', message, 'success')
+          }, 3000)
         }
-        this.$router.push({name: 'Home'})
+        this.$router.push({name: 'BackHome', params: {last: parseInt(this.id)}})
       },
       change () {
         MathJax.Hub.Queue(['Typeset', MathJax.Hub, 'editor-output'])

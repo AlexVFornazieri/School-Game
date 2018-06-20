@@ -189,7 +189,7 @@ export class Service {
         titulo: '1ª Lei de Newton ou princípio da inércia',
         cover: 'http://beto.abelha.network/static/img/capas/02.jpg',
         videoId: '0lmB4pNgQWU',
-        habilitado: true,
+        habilitado: false,
         videoWatched: false,
         answered: false,
         xps: 0,
@@ -392,7 +392,7 @@ export class Service {
         titulo: '2ª Lei de Newton ou princípio fundamental da dinâmica',
         cover: 'http://beto.abelha.network/static/img/capas/03.jpg',
         videoId: 'ZQPO9-LGoAU',
-        habilitado: true,
+        habilitado: false,
         videoWatched: false,
         answered: false,
         xps: 0,
@@ -628,7 +628,7 @@ export class Service {
         titulo: '3ª Lei de Newton ou Princípio da Ação e Reação',
         cover: 'http://beto.abelha.network/static/img/capas/04.jpg',
         videoId: 'R9hh0WPe8Uc',
-        habilitado: true,
+        habilitado: false,
         videoWatched: false,
         answered: false,
         xps: 0,
@@ -813,7 +813,7 @@ export class Service {
         titulo: 'Força peso',
         cover: 'http://beto.abelha.network/static/img/capas/05.jpg',
         videoId: 'TfC4svFp6Vg',
-        habilitado: true,
+        habilitado: false,
         videoWatched: false,
         answered: false,
         xps: 0,
@@ -1022,7 +1022,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
         titulo: 'Força normal',
         cover: 'http://beto.abelha.network/static/img/capas/06.jpg',
         videoId: 'TfC4svFp6Vg',
-        habilitado: true,
+        habilitado: false,
         videoWatched: false,
         answered: false,
         xps: 0,
@@ -1241,7 +1241,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             },
             {
               texto: 'a força peso do copo e a reação normal da mesa sobre o copo se anulam.',
-              correta: false,
+              correta: true,
               selecionada: false
             },
             {
@@ -1264,7 +1264,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           alternativas: [
             {
               texto: 'A força de reação normal está corretamente representada em I, II e IV.',
-              correta: false,
+              correta: true,
               selecionada: false
             },
             {
@@ -1291,7 +1291,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
         titulo: 'Força elástica',
         cover: 'http://beto.abelha.network/static/img/capas/07.jpg',
         videoId: 'oE5ICFXuvn8',
-        habilitado: true,
+        habilitado: false,
         videoWatched: false,
         answered: false,
         xps: 0,
@@ -1526,7 +1526,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
         titulo: 'Força de tração',
         cover: 'http://beto.abelha.network/static/img/capas/08.jpg',
         videoId: 'tfD7v4Nz4CY',
-        habilitado: true,
+        habilitado: false,
         videoWatched: false,
         answered: false,
         xps: 0,
@@ -1790,7 +1790,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
         titulo: 'Força de atrito',
         cover: 'http://beto.abelha.network/static/img/capas/09.jpg',
         videoId: 'gHe26-eI4fc',
-        habilitado: true,
+        habilitado: false,
         videoWatched: false,
         answered: false,
         xps: 0,
@@ -2115,7 +2115,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
         titulo: 'Força centrípeta',
         cover: 'http://beto.abelha.network/static/img/capas/10.jpg',
         videoId: 'ArHh_7kSv4M',
-        habilitado: true,
+        habilitado: false,
         videoWatched: false,
         answered: false,
         xps: 0,
@@ -2337,7 +2337,13 @@ $m=2.551Kg $ (calcule e comemore)</p>
   }
 
   getQuestoes (target) {
-    return this.modulos[target].questoes
+    const questoes = this.modulos[target].questoes
+    questoes.forEach((questao) => {
+      questao.alternativas.sort(function (a, b) {
+        return 0.5 - Math.random()
+      })
+    })
+    return questoes
   }
 
   addScore (score, target) {
@@ -2354,7 +2360,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
 
   setTeoriaRead (target) {
     this.modulos[target].teoriaRead = true
-    this.habilitaModulos(target)
+    return this.habilitaModulos(target)
   }
 
   getTeoriaRead (target) {
@@ -2363,7 +2369,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
 
   setAnswered (target) {
     this.modulos[target].answered = true
-    this.habilitaModulos(target)
+    return this.habilitaModulos(target)
   }
 
   getAnswered (target) {
@@ -2391,10 +2397,12 @@ $m=2.551Kg $ (calcule e comemore)</p>
   }
 
   habilitaModulos (target) {
-    if (target >= this.modulos.length - 1) return
+    if (target >= this.modulos.length - 1) return false
     const modulo = this.modulos[target]
     if (modulo.answered && modulo.teoriaRead) {
       this.modulos[target + 1].habilitado = true
+      return true
     }
+    return false
   }
 }

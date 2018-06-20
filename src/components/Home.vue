@@ -94,7 +94,7 @@
 
     <v-container grid-list-md>
       <v-layout row wrap>
-        <v-flex xs12 sm6 offset-sm3 v-for="(modulo,index) in modulos" :key="index">
+        <v-flex xs12 sm6 offset-sm3 v-for="(modulo,index) in modulos" :key="index" :id="'mod' + index">
           <v-slide-y-transition mode="out-in">
             <v-card class="modules">
               <v-card-media height="150px" :src="modulo.cover"></v-card-media>
@@ -156,6 +156,11 @@
 
 <script>
   export default {
+    props: {
+      last: {
+        default: 0
+      }
+    },
     data () {
       return {
         modulos: [],
@@ -170,8 +175,10 @@
     },
 
     mounted () {
-      this.$vuetify.goTo(0, {duration: 300})
       this.modulos = this.$service.listaModulos()
+      this.$nextTick(() => {
+        this.$vuetify.goTo('#mod' + this.last, {duration: 150})
+      })
     }
   }
 </script>

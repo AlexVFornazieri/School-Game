@@ -2330,6 +2330,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
         }]
       }
     ]
+    this.modulosReseted = JSON.stringify(this.modulos)
 
     if (localStorage.modulos) {
       this.modulos = JSON.parse(localStorage.modulos)
@@ -2338,6 +2339,20 @@ $m=2.551Kg $ (calcule e comemore)</p>
 
   save () {
     localStorage.modulos = JSON.stringify(this.modulos)
+  }
+
+  reset () {
+    this.modulos = JSON.parse(this.modulosReseted)
+    this.save()
+  }
+
+  setPlayer (player) {
+    localStorage.player = JSON.stringify(player)
+  }
+
+  getPlayer () {
+    if (!localStorage.player) return false
+    return JSON.parse(localStorage.player)
   }
 
   listaModulos () {

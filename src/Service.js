@@ -2330,6 +2330,14 @@ $m=2.551Kg $ (calcule e comemore)</p>
         }]
       }
     ]
+
+    if (localStorage.modulos) {
+      this.modulos = JSON.parse(localStorage.modulos)
+    }
+  }
+
+  save () {
+    localStorage.modulos = JSON.stringify(this.modulos)
   }
 
   listaModulos () {
@@ -2348,10 +2356,12 @@ $m=2.551Kg $ (calcule e comemore)</p>
 
   addScore (score, target) {
     this.modulos[target].xps += score
+    this.save()
   }
 
   setVideoWatched (target) {
     this.modulos[target].videoWatched = true
+    this.save()
   }
 
   getVideoWatched (target) {
@@ -2360,6 +2370,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
 
   setTeoriaRead (target) {
     this.modulos[target].teoriaRead = true
+    this.save()
     return this.habilitaModulos(target)
   }
 
@@ -2369,6 +2380,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
 
   setAnswered (target) {
     this.modulos[target].answered = true
+    this.save()
     return this.habilitaModulos(target)
   }
 
@@ -2386,6 +2398,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
 
   setExemplosRead (target) {
     this.modulos[target].exemplosRead = true
+    this.save()
   }
 
   getExemplosRead (target) {
@@ -2401,6 +2414,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
     const modulo = this.modulos[target]
     if (modulo.answered && modulo.teoriaRead) {
       this.modulos[target + 1].habilitado = true
+      this.save()
       return true
     }
     return false

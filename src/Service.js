@@ -5,7 +5,7 @@ export class Service {
       {
         titulo: 'Noções de Força',
         tags: 'Definição, Força Resultante, Equilíbrio',
-        cover: 'http://beto.abelha.network/static/img/capas/01.jpg',
+        cover: '//beto.abelha.network/static/img/capas/01.jpg',
         habilitado: true,
         videoId: 'lpe7mT2LSuY',
         videoWatched: false,
@@ -30,7 +30,7 @@ export class Service {
 
         <p>Ao chutarmos uma bola, o pé faz sobre ela uma força que, além de deformá-la, inicia-lhe o
           movimento.
-          <img src="http://beto.abelha.network/static/img/mod_01_img_01.png"/>
+          <img src="//beto.abelha.network/static/img/mod_01_img_01.png"/>
         </p>
 
         <p>Quando as superfícies dos corpos que interagem se tocam – como a interação pé-bola, por exemplo, a força é
@@ -39,7 +39,7 @@ export class Service {
         <p>Ocorrendo a interação e estando os corpos a distância, a força é chamada de campo. Um exemplo é a interação
           Terra-maça. Em dinâmica vamos tratar de forças cujo efeito principal, é causar variações na velocidade
           de um corpo, isto é. Aceleração.
-          <img src="http://beto.abelha.network/static/img/mod_01_img_02.png"/>
+          <img src="//beto.abelha.network/static/img/mod_01_img_02.png"/>
         </p>
 
         <v-alert color="info" icon="info" :value="true">
@@ -54,7 +54,7 @@ export class Service {
         <p>
           Seja uma partícula na qual estão aplicadas várias forças. Esse sistema de forças pode ser substituído por uma
           força, a força resultante, que é capaz de produzir na partícula o mesmo efeito que todas as forças aplicadas.
-          <img src="http://beto.abelha.network/static/img/mod_01_img_03.png"/>
+          <img src="//beto.abelha.network/static/img/mod_01_img_03.png"/>
         </p>
           `
         },
@@ -69,10 +69,10 @@ export class Service {
             material, formando um
             ângulo α entre si. Determine a intensidade da força resultante para os seguintes valore de α: </p>
           <ul>
-            <li>0° <img src="http://beto.abelha.network/static/img/mod_01_ex_img_01.png"/></li>
-            <li>60° <img src="http://beto.abelha.network/static/img/mod_01_ex_img_02.png"/></li>
-            <li>90° <img src="http://beto.abelha.network/static/img/mod_01_ex_img_03.png"/></li>
-            <li>180° <img src="http://beto.abelha.network/static/img/mod_01_ex_img_04.png"/></li>
+            <li>0° <img src="//beto.abelha.network/static/img/mod_01_ex_img_01.png"/></li>
+            <li>60° <img src="//beto.abelha.network/static/img/mod_01_ex_img_02.png"/></li>
+            <li>90° <img src="//beto.abelha.network/static/img/mod_01_ex_img_03.png"/></li>
+            <li>180° <img src="//beto.abelha.network/static/img/mod_01_ex_img_04.png"/></li>
           </ul>
         </div>`
         },
@@ -187,7 +187,7 @@ export class Service {
       /* ---------- */
       {
         titulo: '1ª Lei de Newton ou princípio da inércia',
-        cover: 'http://beto.abelha.network/static/img/capas/02.jpg',
+        cover: '//beto.abelha.network/static/img/capas/02.jpg',
         videoId: '0lmB4pNgQWU',
         habilitado: false,
         videoWatched: false,
@@ -228,7 +228,7 @@ export class Service {
           texto: `
           <h2>Exemplo 1: Sonda espacial à deriva</h2> 
           <p>Uma sonda espacial está à deriva com uma velocidade constante no espaço (longe de qualquer influência de planetas e estrelas) com seus propulsores desligados. Se dois propulsores forem ligados simultaneamente exercendo forças idênticas para as direções esquerda e direita nas direções mostradas, o que aconteceria com o movimento do foguete?
-          <img src="http://beto.abelha.network/static/img/mod_02_ex_img_01.png"/></p>
+          <img src="//beto.abelha.network/static/img/mod_02_ex_img_01.png"/></p>
            <ul>
            <li>a) A sonda espacial continuaria com velocidade constante</li>
            <li>b) A sonda espacial aumentaria sua velocidade</li>
@@ -240,7 +240,7 @@ export class Service {
           
           <h2>Exemplo 2: O elevador </h2>
                     <p>Um elevador está sendo puxado para cima com uma velocidade constante por um cabo como visto no diagrama abaixo. Enquanto o elevador está se movendo para cima com velocidade constante, como a magnitude da força para cima exercida no elevador pelo cabo FC se comparada à magnitude da força da gravidade para baixo FG no elevador?
-                    <img src="http://beto.abelha.network/static/img/mod_02_ex_img_02.png"/>
+                    <img src="//beto.abelha.network/static/img/mod_02_ex_img_02.png"/>
                     </p>
           <ul>
           <li>a) FC é maior que FG </li>
@@ -253,7 +253,7 @@ export class Service {
           
           <h2>Exemplo 3: A trajetória da sonda espacial</h2>
           <p>Uma sonda espacial está à deriva com uma velocidade constante no espaço (longe de qualquer influência de planetas e estrelas) com seus propulsores desligados. Se um propulsor for ligado e logo depois desligado fazendo uma pequena explosão de força na direção mostrada, o que melhor representaria o caminho viajado pelo foguete após o propulsor ser desligado?
-          <img src="http://beto.abelha.network/static/img/mod_02_ex_img_03.png"/></p>
+          <img src="//beto.abelha.network/static/img/mod_02_ex_img_03.png"/></p>
           
            <ul>
           <li>a) trajetória a </li>
@@ -390,7 +390,7 @@ export class Service {
       /* ---------- */
       {
         titulo: '2ª Lei de Newton ou princípio fundamental da dinâmica',
-        cover: 'http://beto.abelha.network/static/img/capas/03.jpg',
+        cover: '//beto.abelha.network/static/img/capas/03.jpg',
         videoId: 'ZQPO9-LGoAU',
         habilitado: false,
         videoWatched: false,
@@ -417,10 +417,10 @@ export class Service {
             <h3>O que a expressão soma vetorial significa?</h3>
             
             <p>Podemos encontrar a soma de múltiplas forças vetoriais graficamente usando o método de cauda-a-ponta. Isto significa que colocamos a cauda de cada vetor de força que queremos adicionar na ponta do vetor de força anterior. Então, depois de colocar o último vetor de força, o vetor de força total apontaria para a cauda do primeiro até a última ponta como visto no diagrama abaixo.
-            <img src="http://beto.abelha.network/static/img/mod_03_img_01.png"/></p>
+            <img src="//beto.abelha.network/static/img/mod_03_img_01.png"/></p>
              
             <p>Por exemplo, considere duas forças de magnitude 30 N e 20 N que são exercida para a direita e esquerda, respectivamente, sobre a ovelha mostrada acima. Se supormos que para a direita é o sentido positivo, a força resultante sobre as ovelhas pode ser encontrada por:
-            <img src="http://beto.abelha.network/static/img/mod_03_img_02.png"/></p>
+            <img src="//beto.abelha.network/static/img/mod_03_img_02.png"/></p>
              
             <p>$\\sum{F}$ = 30N – 20N <br>
             $\\sum{F}$ = 10 N (para a direita)</p>
@@ -468,7 +468,7 @@ export class Service {
             <p>Uma tartaruga de 1,2kg chamada Newton tem quatro forças exercidas sobre ela, como mostrado no diagrama abaixo.</p>
             <p>Qual é a aceleração horizontal da tartaruga Newton?<br>
             Qual é a aceleração vertical da tartaruga Newton?
-            <img src="http://beto.abelha.network/static/img/mod_03_ex_img_01.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_03_ex_img_01.png"></p>
             <p>Para encontrar a aceleração horizontal, usaremos a Segunda Lei de Newton para a direção horizontal.</p>
             <p>$a_x=\\frac{\\sum F_x}{m}$ (Comece com a Segunda Lei de Newton para a direção horizontal.)</p>
             <p>$a_x=\\frac{\\left(30N\\right).cos{30}^o-22N}{1,2Kg}$ (Substitua as forças horizontais com os sinais negativos corretos.)</p>
@@ -482,7 +482,7 @@ export class Service {
             
             <h2>Exemplo 2: O queijo suspenso</h2>
             <p>Uma fatia de queijo é suspensa em repouso por dois fios que exercem forças de magnitude $F_1$ e $F_2$, como pode ser visto abaixo. Há também uma força da gravidade para baixo sobre o queijo de magnitude 20N.
-            <img src="http://beto.abelha.network/static/img/mod_03_ex_img_02.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_03_ex_img_02.png"></p>
             <p>Começaremos usando ou a versão horizontal ou a vertical da Segunda Lei de Newton. Não sabemos o valor de nenhuma das forças horizontais, mas sabemos a magnitude de uma das forças verticais 20N. Uma vez que temos mais informações sobre a direção vertical, vamos analisar nesse sentido primeiro.</p>
             <p>$a_y=\\frac{\\sum F_y}{m}$ (Comece com a Segunda Lei de Newton para a direção vertical.)</p>
             <p>$a_y=\\frac{F_1.sen{60}^o-20N}{m}$ (Substitua as forças verticais com os sinais negativos corretos.)</p>
@@ -626,7 +626,7 @@ export class Service {
       /* ---------- */
       {
         titulo: '3ª Lei de Newton ou Princípio da Ação e Reação',
-        cover: 'http://beto.abelha.network/static/img/capas/04.jpg',
+        cover: '//beto.abelha.network/static/img/capas/04.jpg',
         videoId: 'R9hh0WPe8Uc',
         habilitado: false,
         videoWatched: false,
@@ -644,7 +644,7 @@ export class Service {
             <p>A Terceira Lei de Newton: Se um objeto A exerce uma força sobre um objeto B, então o objeto B deve exercer uma força de igual magnitude e de sentido oposto sobre o objeto A.</p>
             <p>Esta lei representa uma certa simetria na natureza: as forças sempre ocorrem aos pares, e um corpo não pode exercer uma força sobre outro, sem ele mesmo experimentar uma força. Às vezes, vagamente, nos referimos à essa lei como ação-reação, onde a força exercida é a ação e a força experimentada como consequência é a reação.</p>
             <p>Podemos ver rapidamente a Terceira Lei de Newton em ação dando uma olhada como pessoas se movem. Considere uma nadadora empurrando o lado da piscina, como ilustrado abaixo.
-            <img src="http://beto.abelha.network/static/img/mod_04_img_01.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_04_img_01.png"></p>
             
             <p>A nadadora empurra contra a parede da piscina com os pés e acelera em sentido oposto ao seu impulso. A parede exerce uma força igual e oposta de volta sobre o nadador. Você pode pensar que as duas forças iguais e opostas iriam se cancelar, mas elas não fazem isso porque elas atuam em sistemas diferentes. Nesse caso, existem dois sistemas que podemos investigar: a nadadora ou a parede. Se escolhermos a nadadora para ser o sistema de interesse, como na imagem acima,
              então $F_{\\text{parede no pé}}$ é uma força externa sobre este sistema e afeta o seu movimento. A nadadora se move na direção do $F_{\\text{parede no pé}}$.
@@ -664,7 +664,7 @@ export class Service {
             `
             <h2>Exemplo 1: Empurrando uma geladeira</h2>
             <p>Uma pessoa conduz um carro, Carro 1, para a direita enquanto empurra um outro carro, Carro 2, este carregando uma geladeira enorme. A massa total do Carro 2, carro mais geladeira, é três vezes a massa total do Carro 1, carro mais pessoa. Se a pessoa está dirigindo com força suficiente para que os dois carros aceleram para a direita, o que pode ser dito com certeza sobre as magnitudes das forças sobre os carros?
-            <img src="http://beto.abelha.network/static/img/mod_04_ex_img_01.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_04_ex_img_01.png"></p>
             
             <p>A força no Carro 2 exercida pelo Carro 1 é igual em magnitude à força no Carro 1 exercida pelo Carro 2.</p>
             <p>Não importa se há aceleração ou se a massa de um objeto é maior do que o outro objeto. Pares de força reativas são sempre iguais em magnitude. Sabemos que as forças nesta questão são pares de força reativas uma vez que se trocar a ordem dos objetos na frase "força exercida no Carro 2 pelo Carro 1 nos dá a "força exercida no Carro 1 pelo Carro 2. Trocando a ordem dos objetos envolvidos na força—isto é, o objeto exercendo a força e o objeto em que a força é exercida—é uma maneira fácil de identificar par de força da terceira lei.</p>
@@ -811,7 +811,7 @@ export class Service {
       /* ---------- */
       {
         titulo: 'Força peso',
-        cover: 'http://beto.abelha.network/static/img/capas/05.jpg',
+        cover: '//beto.abelha.network/static/img/capas/05.jpg',
         videoId: 'TfC4svFp6Vg',
         habilitado: false,
         videoWatched: false,
@@ -831,14 +831,14 @@ export class Service {
             $$g = |a_g|= | - 9,8_{m/s^2} |= + 9,8_{m/s^2}$$
             $$a_g= - 9,8_{m/s^2}$$
             
-            <img src="http://beto.abelha.network/static/img/mod_05_img_01.png">
+            <img src="//beto.abelha.network/static/img/mod_05_img_01.png">
             
             <p>Essa força da gravidade $F_g=m.g$ (ou "peso") é exercida pela Terra em todos os objetos, independentemente da forma como eles estão se movendo, e de que outras forças são exercidas sobre eles. Em outras palavras, haverá uma força gravitacional de magnitude m.g exercida para baixo em todos os objetos próximos da Terra, estejam eles caindo, voando com uma dada angulação, em repouso sobre uma mesa, ou acelerando para cima em um elevador. Pode haver outras forças que contribuem para a aceleração do objeto, mas a força da gravidade está sempre presente.</p>
             
             <h3>E se formos para o espaço?</h3>
             
             <p>A força da gravidade em um objeto fica cada vez menor quanto mais longe um objeto estiver da Terra. Contudo, a força da gravidade vai muito além da atmosfera terrestre. Por exemplo, na posição da Estação Espacial Internacional, a terra causa aceleração da gravidade de magnitude $g = 8,7_{m/s^2}$. Esse valor é menor que o valor de g na superfície da Terra, mas não tão pequeno quanto as pessoas pensam. Os astronautas na Estação Espacial Internacional experimentam uma ausência de peso não porque não há força da gravidade, mas porque eles estão em uma órbita em queda livre ao redor da Terra.
-            <img src="http://beto.abelha.network/static/img/mod_05_img_02.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_05_img_02.png"></p>
              
             <p>A força da gravidade exercida pela Terra tem alcance infinito (isto é, puxa coisas que estão infinitamente distantes), mas a força fica cada vez menor quanto maior a distância entre um objeto e a Terra.</p>
             
@@ -857,7 +857,7 @@ export class Service {
 <h2>Exemplo 1: O Peso do Avião</h2>
 
 <p>Um avião de massa 4.500Kg  está decolando, voando pelo ar e acelerando para a frente e para cima. Há uma força de empuxo de 6.700N  no avião na direção do movimento e uma força de resistência do ar de 4.300N.
-<img src="http://beto.abelha.network/static/img/mod_05_ex_img_01.png"></p>
+<img src="//beto.abelha.network/static/img/mod_05_ex_img_01.png"></p>
 
 <h3>Qual é a força da gravidade sobre o avião durante a decolagem?</h3>
 
@@ -870,7 +870,7 @@ $F_g=44.100N$ (calcule e comemore)</p>
 <h2>Exemplo 2: Calculando a massa</h2>
 
 <p>Um elefante da floresta africana tem um peso de 25.000 N.
-<img src="http://beto.abelha.network/static/img/mod_05_ex_img_02.png"></p>
+<img src="//beto.abelha.network/static/img/mod_05_ex_img_02.png"></p>
  
 <h3>Qual é a massa do elefante da floresta africana?</h3>
 
@@ -885,10 +885,10 @@ $m=\\frac{25.000N}{9,8_{m/s^2}}$ (calcule a massa m)<br>
 
 $m=2.551Kg $ (calcule e comemore)</p>
 
-<p><b>Lembre-se:</b> A força peso é sempre VERTICAL PARA BAIXO em relação a terra. <img src="http://beto.abelha.network/static/img/mod_05_ex_img_03.png"></p>
+<p><b>Lembre-se:</b> A força peso é sempre VERTICAL PARA BAIXO em relação a terra. <img src="//beto.abelha.network/static/img/mod_05_ex_img_03.png"></p>
 
 <p>Muitas pessoas confundem massa com peso. Tenha em mente que a unidade da massa é o kg, mas como o peso é uma força, sua unidade é N.
-<img src="http://beto.abelha.network/static/img/mod_05_ex_img_04.png"></p>
+<img src="//beto.abelha.network/static/img/mod_05_ex_img_04.png"></p>
             `
         },
         questoes: [{
@@ -1020,7 +1020,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
       /* ---------- */
       {
         titulo: 'Força normal',
-        cover: 'http://beto.abelha.network/static/img/capas/06.jpg',
+        cover: '//beto.abelha.network/static/img/capas/06.jpg',
         videoId: 'TfC4svFp6Vg',
         habilitado: false,
         videoWatched: false,
@@ -1033,10 +1033,10 @@ $m=2.551Kg $ (calcule e comemore)</p>
               
               <p>Já fez uma curva rápido demais e deu de cara com uma parede? Eu já. Isso dói e faz eu me sentir um bobo. Podemos culpar a força normal pela dor que sentimos quando trombamos com objetos sólidos. A força normal é a força que as superfícies exercem para evitar que objetos sólidos atravessem uns aos outros.</p>
               <p>A força normal é uma força de contato. Se duas superfícies não estão em contato, elas não podem exercer uma força normal uma sobre a outra. Por exemplo, as superfícies de uma mesa e de uma caixa não podem exercer forças normais uma na outra se elas não estiverem em contato. 
-              <img src="http://beto.abelha.network/static/img/mod_06_img_01.png"></p>
+              <img src="//beto.abelha.network/static/img/mod_06_img_01.png"></p>
                
               <p>Contudo, quando duas superfícies estão em contato (por exemplo, uma caixa e uma mesa) elas exercem uma força normal uma na outra, perpendicular às superfícies de contato. Essa força normal será tão grande quanto necessário para evitar que as superfícies penetrem uma na outra.
-              <img src="http://beto.abelha.network/static/img/mod_06_img_02.png"></p>
+              <img src="//beto.abelha.network/static/img/mod_06_img_02.png"></p>
               
               <p>O mecanismo pelo qual a mesa exerce uma força normal é semelhante ao de uma mola comprimida que exerce uma força. Quando um peso é colocado sobre uma mesa, a superfície se deforma suavemente e tem sua forma alterada (normalmente isso é imperceptível, a menos que o peso seja muito grande) e há uma força restauradora que tenta restaurar a mesa à sua forma natural e não comprimida (isto é, a forma quando não há peso algum em cima). Chamamos essa força que a mesa exerce para restaurar a si mesma de força normal. Se você fizer força suficiente sobre a mesa, a grande deformação é capaz de quebrá-la.</p>
               <p>Claro, a caixa também seria comprimida suavemente e tentaria se restaurar para sua forma natural.</p>
@@ -1050,7 +1050,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
               
               <p>Estranhamente, se um objeto pesado for colocado sobre uma mesa, esta deve exercer mais força normal para evitar que o peso a atravesse. Como a mesa sabe exercer apenas a quantidade certa de força para evitar que o objeto a atravesse?</p>
               <p>Basicamente, a mesa "sabe" quanta força precisa ser exercida com base em quanto a superfície/objeto está sendo comprimido ou deformado. Quando objetos sólidos se deformam, eles normalmente tentam se restaurar e "voltar" à sua forma natural. Quanto maior o peso, maior a deformação, e maior é a força restauradora que tenta fazer a superfície voltar a sua forma natural. Essa deformação seria perceptível se a carga fosse colocada em uma mesa, mas até mesmo objetos rígidos se deformam quando uma força é aplicada a eles. A menos que o objeto seja deformado além do seu limite, ele vai exercer uma força restauradora bem parecida com a de uma mola deformada (ou um trampolim, ou uma cama elástica). Então, quando a carga é colocada sobre a mesa, a mesa cede até que a força restauradora se torne tão grande quanto o peso da carga. Nesse ponto a força resultante externa na carga é zero. Essa é a situação na qual a carga está em repouso sobre a mesa. A mesa cede rapidamente, e a depressão é leve, então normalmente não a percebemos.
-              <img src="http://beto.abelha.network/static/img/mod_06_img_03.png"></p>
+              <img src="//beto.abelha.network/static/img/mod_06_img_03.png"></p>
               
                
               <p>Figura: (a) A pessoa segurando o pacote de ração deve exercer uma força para cima $F_{mão}$ igual em magnitude e na direção oposta ao peso do pacote de ração  $W$,   (b) A mesa cede quando o pacote de ração é colocado sobre ela, como um trampolim rígido. As forças de restauração elástica na mesa aumentam conforme ela cede, até que exerçam uma força normal $N$ ou $F_n$  de igual magnitude e direção oposta ao peso da carga.</p>
@@ -1069,14 +1069,14 @@ $m=2.551Kg $ (calcule e comemore)</p>
               <p>Essencialmente, estamos calculando a força normal considerando que ela será tão grande ou tão pequena quanto necessário para evitar que as superfícies penetrem uma na outra.</p>
               
               <p>Vamos aplicar essa estratégia ao exemplo simples a seguir. Considere o caso simples de uma caixa de massa m que está em repouso sobre uma mesa, como mostrado abaixo. 
-              <img src="http://beto.abelha.network/static/img/mod_06_img_04.png"></p>
+              <img src="//beto.abelha.network/static/img/mod_06_img_04.png"></p>
               
                
               <p>Seguindo o procedimento, obtemos<br>
               
               $a_y = \\frac{\\sum F_y}{m}$  (use a segunda lei de Newton para a direção vertical, porque $F_n$ é vertical)<br>
               
-              $0=\\frac{{F_n}}-{F_g}}{m}$ (insira a aceleração vertical e as forças verticais)</p>
+              $0=\\frac{{F_n}-{F_g}}{m}$ (insira a aceleração vertical e as forças verticais)</p>
               
               <h3>Por que a aceleração vertical não é -9,8?</h3>
               <p>Cuidado, os objetos em queda livre têm uma aceleração vertical de $a_y = 9,8_{m/s^2}$, mas uma caixa em repouso sobre uma mesa não tem aceleração (isto é, $a_y=0$).</p>
@@ -1103,7 +1103,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             <h3>Qual é a força normal exercida pelo chão do elevador no pacote?</h3>
             
             <p>Primeiro desenhamos um diagrama de forças mostrando todas as forças que agem no pacote (não incluímos a aceleração no diagrama porque a aceleração não é uma força. Além disso, não incluímos uma força de elevador adicional porque a força normal é a força exercida na caixa pelo elevador).
-            <img src="http://beto.abelha.network/static/img/mod_06_ex_img_01.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_06_ex_img_01.png"></p>
             
             <p>$a_y=\\frac{\\sum F_y}{m}$ (usamos a segunda lei de Newton para a direção vertical)</p>
             
@@ -1123,10 +1123,10 @@ $m=2.551Kg $ (calcule e comemore)</p>
             
             <h3>Qual é a força normal exercida pela mesa na caixa de cookies?</h3>
             
-            <img src="http://beto.abelha.network/static/img/mod_06_ex_img_02.png">
+            <img src="//beto.abelha.network/static/img/mod_06_ex_img_02.png">
              
             <p>Mesmo que esse pareça um tipo diferente de problema, o abordamos com a mesma estratégia de antes. Primeiro desenhamos um diagrama de forças de todas as forças agindo sobre a caixa.
-            <img src="http://beto.abelha.network/static/img/mod_06_ex_img_03.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_06_ex_img_03.png"></p>
               
             <h3>Por que não desenhamos as forças na direção do ponto?</h3>
             <p>A convenção típica para desenhar diagramas de forças (isto é, diagramas de corpo livre) é desenhar todas as forças emanando do centro do ponto (o qual representa o objeto em questão) e não direcionadas para o ponto.</p>
@@ -1136,7 +1136,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             
             <h3>De onde veio o termo $10N.sen 30°$, e por que ele é negativo?</h3>
             <p>Precisamos decompor a força diagonal em componentes vertical e horizontal, como mostrado abaixo. 
-            <img src="http://beto.abelha.network/static/img/mod_06_ex_img_04.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_06_ex_img_04.png"></p>
              
             <p>A componente vertical pode ser encontrada usando trigonometria e a definição de $sen$, <br>
             $sen 30^0=\\frac{oposto}{hipotenusa}=\\frac{F_Ay}{F_A}$<br>
@@ -1150,7 +1150,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             $F_n=1kg.9,8_{m/s^2}+10N.sen 30^0=14,8N$ (calcule comemore)</p>
             
             <p><b>Lembre-se:</b> A decomposição da força norma é sempre perpendicular a superfície de apoio. 
-            <img src="http://beto.abelha.network/static/img/mod_06_ex_img_05.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_06_ex_img_05.png"></p>
             `
         },
         questoes: [{
@@ -1257,7 +1257,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           ]
         }, {
           texto: 'A força de reação normal é uma força que surge quando existe contato entre o corpo e uma superfície, sendo definida como uma força de reação da superfície sobre a compressão que o corpo exerce sobre esta superfície. Abaixo temos quatro situações, com os respectivos diagramas de forças. Analise a representação da Força de Reação Normal (N) em cada uma das situações.' +
-          '<img src="http://beto.abelha.network/static/img/mod_q_05.png">' +
+          '<img src="//beto.abelha.network/static/img/mod_q_05.png">' +
           'Assinale a alternativa CORRETA.',
           respondiada: false,
           pontuacao: 200,
@@ -1289,7 +1289,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
       /* ---------- */
       {
         titulo: 'Força elástica',
-        cover: 'http://beto.abelha.network/static/img/capas/07.jpg',
+        cover: '//beto.abelha.network/static/img/capas/07.jpg',
         videoId: 'oE5ICFXuvn8',
         habilitado: false,
         videoWatched: false,
@@ -1376,7 +1376,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             <p>O comprimento nominal da mola é $L_0 = 50mm$. Qual é a constante de mola mínima necessária para este projeto?</p>
             <p>Explique: Por que não se conectar a câmera diretamente no parafuso?</p>
             <p>Embora isso pudesse funcionar, não resultaria em um mecanismo com um movimento suave e repetitivo conforme o parafuso fosse ajustado. Isto é porque há folga em todos os mecanismos onde um parafuso gira dentro de uma porca ou de uma seção rosqueada. Isto é devido ao espaçamento finito das roscas. Uma solução de engenharia comum ao problema da folga é usar um parafuso empurrando contra uma mola, como neste exemplo.
-            <img src="http://beto.abelha.network/static/img/mod_07_ex_img_01.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_07_ex_img_01.png"></p>
             <p>A mola deve ser elástica o suficiente para fornecer a força necessária para puxar a câmera contra a ponta do parafuso o tempo todo. A força estará mais fraca quando a mola estiver na sua extensão mínima , isto é, quando a distância entre a parte superior e inferior da mola for 100mm.</p>
             <p>Porque a mola é especificada para ter comprimento nominal de $50mm$, a mola vai ter uma extensão mínima de $x = 100mm - 50mm = 50mm$. A força da mola deve se opor à força devida à gravidade na câmera de de $m.g=1kg.9,8_{m/s^2}=9,8N$</p>
             <p>Usando a lei de Hooke encontramos a constante da mola necessária:</p>
@@ -1524,7 +1524,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
       /* ---------- */
       {
         titulo: 'Força de tração',
-        cover: 'http://beto.abelha.network/static/img/capas/08.jpg',
+        cover: '//beto.abelha.network/static/img/capas/08.jpg',
         videoId: 'tfD7v4Nz4CY',
         habilitado: false,
         videoWatched: false,
@@ -1539,7 +1539,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             <h3>O QUE SIGNIFICA TRAÇÃO?</h3>
             <p>Todos os objetos físicos que estão em contato exercem forças uns sobre os outros. Damos diferentes nomes para essas forças de contato, com base nos tipos dos objetos em contato. Se um dos objetos exercendo a força for uma corda, uma corrente, ou um cabo, chamamos a força de tração.</p>  
             <p>Se você puxar um objeto com uma corda, a corda vai se esticar um pouco (geralmente isso é imperceptível). Esse estiramento na corda vai deixá-la esticada (por exemplo, sob tração), o que permite que a corda transfira uma força de um lado para o outro, de forma semelhante a como uma mola esticada vai puxar objetos conectados a ela. O estiramento da corda normalmente é muito pequeno para ser percebido, então geralmente ignoramos esse pequeno estiramento que ocorre em cordas, cabos e fios. Contudo, se as forças envolvidas forem muito grandes, o grande estiramento pode fazer a corda se romper. Então é aconselhável verificar o limite de tração para qualquer cabo ou corda que você planejar usar. 
-            <img src="http://beto.abelha.network/static/img/mod_08_img_01.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_08_img_01.png"></p>
              
             <p>Cordas e cabos são úteis para exercer forças porque podem transferir com eficiência uma força por uma distância significativa (por exemplo, o comprimento de uma corda). Por exemplo, um trenó pode ser puxado por um time de Huskies Siberianos com cordas presas a eles, o que permite que os cães corram uma distância maior do que correriam se tivessem que empurrar o trenó por trás usando a força normal. (Sim, esse seria o time de cães de trenó mais patético de todos os tempos). Aqui, é importante observar que a tração é uma força que puxa, já que as cordas simplesmente não podem empurrar com eficácia. Tentar empurrar algo com uma corda faz com que ela fique frouxa e perca a tração que lhe permite puxar. Isso pode parecer óbvio, mas na hora de desenhar as forças agindo em um objeto, as pessoas normalmente desenham a força de tração na direção errada, então lembre-se de que a tração pode somente puxar um objeto.</p>
             
@@ -1548,7 +1548,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             <p>Desenhar as forças exercidas no objeto em questão</p> 
             <p>Escrever a segunda lei de Newton $a=\\frac{\\sum F}{m}$ para uma direção na qual a tração está direcionada.</p>
             <p>Calcular a tração usando a equação da segunda lei de Newton $a=\\frac{\\sum F}{m}$. 
-            <img src="http://beto.abelha.network/static/img/mod_08_img_02.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_08_img_02.png"></p>
             `
         },
         exemplos: {
@@ -1560,10 +1560,10 @@ $m=2.551Kg $ (calcule e comemore)</p>
             <p>Uma caixa de extrato de pepino de 2kg está sendo puxada sobre uma mesa sem atrito por uma corda com um ângulo de $\\theta={60}^0$, como mostrado abaixo. A tração na corda faz com que a caixa deslize pela mesa para a direita com uma aceleração de $3,0_{m/s^2}$.</p>
             
             <h3>Qual é a tração na corda?</h3>
-            <img src="http://beto.abelha.network/static/img/mod_08_ex_img_01.png">
+            <img src="//beto.abelha.network/static/img/mod_08_ex_img_01.png">
              
             <p>Primeiramente, desenhamos o diagrama de forças de todas as forças que agem na caixa.
-            <img src="http://beto.abelha.network/static/img/mod_08_ex_img_02.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_08_ex_img_02.png"></p>
             
             <p>Agora, usamos a segunda lei de Newton. A tração é direcionada tanto na vertical quanto na horizontal, então não está claro qual direção escolher. Contudo, como conhecemos a aceleração horizontal e sabemos que a tração é a única força nessa direção, vamos usar a segunda lei de Newton na direção horizontal.</p>
             
@@ -1580,7 +1580,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             <p><b>De onde veio o termo Tcos60?</b></p>
             
             <p>Precisamos dividir a tração diagonal em componentes vertical e horizontal, como pode ser visto abaixo.
-            <img src="http://beto.abelha.network/static/img/mod_08_ex_img_03.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_08_ex_img_03.png"></p>
             
              
             <p>A componente horizontal da tração $T_x$ pode ser encontrada usando trigonometria e a definição de cosseno,</p>
@@ -1600,11 +1600,11 @@ $m=2.551Kg $ (calcule e comemore)</p>
             <h2>Exemplo 2: Caixa pendurada por duas cordas</h2>
             
             <p>Uma caixa de biscoitos em forma de animais de 0,25kg  está pendurada, em repouso, por duas cordas ligadas ao teto e à parede, respectivamente. A corda na diagonal sob tração $T_2$ está direcionada em um ângulo de $\\theta={30}^0$ a partir da direção horizontal, como mostrado abaixo.
-            <img src="http://beto.abelha.network/static/img/mod_08_ex_img_04.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_08_ex_img_04.png"></p>
             
             <p>Quais são as trações $T_1$ e $T_2$ nas duas cordas?</p>
             <p>Primeiramente, desenhamos um diagrama de forças de todas as forças que agem na caixa de biscoitos. 
-            <img src="http://beto.abelha.network/static/img/mod_08_ex_img_05.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_08_ex_img_05.png"></p>
             
             <p>Agora temos que usar a segunda lei de Newton. Há trações direcionadas tanto na vertical quanto na horizontal, então novamente não está muito claro qual direção escolher. Contudo, como conhecemos a força da gravidade, que é uma força vertical, vamos começar com a segunda lei de Newton na direção vertical.</p>
             
@@ -1617,7 +1617,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             <p>Como estamos a segunda lei de Newton para a direção vertical, podemos incluir apenas forças verticais.</p>
             <p>A força da gravidade (de magnitude $F_g$) é direcionada na vertical e para baixo, então a incluímos com um sinal negativo.</p>
             <p>Além disso, como a tração $T_2$ está direcionada na diagonal, precisamos dividi-la em componentes horizontal e vertical, como mostrado abaixo.
-            <img src="http://beto.abelha.network/static/img/mod_08_ex_img_06.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_08_ex_img_06.png"></p>
              
             <p>Podemos encontrar a componente vertical da tração $T_2$ usando a definição de seno.</p>
             
@@ -1648,7 +1648,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
         },
         questoes: [{
           texto: 'Veja a figura abaixo, nela temos um bloco de massa m = 8kg suspenso por uma corda. Adotando $g = 10_{m/s^2}$, determine o valor da tração na corda e marque a opção correta.' +
-          '<img src="http://beto.abelha.network/static/img/mod_08_q_01.png">',
+          '<img src="//beto.abelha.network/static/img/mod_08_q_01.png">',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -1675,7 +1675,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           ]
         }, {
           texto: 'Suponha que uma pessoa de massa igual a 50kg esteja suspensa numa corda, como na ilustração abaixo. A outra extremidade dessa corda está presa num bloco de massa de 56kg que está em repouso em uma superfície plana. Supondo que a aceleração da gravidade local é igual a $10_{m/s^2}$, determine o valor da força de reação normal trocada entre o bloco e a superfície onde está apoiado' +
-          '<img src="http://beto.abelha.network/static/img/mod_08_q_02.png">',
+          '<img src="//beto.abelha.network/static/img/mod_08_q_02.png">',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -1702,7 +1702,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           ]
         }, {
           texto: 'Na figura abaixo temos dois blocos que estão ligados entre si por uma corda ideal, isto é, cuja massa é desprezível. Podemos ver que o bloco A encontra-se apoiado sobre uma superfície plana. Adote $g = 10_{m/s^2}$, $m_A = 9kg$ e $m_B = 6kg$, determine o valor da tração na corda e marque a alternativa correta.' +
-          '<img src="http://beto.abelha.network/static/img/mod_08_q_03.png">',
+          '<img src="//beto.abelha.network/static/img/mod_08_q_03.png">',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -1729,7 +1729,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           ]
         }, {
           texto: 'Dois blocos A e B, de massas 2,0kg e 6,0kg, respectivamente, e ligados por um fio, estão em repouso sobre um plano horizontal. Quando puxado para a direita pela força F mostrada na figura, o conjunto adquire aceleração de $2,0_{m/s^2}$.' +
-          '<img src="http://beto.abelha.network/static/img/mod_08_q_04.png">' +
+          '<img src="//beto.abelha.network/static/img/mod_08_q_04.png">' +
           'Nestas condições, pode-se afirmar que o módulo da resultante das forças que atuam em A e o módulo da resultante das forças que atuam em B valem, em newtons, respectivamente,',
           respondiada: false,
           pontuacao: 200,
@@ -1757,7 +1757,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           ]
         }, {
           texto: 'A figura ao lado representa um sistema que liga os objetos A com massa de $3kg$, B com $5kg$ e C com $2kg$. O corpo B e sustentado pela superfície da mesa com atrito desprezível, os fios são inextensíveis e suas massas desprezíveis. Nessas condições, pode-se afirmar que a tração no fio que liga os corpos A e B vale em Newton: considere $g = 10_{m/s^2}$' +
-          '<img src="http://beto.abelha.network/static/img/mod_08_q_05.png">',
+          '<img src="//beto.abelha.network/static/img/mod_08_q_05.png">',
           respondiada: false,
           pontuacao: 200,
           alternativas: [
@@ -1788,7 +1788,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
       /* ---------- */
       {
         titulo: 'Força de atrito',
-        cover: 'http://beto.abelha.network/static/img/capas/09.jpg',
+        cover: '//beto.abelha.network/static/img/capas/09.jpg',
         videoId: 'gHe26-eI4fc',
         habilitado: false,
         videoWatched: false,
@@ -1802,7 +1802,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
 
           <h3>O que são as forças de atrito estático e cinético?</h3>
           <p>Estacionar seu carro nas ladeiras íngremes de São Francisco é assustador, e seria impossível fazer isso sem a força de atrito estático.
-          <img src="http://beto.abelha.network/static/img/mod_09_img_01.png"></p>
+          <img src="//beto.abelha.network/static/img/mod_09_img_01.png"></p>
           
           <p>A força de atrito estático $F_e$ é uma força entre duas superfícies que evita que essas superfícies deslizem ou escorreguem uma sobre a outra. Essa é a mesma força que permite que você acelere para a frente quando corre. Seu pé de apoio pode se firmar no chão e empurrá-lo para trás, o que faz com que o chão empurre seu pé para a frente. Chamamos esse tipo de atrito "aderente", que evita que as superfícies deslizem uma sobre a outra, de força de atrito estático. Se não houvesse atrito entre seu pé o chão, você não poderia impulsionar-se para a frente e correr, e acabaria simplesmente correndo sem sair do lugar (a mesma coisa que acontece quando você tenta correr sobre o gelo muito escorregadio).</p>
           
@@ -1810,7 +1810,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           
           <h4>Fisicamente, por que existem forças de atrito?</h4>
           <p>A maioria das superfícies (como madeira e plástico) parecem bastante lisas a olho nu. Mas, se você pudesse ampliá-las, veria que as superfícies são ásperas no nível microscópico. Por exemplo, as superfícies da caixa e do chão, como mostradas abaixo, são na verdade ásperas e irregulares no nível microscópico.
-          <img src="http://beto.abelha.network/static/img/mod_09_img_02.png"></p>
+          <img src="//beto.abelha.network/static/img/mod_09_img_02.png"></p>
           
           <p>O atrito surge em parte por causa da aspereza das superfícies em contato, como visto na visualização expandida. Para que o objeto se mova, ele deve subir até o ponto em que os picos de sua superfície possam escapar da superfície na qual ele está. Portanto, uma força é necessária apenas para colocar o objeto em movimento. Alguns dos picos vão se quebrar, o que também requer uma força para manter o movimento. Boa parte do atrito é, na verdade, devida a forças de atração entre as moléculas que compõem os dois objetos, então mesmo superfícies perfeitamente lisas não estão livres de atrito. Tais forças de aderência também dependem das substâncias das quais as superfícies são feitas, explicando, por exemplo, por que sapatos com sola de borracha escorregam menos que sapatos com sola de couro. Mas, para ser completamente honestos, não temos uma compreensão completa das causas microscópicas do atrito. As pesquisas mais recentes em tribologia (o estudo de superfícies deslizantes) sugerem que a vibração nas superfícies, levando à perda de energia pelo calor, é a principal fonte de fricção.</p>
           
@@ -1852,7 +1852,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           <p>Espere, como é? Você pode explicar como um carro em movimento pode usar a força de atrito estático?</p>
           
           <p>Se os pneus do carro estão funcionando como deveriam (rodando, sem deslizar) é a força de aderência do atrito estático que está agindo nos pneus. A força de atrito estático entre os pneus e o chão é o que permite que os carros aumentem e diminuam de velocidade, e façam curvas de forma suave e segura. Para aumentar a velocidade, os pneus começam a girar mais rapidamente e aderem à estrada usando a força de atrito estático. Os pneus podem então empurrar a rua para trás, e a terceira lei diz que a rua tem que empurrar os pneus para a frente. É a força de aderência do atrito estático torna isso possível. 
-          <img src="http://beto.abelha.network/static/img/mod_09_img_03.png"></p>
+          <img src="//beto.abelha.network/static/img/mod_09_img_03.png"></p>
           
           <p>Se os pneus começarem a girar muito rápido ("pisar fundo"), ou pararem de girar muito rápido ("pisar forte no freio"), vai acontecer uma derrapagem (e também fumaça e marcas de derrapagem) entre os pneus e o chão. Essa derrapagem é uma forma fácil de dizer que a força agindo é o atrito cinético, ao invés do atrito estático.</p>
           <p>As pessoas normalmente acham estranho pensar que o pneu de um carro em movimento tem atrito estático agindo sobre ele. Os alunos normalmente pensam, de forma equivocada, que o atrito estático significa que o objeto não pode se mover.</p>
@@ -1913,7 +1913,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
           3º - $F_{empurrar}=800N$</p>
           
           <p>Para cada caso individual listado acima, determine a magnitude da força de atrito que vai existir entre a geladeira e o chão. 
-          <img src="http://beto.abelha.network/static/img/mod_09_img_04.png"></p>
+          <img src="//beto.abelha.network/static/img/mod_09_img_04.png"></p>
           
           <p>Para começar, vamos calcular a força máxima de atrito estático possível.</p>
           
@@ -1944,12 +1944,12 @@ $m=2.551Kg $ (calcule e comemore)</p>
           <h2>Exemplo 2: Caixa puxada sobre uma mesa áspera</h2>
           <p>Uma caixa de 1,3kg de chocolate congelados é puxada com velocidade constante sobre uma mesa por uma corda. A corda está em um ângulo de $\\theta={60}^0$ e sob uma tração de 4N.</p>
           <p>Qual é o coeficiente de atrito cinético entre a mesa e a caixa? 
-          <img src="http://beto.abelha.network/static/img/mod_09_img_05.png"></p>
+          <img src="//beto.abelha.network/static/img/mod_09_img_05.png"></p>
            
           <p>Como não sabemos o coeficiente de atrito cinético, podemos usar a fórmula $F_c = \\mu_c . F_n$  para calcular diretamente a força de atrito. Contudo, como conhecemos a aceleração na direção horizontal (ela é zero porque a caixa se move a uma velocidade constante) devemos começar com a segunda lei de Newton.</p>
           
           <p>Sempre que usamos a segunda lei de Newton devemos desenhar um diagrama de forças. 
-          <img src="http://beto.abelha.network/static/img/mod_09_img_06.png"></p>
+          <img src="//beto.abelha.network/static/img/mod_09_img_06.png"></p>
           
           <p>$a_x=\\frac{\\sum F_x}{m}$ (use a segunda lei de Newton para a direção horizontal)</p>
           
@@ -1976,7 +1976,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
         },
         questoes: [{
           texto: `O bloco da figura, de massa 5kg, move-se com velocidade constante de $1,0_{m/s}$ num plano horizontal, sob a ação da força $F$, constante e horizontal.
-          <img src="http://beto.abelha.network/static/img/mod_09_q_01.png">
+          <img src="//beto.abelha.network/static/img/mod_09_q_01.png">
           Se o coeficiente de atrito entre o bloco e o plano vale 0,20, e a aceleração da gravidade, $10_{m/s2}$, então o módulo da força $F$, em Newtons, vale:
           `,
           respondiada: false,
@@ -2113,7 +2113,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
       /* ---------- */
       {
         titulo: 'Força centrípeta',
-        cover: 'http://beto.abelha.network/static/img/capas/10.jpg',
+        cover: '//beto.abelha.network/static/img/capas/10.jpg',
         videoId: 'ArHh_7kSv4M',
         habilitado: false,
         videoWatched: false,
@@ -2142,7 +2142,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             $$F_c=\\frac{{mv}^2}{r}$$
             
             <p>e é sempre dirigido para o centro da trajetória circular. De forma equivalente, se $\\omega$ é a velocidade angular e porque $\\omega=v.r$ então $F_c=m.r.\\omega^2$
-            <img src="http://beto.abelha.network/static/img/mod_10_img_01.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_10_img_01.png"></p>
             `
         },
         exemplos: {
@@ -2152,7 +2152,7 @@ $m=2.551Kg $ (calcule e comemore)</p>
             <h2>Exemplo 1: Bola amarrada</h2>
             <p>Um aparato que ilustra claramente a força centrípeta consiste em uma massa $m_1$ que gira em um círculo horizontal, conectada à uma corda leve que passa por um tubo vertical para contra-balancear $m_2$ como mostrado na Figura.</p>
             <p>Se $m_1$ é uma massa 1kg rodando em um círculo de raio 1m  e $m_2=4kg$,  qual é a velocidade angular assumindo que a massa está se movendo verticalmente e há uma mínima fricção entre a corda e o tubo?
-            <img src="http://beto.abelha.network/static/img/mod_10_img_02.png"></p>
+            <img src="//beto.abelha.network/static/img/mod_10_img_02.png"></p>
             
             <p>Quando a corda passa pelo tubo ela redireciona a força gerada pela gravidade atuando em $m_2$ para o plano horizontal. Esta é a força centrípeta que permite $m_1$ rodar em círculo. Nenhuma massa está se movendo verticalmente, então a força centrípeta deve ser exatamente equilibrada.</p>
             

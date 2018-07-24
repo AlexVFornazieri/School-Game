@@ -3,7 +3,7 @@
     <v-dialog v-model="isOpen" persistent max-width="400px">
       <v-card>
         <v-card-title>
-          <span class="headline">Pronto para começar?</span>
+          <span class="headline">Parabéns!</span>
         </v-card-title>
         <v-card-text>
           <div v-if="loading">

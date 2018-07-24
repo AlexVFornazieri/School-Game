@@ -2332,6 +2332,18 @@ $m=2.551Kg $ (calcule e comemore)</p>
     ]
     this.modulosReseted = JSON.stringify(this.modulos)
 
+    this.timing = 0
+
+    if (localStorage.timing) {
+      console.log(localStorage.timing)
+      this.timing = parseInt(localStorage.timing)
+    }
+
+    setInterval(() => {
+      this.timing++
+      localStorage.timing = this.timing
+    }, 100)
+
     if (localStorage.modulos) {
       this.modulos = JSON.parse(localStorage.modulos)
     }
@@ -2342,16 +2354,23 @@ $m=2.551Kg $ (calcule e comemore)</p>
   }
 
   reset () {
+    this.setPlayer(undefined)
     this.modulos = JSON.parse(this.modulosReseted)
     this.save()
   }
 
+  getTime () {
+    return this.timing
+  }
+
   setPlayer (player) {
+    if (!player) localStorage.removeItem('player')
     localStorage.player = JSON.stringify(player)
   }
 
   getPlayer () {
-    if (!localStorage.player) return false
+    if (!localStorage.player ||
+      localStorage.player === 'undefined') return false
     return JSON.parse(localStorage.player)
   }
 

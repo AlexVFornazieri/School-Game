@@ -16,6 +16,14 @@
             <v-list-tile-title>{{player.name}}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
+        <v-list-tile @click="reset">
+          <v-list-tile-action>
+            <v-icon>fa-eraser</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Reiniciar (reset)</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
       </v-list>
     </v-navigation-drawer>
     <v-toolbar
@@ -80,7 +88,6 @@
                     Vídeo Aula
                   </v-btn>
 
-
                   <v-btn
                     :to="{name: 'Questoes', params: {id: index}}" block
                     :disabled="!modulo.habilitado"
@@ -116,20 +123,24 @@
         modulos: [],
         dialog: false,
         drawer: null,
-        player: {},
-        items: [
-          {icon: 'settings', text: 'Configurações'},
-          {icon: 'chat_bubble', text: 'Feedback'},
-          {icon: 'help', text: 'Ajuda'}
-        ]
+        player: {}
       }
     },
 
     mounted () {
+      console.log(this.$service.getTime() / 6000)
+      this.player = this.$service.getPlayer()
       this.modulos = this.$service.listaModulos()
       this.$nextTick(() => {
         this.$vuetify.goTo('#mod' + this.last, {duration: 150})
       })
+    },
+
+    methods: {
+      reset () {
+        this.$service.reset()
+        window.location.assign(window.location.href.split('/#')[0])
+      }
     }
   }
 </script>

@@ -49,7 +49,8 @@
         if (!this.$service.getTeoriaRead(this.id)) {
           if (this.$service.setTeoriaRead(this.id)) {
             setTimeout(() => {
-              const message = `Muito bem! Próxima fase foi desbloqueada.`
+              const time = this.$service.getTime()
+              const message = `Muito bem! Próxima fase foi desbloqueada. (${time} min.)`
               this.$bus.$emit('show-message', message, 'success')
             }, 5000)
           }

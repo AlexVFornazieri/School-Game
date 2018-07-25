@@ -2356,11 +2356,20 @@ $m=2.551Kg $ (calcule e comemore)</p>
   reset () {
     this.setPlayer(undefined)
     this.modulos = JSON.parse(this.modulosReseted)
+    localStorage.timing = 0
     this.save()
   }
 
   getTime () {
-    return this.timing
+    return (this.timing / 6000).toFixed(3)
+  }
+
+  getTotal () {
+    let total = 0
+    this.modulos.forEach((m) => {
+      total += m.xps
+    })
+    return total
   }
 
   setPlayer (player) {
@@ -2452,5 +2461,10 @@ $m=2.551Kg $ (calcule e comemore)</p>
       return true
     }
     return false
+  }
+
+  checkDone () {
+    const last = this.modulos.length - 1
+    return this.getTeoriaRead(last) && this.getAnswered(last)
   }
 }

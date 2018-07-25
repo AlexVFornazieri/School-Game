@@ -1,6 +1,7 @@
 <template>
   <v-content>
     <start-modal></start-modal>
+    <done-modal ref="done"></done-modal>
     <v-navigation-drawer
       fixed
       :clipped="$vuetify.breakpoint.lgAndUp"
@@ -108,10 +109,12 @@
 
 <script>
   import StartModal from './StartModal'
+  import DoneModal from './DoneModal'
 
   export default {
     components: {
-      StartModal
+      StartModal,
+      DoneModal
     },
     props: {
       last: {
@@ -128,7 +131,10 @@
     },
 
     mounted () {
-      console.log(this.$service.getTime() / 6000)
+      console.log(this.$service.checkDone())
+      if (this.$service.checkDone()) {
+        this.$refs.done.open()
+      }
       this.player = this.$service.getPlayer()
       this.modulos = this.$service.listaModulos()
       this.$nextTick(() => {

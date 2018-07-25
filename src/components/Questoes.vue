@@ -163,9 +163,10 @@
         if (!this.$service.getAnswered(this.id)) {
           const message = `Questionário concluído, ${this.total} pontos acumulados.`
           this.$bus.$emit('show-message', message, 'info')
-          if (this.$service.setAnswered(this.id)) {}
+          this.$service.setAnswered(this.id)
           setTimeout(() => {
-            const message = `Muito bem! Próxima fase foi desbloqueada.`
+            const time = this.$service.getTime()
+            const message = `Muito bem! Próxima fase foi desbloqueada. (${time} min.)`
             this.$bus.$emit('show-message', message, 'success')
           }, 3000)
         }

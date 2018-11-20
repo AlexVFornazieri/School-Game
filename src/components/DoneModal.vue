@@ -12,7 +12,7 @@
             <br>
             <span>Pontos acumulados</span>
           </div>
-          <p>Tempo: <b>{{timing}} min.</b></p>
+          <!-- <p>Tempo: <b>{{timing}} min.</b></p> !-->
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
@@ -44,11 +44,6 @@
         isOpen: false,
         timing: this.$service.getTime(),
         total: this.$service.getTotal()
-      }
-    },
-    mounted () {
-      if (!this.$service.getPlayer()) {
-        this.isOpen = true
       }
     },
     methods: {

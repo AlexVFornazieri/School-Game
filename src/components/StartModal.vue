@@ -68,7 +68,7 @@
     },
     mounted () {
       if (!this.$service.getPlayer()) {
-        this.isOpen = true
+        // this.isOpen = true
       }
     },
     methods: {

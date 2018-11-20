@@ -1,8 +1,12 @@
 # School Game
 
-> Projeto de prototipação de jogo para interação de alunos do ensino médio, solicitado por professor de Fisíca de uma instuição local para projeto de mestrado.
+> Projeto de prototipação de jogo mobile para interação de alunos do ensino médio, solicitado por professor de Fisíca de uma instuição local para projeto de mestrado.
+
+Vue, Material Design (Vuetify), Webpack, Youtube API.
 
 Status: em desenvolvimento.
+
+Demo: http://beto.abelha.network (ABRIR NO CELULAR)
 
 ## Build Setup
 
